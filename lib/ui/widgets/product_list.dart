@@ -26,6 +26,7 @@ class ProductList extends ConsumerWidget {
         final product = products[index];
 
         return ProductCard(
+          key: ValueKey(product.id),
           product: product,
           isFavorite: product.isFavorite,
           onFavoriteToggle: () => onFavoriteToggle(product),

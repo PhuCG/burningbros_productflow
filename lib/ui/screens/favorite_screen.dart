@@ -90,6 +90,7 @@ class _FavoriteScreenState extends ConsumerState<FavoriteScreen> {
                 final favorite = favorites[index];
 
                 return ProductCard(
+                  key: ValueKey(favorite.productId),
                   product: favorite.toProduct(),
                   isFavorite: true,
 

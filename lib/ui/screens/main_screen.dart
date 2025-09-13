@@ -14,8 +14,8 @@ class _MainScreenState extends ConsumerState<MainScreen> {
   int _currentIndex = 0;
 
   final List<Widget> _screens = [
-    const ProductListScreen(),
-    const FavoriteScreen(),
+    const ProductListScreen(key: Key('productListScreen')),
+    const FavoriteScreen(key: Key('favoriteScreen')),
   ];
 
   @override
