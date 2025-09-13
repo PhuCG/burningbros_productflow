@@ -9,12 +9,17 @@ extension ErrorExtension on Object {
     late String description;
 
     switch (this as ApiError) {
-      case ApiError.badRequest:
+      case BadRequestApiError _:
         title = 'Bad Request';
         description = 'An invalid request was made';
-      case ApiError.unauthorized:
-        title = 'Unauthorized';
-        description = 'Authentication is required';
+
+      case ServerConnectionErrorApiError _:
+        title = 'Internet Connection Error';
+        description = 'Please check your internet connection and try again';
+
+      case UnknownApiError _:
+        title = 'Unknown Error';
+        description = 'An unknown error occurred';
 
       default:
         title = 'Unknown Error';
