@@ -19,6 +19,7 @@ _$ProductImpl _$$ProductImplFromJson(Map<String, dynamic> json) =>
       thumbnail: json['thumbnail'] as String,
       images:
           (json['images'] as List<dynamic>).map((e) => e as String).toList(),
+      isFavorite: json['isFavorite'] as bool? ?? false,
     );
 
 Map<String, dynamic> _$$ProductImplToJson(_$ProductImpl instance) =>
@@ -33,4 +34,5 @@ Map<String, dynamic> _$$ProductImplToJson(_$ProductImpl instance) =>
       'category': instance.category,
       'thumbnail': instance.thumbnail,
       'images': instance.images,
+      'isFavorite': instance.isFavorite,
     };

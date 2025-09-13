@@ -1,3 +1,5 @@
+import 'package:burningbros_productflow/models/favorite.dart';
+import 'package:burningbros_productflow/repositories/favorite_repository.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import '../repositories/product_repository.dart';
 import '../utils/app_constants.dart';
@@ -91,5 +93,26 @@ class ProductNotifier extends _$ProductNotifier {
       }
       return LoadMoreResult.fail;
     }
+  }
+
+  Future<void> toggleFavorite(Product product) async {
+    final repository = ref.read(favoriteRepositoryProvider);
+    var isFavorite = true;
+    if (product.isFavorite) {
+      await repository.removeFavorite(product.id);
+      isFavorite = false;
+    } else {
+      await repository.addFavorite(Favorite.fromProduct(product));
+    }
+    state.products.whenData((data) {
+      state = state.copyWith(
+        products: AsyncValue.data(
+          data.map((e) {
+            if (e.id == product.id) return e.copyWith(isFavorite: isFavorite);
+            return e;
+          }).toList(),
+        ),
+      );
+    });
   }
 }

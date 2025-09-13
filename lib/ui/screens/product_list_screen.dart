@@ -83,7 +83,12 @@ class _ProductListScreenState extends ConsumerState<ProductListScreen> {
         },
         child: productState.products.when(
           data: (data) {
-            return ProductList(products: data);
+            return ProductList(
+              products: data,
+              onFavoriteToggle: (product) {
+                productNotifier.toggleFavorite(product);
+              },
+            );
           },
           error: (error, stackTrace) {
             return error.toLargeErrorWidget(context);

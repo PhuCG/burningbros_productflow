@@ -22,6 +22,7 @@ class _SearchProductScreenState extends ConsumerState<SearchProductScreen> {
     controlFinishRefresh: true,
     controlFinishLoad: true,
   );
+  late SearchProductNotifier searchProductNotifier;
   final _debouncer = Debouncer(
     delay: Duration(milliseconds: AppConstants.debounceTime),
   );
@@ -29,15 +30,13 @@ class _SearchProductScreenState extends ConsumerState<SearchProductScreen> {
   @override
   void initState() {
     super.initState();
-
+    searchProductNotifier = ref.read(searchProductNotifierProvider.notifier);
     // Setup search listener with debounce
     _searchController.addListener(() {
       _debouncer.run(() {
         final query = _searchController.text.trim();
         if (query.isNotEmpty) {
-          ref
-              .read(searchProductNotifierProvider.notifier)
-              .searchProducts(query);
+          searchProductNotifier.searchProducts(query);
         }
       });
     });
@@ -74,9 +73,7 @@ class _SearchProductScreenState extends ConsumerState<SearchProductScreen> {
                           icon: const Icon(Icons.clear),
                           onPressed: () {
                             _searchController.clear();
-                            ref
-                                .read(searchProductNotifierProvider.notifier)
-                                .clearSearch();
+                            searchProductNotifier.clearSearch();
                           },
                         )
                         : null,
@@ -94,17 +91,12 @@ class _SearchProductScreenState extends ConsumerState<SearchProductScreen> {
             child: EasyRefresh(
               controller: _refreshController,
               onRefresh: () async {
-                await ref
-                    .read(searchProductNotifierProvider.notifier)
-                    .refreshSearch();
+                await searchProductNotifier.refreshSearch();
                 _refreshController.finishRefresh();
                 _refreshController.resetFooter();
               },
               onLoad: () async {
-                final result =
-                    await ref
-                        .read(searchProductNotifierProvider.notifier)
-                        .loadMore();
+                final result = await searchProductNotifier.loadMore();
 
                 // Handle the result based on LoadMoreResult enum
                 switch (result) {
@@ -121,7 +113,24 @@ class _SearchProductScreenState extends ConsumerState<SearchProductScreen> {
               },
               child: searchState.products.when(
                 data: (data) {
-                  return ProductList(products: data);
+                  if (data.isEmpty) {
+                    return const Center(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(Icons.search, size: 64, color: Colors.grey),
+                          SizedBox(height: 16),
+                          Text('Type to search for products'),
+                        ],
+                      ),
+                    );
+                  }
+                  return ProductList(
+                    products: data,
+                    onFavoriteToggle: (product) {
+                      searchProductNotifier.toggleFavorite(product);
+                    },
+                  );
                 },
                 error: (error, stackTrace) {
                   return error.toLargeErrorWidget(context);

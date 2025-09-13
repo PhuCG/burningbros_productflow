@@ -30,6 +30,7 @@ mixin _$Product {
   String get category => throw _privateConstructorUsedError;
   String get thumbnail => throw _privateConstructorUsedError;
   List<String> get images => throw _privateConstructorUsedError;
+  bool get isFavorite => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -51,7 +52,8 @@ abstract class $ProductCopyWith<$Res> {
       int stock,
       String category,
       String thumbnail,
-      List<String> images});
+      List<String> images,
+      bool isFavorite});
 }
 
 /// @nodoc
@@ -77,6 +79,7 @@ class _$ProductCopyWithImpl<$Res, $Val extends Product>
     Object? category = null,
     Object? thumbnail = null,
     Object? images = null,
+    Object? isFavorite = null,
   }) {
     return _then(_value.copyWith(
       id: null == id
@@ -119,6 +122,10 @@ class _$ProductCopyWithImpl<$Res, $Val extends Product>
           ? _value.images
           : images // ignore: cast_nullable_to_non_nullable
               as List<String>,
+      isFavorite: null == isFavorite
+          ? _value.isFavorite
+          : isFavorite // ignore: cast_nullable_to_non_nullable
+              as bool,
     ) as $Val);
   }
 }
@@ -140,7 +147,8 @@ abstract class _$$ProductImplCopyWith<$Res> implements $ProductCopyWith<$Res> {
       int stock,
       String category,
       String thumbnail,
-      List<String> images});
+      List<String> images,
+      bool isFavorite});
 }
 
 /// @nodoc
@@ -164,6 +172,7 @@ class __$$ProductImplCopyWithImpl<$Res>
     Object? category = null,
     Object? thumbnail = null,
     Object? images = null,
+    Object? isFavorite = null,
   }) {
     return _then(_$ProductImpl(
       id: null == id
@@ -206,6 +215,10 @@ class __$$ProductImplCopyWithImpl<$Res>
           ? _value._images
           : images // ignore: cast_nullable_to_non_nullable
               as List<String>,
+      isFavorite: null == isFavorite
+          ? _value.isFavorite
+          : isFavorite // ignore: cast_nullable_to_non_nullable
+              as bool,
     ));
   }
 }
@@ -223,7 +236,8 @@ class _$ProductImpl implements _Product {
       required this.stock,
       required this.category,
       required this.thumbnail,
-      required final List<String> images})
+      required final List<String> images,
+      this.isFavorite = false})
       : _images = images;
 
   factory _$ProductImpl.fromJson(Map<String, dynamic> json) =>
@@ -256,8 +270,12 @@ class _$ProductImpl implements _Product {
   }
 
   @override
+  @JsonKey()
+  final bool isFavorite;
+
+  @override
   String toString() {
-    return 'Product(id: $id, title: $title, description: $description, price: $price, discountPercentage: $discountPercentage, rating: $rating, stock: $stock, category: $category, thumbnail: $thumbnail, images: $images)';
+    return 'Product(id: $id, title: $title, description: $description, price: $price, discountPercentage: $discountPercentage, rating: $rating, stock: $stock, category: $category, thumbnail: $thumbnail, images: $images, isFavorite: $isFavorite)';
   }
 
   @override
@@ -278,7 +296,9 @@ class _$ProductImpl implements _Product {
                 other.category == category) &&
             (identical(other.thumbnail, thumbnail) ||
                 other.thumbnail == thumbnail) &&
-            const DeepCollectionEquality().equals(other._images, _images));
+            const DeepCollectionEquality().equals(other._images, _images) &&
+            (identical(other.isFavorite, isFavorite) ||
+                other.isFavorite == isFavorite));
   }
 
   @JsonKey(ignore: true)
@@ -294,7 +314,8 @@ class _$ProductImpl implements _Product {
       stock,
       category,
       thumbnail,
-      const DeepCollectionEquality().hash(_images));
+      const DeepCollectionEquality().hash(_images),
+      isFavorite);
 
   @JsonKey(ignore: true)
   @override
@@ -321,7 +342,8 @@ abstract class _Product implements Product {
       required final int stock,
       required final String category,
       required final String thumbnail,
-      required final List<String> images}) = _$ProductImpl;
+      required final List<String> images,
+      final bool isFavorite}) = _$ProductImpl;
 
   factory _Product.fromJson(Map<String, dynamic> json) = _$ProductImpl.fromJson;
 
@@ -345,6 +367,8 @@ abstract class _Product implements Product {
   String get thumbnail;
   @override
   List<String> get images;
+  @override
+  bool get isFavorite;
   @override
   @JsonKey(ignore: true)
   _$$ProductImplCopyWith<_$ProductImpl> get copyWith =>
