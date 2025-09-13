@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:easy_refresh/easy_refresh.dart';
 import '../../providers/product_provider.dart';
-import 'search_product_screen.dart';
+import '../../utils/load_more_result.dart';
 
 class ProductListScreen extends ConsumerStatefulWidget {
   const ProductListScreen({super.key});
@@ -27,7 +27,7 @@ class _ProductListScreenState extends ConsumerState<ProductListScreen> {
     productNotifier = ref.read(productNotifierProvider.notifier);
     // Fetch products when screen initializes
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      ref.read(productNotifierProvider.notifier).fetchProducts();
+      productNotifier.fetchProducts();
     });
   }
 
@@ -66,14 +66,19 @@ class _ProductListScreenState extends ConsumerState<ProductListScreen> {
           _refreshController.resetFooter();
         },
         onLoad: () async {
-          if (!productState.hasReachedEnd) {
-            await productNotifier.fetchProducts();
+          final result = await productNotifier.loadMore();
+
+          switch (result) {
+            case LoadMoreResult.success:
+              _refreshController.finishLoad(IndicatorResult.success);
+              break;
+            case LoadMoreResult.noMore:
+              _refreshController.finishLoad(IndicatorResult.noMore);
+              break;
+            case LoadMoreResult.fail:
+              _refreshController.finishLoad(IndicatorResult.fail);
+              break;
           }
-          _refreshController.finishLoad(
-            productState.hasReachedEnd
-                ? IndicatorResult.noMore
-                : IndicatorResult.success,
-          );
         },
         child: productState.products.when(
           data: (data) {
