@@ -5,7 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:easy_refresh/easy_refresh.dart';
 import '../../providers/product_provider.dart';
 import '../../utils/load_more_result.dart';
-import 'search_product_screen.dart';
+import '../search/product_search_delegate.dart';
 
 class ProductListScreen extends ConsumerStatefulWidget {
   const ProductListScreen({super.key});
@@ -50,10 +50,10 @@ class _ProductListScreenState extends ConsumerState<ProductListScreen> {
           IconButton(
             icon: const Icon(Icons.search),
             onPressed: () {
-              Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (context) => const SearchProductScreen(),
-                ),
+              showSearch(
+                maintainState: true,
+                context: context,
+                delegate: ProductSearchDelegate(),
               );
             },
           ),
