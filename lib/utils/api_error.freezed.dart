@@ -1,5 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
 // coverage:ignore-file
+// GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -9,1017 +9,4663 @@ part of 'api_error.dart';
 // FreezedGenerator
 // **************************************************************************
 
-// dart format off
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+
 /// @nodoc
 mixin _$ApiError {
-
-
-
-
-
-@override
-bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is ApiError);
-}
-
-
-@override
-int get hashCode => runtimeType.hashCode;
-
-@override
-String toString() {
-  return 'ApiError()';
-}
-
-
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(String? message) badRequest,
+    required TResult Function() unauthorized,
+    required TResult Function() forbidden,
+    required TResult Function() notFound,
+    required TResult Function() methodNotAllowed,
+    required TResult Function() conflict,
+    required TResult Function() unsupportedMediaType,
+    required TResult Function() tooManyRequests,
+    required TResult Function() preconditionFailed,
+    required TResult Function() payloadTooLarge,
+    required TResult Function() internalServerError,
+    required TResult Function() serviceUnavailable,
+    required TResult Function() gatewayTimeout,
+    required TResult Function() serverOverload,
+    required TResult Function() serverError,
+    required TResult Function(String? error) serverConnectionError,
+    required TResult Function() networkError,
+    required TResult Function() timeout,
+    required TResult Function(Object? error, StackTrace? stackTrace) unknown,
+    required TResult Function() maintenance,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String? message)? badRequest,
+    TResult? Function()? unauthorized,
+    TResult? Function()? forbidden,
+    TResult? Function()? notFound,
+    TResult? Function()? methodNotAllowed,
+    TResult? Function()? conflict,
+    TResult? Function()? unsupportedMediaType,
+    TResult? Function()? tooManyRequests,
+    TResult? Function()? preconditionFailed,
+    TResult? Function()? payloadTooLarge,
+    TResult? Function()? internalServerError,
+    TResult? Function()? serviceUnavailable,
+    TResult? Function()? gatewayTimeout,
+    TResult? Function()? serverOverload,
+    TResult? Function()? serverError,
+    TResult? Function(String? error)? serverConnectionError,
+    TResult? Function()? networkError,
+    TResult? Function()? timeout,
+    TResult? Function(Object? error, StackTrace? stackTrace)? unknown,
+    TResult? Function()? maintenance,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(String? message)? badRequest,
+    TResult Function()? unauthorized,
+    TResult Function()? forbidden,
+    TResult Function()? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? conflict,
+    TResult Function()? unsupportedMediaType,
+    TResult Function()? tooManyRequests,
+    TResult Function()? preconditionFailed,
+    TResult Function()? payloadTooLarge,
+    TResult Function()? internalServerError,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? gatewayTimeout,
+    TResult Function()? serverOverload,
+    TResult Function()? serverError,
+    TResult Function(String? error)? serverConnectionError,
+    TResult Function()? networkError,
+    TResult Function()? timeout,
+    TResult Function(Object? error, StackTrace? stackTrace)? unknown,
+    TResult Function()? maintenance,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(BadRequestApiError value) badRequest,
+    required TResult Function(UnauthorizedApiError value) unauthorized,
+    required TResult Function(ForbiddenApiError value) forbidden,
+    required TResult Function(NotFoundApiError value) notFound,
+    required TResult Function(MethodNotAllowedApiError value) methodNotAllowed,
+    required TResult Function(ConflictApiError value) conflict,
+    required TResult Function(UnsupportedMediaType value) unsupportedMediaType,
+    required TResult Function(TooManyRequestsApiError value) tooManyRequests,
+    required TResult Function(PreconditionFailedApiError value)
+        preconditionFailed,
+    required TResult Function(PayloadTooLargeApiError value) payloadTooLarge,
+    required TResult Function(InternalServerErrorApiError value)
+        internalServerError,
+    required TResult Function(ServiceUnavailableApiError value)
+        serviceUnavailable,
+    required TResult Function(GatewayTimeoutApiError value) gatewayTimeout,
+    required TResult Function(ServerOverloadApiError value) serverOverload,
+    required TResult Function(ServerErrorApiError value) serverError,
+    required TResult Function(ServerConnectionErrorApiError value)
+        serverConnectionError,
+    required TResult Function(NetworkErrorApiError value) networkError,
+    required TResult Function(TimeoutApiError value) timeout,
+    required TResult Function(UnknownApiError value) unknown,
+    required TResult Function(MaintenanceApiError value) maintenance,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(BadRequestApiError value)? badRequest,
+    TResult? Function(UnauthorizedApiError value)? unauthorized,
+    TResult? Function(ForbiddenApiError value)? forbidden,
+    TResult? Function(NotFoundApiError value)? notFound,
+    TResult? Function(MethodNotAllowedApiError value)? methodNotAllowed,
+    TResult? Function(ConflictApiError value)? conflict,
+    TResult? Function(UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(TooManyRequestsApiError value)? tooManyRequests,
+    TResult? Function(PreconditionFailedApiError value)? preconditionFailed,
+    TResult? Function(PayloadTooLargeApiError value)? payloadTooLarge,
+    TResult? Function(InternalServerErrorApiError value)? internalServerError,
+    TResult? Function(ServiceUnavailableApiError value)? serviceUnavailable,
+    TResult? Function(GatewayTimeoutApiError value)? gatewayTimeout,
+    TResult? Function(ServerOverloadApiError value)? serverOverload,
+    TResult? Function(ServerErrorApiError value)? serverError,
+    TResult? Function(ServerConnectionErrorApiError value)?
+        serverConnectionError,
+    TResult? Function(NetworkErrorApiError value)? networkError,
+    TResult? Function(TimeoutApiError value)? timeout,
+    TResult? Function(UnknownApiError value)? unknown,
+    TResult? Function(MaintenanceApiError value)? maintenance,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(BadRequestApiError value)? badRequest,
+    TResult Function(UnauthorizedApiError value)? unauthorized,
+    TResult Function(ForbiddenApiError value)? forbidden,
+    TResult Function(NotFoundApiError value)? notFound,
+    TResult Function(MethodNotAllowedApiError value)? methodNotAllowed,
+    TResult Function(ConflictApiError value)? conflict,
+    TResult Function(UnsupportedMediaType value)? unsupportedMediaType,
+    TResult Function(TooManyRequestsApiError value)? tooManyRequests,
+    TResult Function(PreconditionFailedApiError value)? preconditionFailed,
+    TResult Function(PayloadTooLargeApiError value)? payloadTooLarge,
+    TResult Function(InternalServerErrorApiError value)? internalServerError,
+    TResult Function(ServiceUnavailableApiError value)? serviceUnavailable,
+    TResult Function(GatewayTimeoutApiError value)? gatewayTimeout,
+    TResult Function(ServerOverloadApiError value)? serverOverload,
+    TResult Function(ServerErrorApiError value)? serverError,
+    TResult Function(ServerConnectionErrorApiError value)?
+        serverConnectionError,
+    TResult Function(NetworkErrorApiError value)? networkError,
+    TResult Function(TimeoutApiError value)? timeout,
+    TResult Function(UnknownApiError value)? unknown,
+    TResult Function(MaintenanceApiError value)? maintenance,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-class $ApiErrorCopyWith<$Res>  {
-$ApiErrorCopyWith(ApiError _, $Res Function(ApiError) __);
+abstract class $ApiErrorCopyWith<$Res> {
+  factory $ApiErrorCopyWith(ApiError value, $Res Function(ApiError) then) =
+      _$ApiErrorCopyWithImpl<$Res, ApiError>;
 }
 
+/// @nodoc
+class _$ApiErrorCopyWithImpl<$Res, $Val extends ApiError>
+    implements $ApiErrorCopyWith<$Res> {
+  _$ApiErrorCopyWithImpl(this._value, this._then);
 
-/// Adds pattern-matching-related methods to [ApiError].
-extension ApiErrorPatterns on ApiError {
-/// A variant of `map` that fallback to returning `orElse`.
-///
-/// It is equivalent to doing:
-/// ```dart
-/// switch (sealedClass) {
-///   case final Subclass value:
-///     return ...;
-///   case _:
-///     return orElse();
-/// }
-/// ```
-
-@optionalTypeArgs TResult maybeMap<TResult extends Object?>({TResult Function( BadRequestApiError value)?  badRequest,TResult Function( UnauthorizedApiError value)?  unauthorized,TResult Function( ForbiddenApiError value)?  forbidden,TResult Function( NotFoundApiError value)?  notFound,TResult Function( MethodNotAllowedApiError value)?  methodNotAllowed,TResult Function( ConflictApiError value)?  conflict,TResult Function( UnsupportedMediaType value)?  unsupportedMediaType,TResult Function( TooManyRequestsApiError value)?  tooManyRequests,TResult Function( PreconditionFailedApiError value)?  preconditionFailed,TResult Function( PayloadTooLargeApiError value)?  payloadTooLarge,TResult Function( InternalServerErrorApiError value)?  internalServerError,TResult Function( ServiceUnavailableApiError value)?  serviceUnavailable,TResult Function( GatewayTimeoutApiError value)?  gatewayTimeout,TResult Function( ServerOverloadApiError value)?  serverOverload,TResult Function( ServerErrorApiError value)?  serverError,TResult Function( ServerConnectionErrorApiError value)?  serverConnectionError,TResult Function( NetworkErrorApiError value)?  networkError,TResult Function( TimeoutApiError value)?  timeout,TResult Function( UnknownApiError value)?  unknown,TResult Function( MaintenanceApiError value)?  maintenance,required TResult orElse(),}){
-final _that = this;
-switch (_that) {
-case BadRequestApiError() when badRequest != null:
-return badRequest(_that);case UnauthorizedApiError() when unauthorized != null:
-return unauthorized(_that);case ForbiddenApiError() when forbidden != null:
-return forbidden(_that);case NotFoundApiError() when notFound != null:
-return notFound(_that);case MethodNotAllowedApiError() when methodNotAllowed != null:
-return methodNotAllowed(_that);case ConflictApiError() when conflict != null:
-return conflict(_that);case UnsupportedMediaType() when unsupportedMediaType != null:
-return unsupportedMediaType(_that);case TooManyRequestsApiError() when tooManyRequests != null:
-return tooManyRequests(_that);case PreconditionFailedApiError() when preconditionFailed != null:
-return preconditionFailed(_that);case PayloadTooLargeApiError() when payloadTooLarge != null:
-return payloadTooLarge(_that);case InternalServerErrorApiError() when internalServerError != null:
-return internalServerError(_that);case ServiceUnavailableApiError() when serviceUnavailable != null:
-return serviceUnavailable(_that);case GatewayTimeoutApiError() when gatewayTimeout != null:
-return gatewayTimeout(_that);case ServerOverloadApiError() when serverOverload != null:
-return serverOverload(_that);case ServerErrorApiError() when serverError != null:
-return serverError(_that);case ServerConnectionErrorApiError() when serverConnectionError != null:
-return serverConnectionError(_that);case NetworkErrorApiError() when networkError != null:
-return networkError(_that);case TimeoutApiError() when timeout != null:
-return timeout(_that);case UnknownApiError() when unknown != null:
-return unknown(_that);case MaintenanceApiError() when maintenance != null:
-return maintenance(_that);case _:
-  return orElse();
-
-}
-}
-/// A `switch`-like method, using callbacks.
-///
-/// Callbacks receives the raw object, upcasted.
-/// It is equivalent to doing:
-/// ```dart
-/// switch (sealedClass) {
-///   case final Subclass value:
-///     return ...;
-///   case final Subclass2 value:
-///     return ...;
-/// }
-/// ```
-
-@optionalTypeArgs TResult map<TResult extends Object?>({required TResult Function( BadRequestApiError value)  badRequest,required TResult Function( UnauthorizedApiError value)  unauthorized,required TResult Function( ForbiddenApiError value)  forbidden,required TResult Function( NotFoundApiError value)  notFound,required TResult Function( MethodNotAllowedApiError value)  methodNotAllowed,required TResult Function( ConflictApiError value)  conflict,required TResult Function( UnsupportedMediaType value)  unsupportedMediaType,required TResult Function( TooManyRequestsApiError value)  tooManyRequests,required TResult Function( PreconditionFailedApiError value)  preconditionFailed,required TResult Function( PayloadTooLargeApiError value)  payloadTooLarge,required TResult Function( InternalServerErrorApiError value)  internalServerError,required TResult Function( ServiceUnavailableApiError value)  serviceUnavailable,required TResult Function( GatewayTimeoutApiError value)  gatewayTimeout,required TResult Function( ServerOverloadApiError value)  serverOverload,required TResult Function( ServerErrorApiError value)  serverError,required TResult Function( ServerConnectionErrorApiError value)  serverConnectionError,required TResult Function( NetworkErrorApiError value)  networkError,required TResult Function( TimeoutApiError value)  timeout,required TResult Function( UnknownApiError value)  unknown,required TResult Function( MaintenanceApiError value)  maintenance,}){
-final _that = this;
-switch (_that) {
-case BadRequestApiError():
-return badRequest(_that);case UnauthorizedApiError():
-return unauthorized(_that);case ForbiddenApiError():
-return forbidden(_that);case NotFoundApiError():
-return notFound(_that);case MethodNotAllowedApiError():
-return methodNotAllowed(_that);case ConflictApiError():
-return conflict(_that);case UnsupportedMediaType():
-return unsupportedMediaType(_that);case TooManyRequestsApiError():
-return tooManyRequests(_that);case PreconditionFailedApiError():
-return preconditionFailed(_that);case PayloadTooLargeApiError():
-return payloadTooLarge(_that);case InternalServerErrorApiError():
-return internalServerError(_that);case ServiceUnavailableApiError():
-return serviceUnavailable(_that);case GatewayTimeoutApiError():
-return gatewayTimeout(_that);case ServerOverloadApiError():
-return serverOverload(_that);case ServerErrorApiError():
-return serverError(_that);case ServerConnectionErrorApiError():
-return serverConnectionError(_that);case NetworkErrorApiError():
-return networkError(_that);case TimeoutApiError():
-return timeout(_that);case UnknownApiError():
-return unknown(_that);case MaintenanceApiError():
-return maintenance(_that);}
-}
-/// A variant of `map` that fallback to returning `null`.
-///
-/// It is equivalent to doing:
-/// ```dart
-/// switch (sealedClass) {
-///   case final Subclass value:
-///     return ...;
-///   case _:
-///     return null;
-/// }
-/// ```
-
-@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>({TResult? Function( BadRequestApiError value)?  badRequest,TResult? Function( UnauthorizedApiError value)?  unauthorized,TResult? Function( ForbiddenApiError value)?  forbidden,TResult? Function( NotFoundApiError value)?  notFound,TResult? Function( MethodNotAllowedApiError value)?  methodNotAllowed,TResult? Function( ConflictApiError value)?  conflict,TResult? Function( UnsupportedMediaType value)?  unsupportedMediaType,TResult? Function( TooManyRequestsApiError value)?  tooManyRequests,TResult? Function( PreconditionFailedApiError value)?  preconditionFailed,TResult? Function( PayloadTooLargeApiError value)?  payloadTooLarge,TResult? Function( InternalServerErrorApiError value)?  internalServerError,TResult? Function( ServiceUnavailableApiError value)?  serviceUnavailable,TResult? Function( GatewayTimeoutApiError value)?  gatewayTimeout,TResult? Function( ServerOverloadApiError value)?  serverOverload,TResult? Function( ServerErrorApiError value)?  serverError,TResult? Function( ServerConnectionErrorApiError value)?  serverConnectionError,TResult? Function( NetworkErrorApiError value)?  networkError,TResult? Function( TimeoutApiError value)?  timeout,TResult? Function( UnknownApiError value)?  unknown,TResult? Function( MaintenanceApiError value)?  maintenance,}){
-final _that = this;
-switch (_that) {
-case BadRequestApiError() when badRequest != null:
-return badRequest(_that);case UnauthorizedApiError() when unauthorized != null:
-return unauthorized(_that);case ForbiddenApiError() when forbidden != null:
-return forbidden(_that);case NotFoundApiError() when notFound != null:
-return notFound(_that);case MethodNotAllowedApiError() when methodNotAllowed != null:
-return methodNotAllowed(_that);case ConflictApiError() when conflict != null:
-return conflict(_that);case UnsupportedMediaType() when unsupportedMediaType != null:
-return unsupportedMediaType(_that);case TooManyRequestsApiError() when tooManyRequests != null:
-return tooManyRequests(_that);case PreconditionFailedApiError() when preconditionFailed != null:
-return preconditionFailed(_that);case PayloadTooLargeApiError() when payloadTooLarge != null:
-return payloadTooLarge(_that);case InternalServerErrorApiError() when internalServerError != null:
-return internalServerError(_that);case ServiceUnavailableApiError() when serviceUnavailable != null:
-return serviceUnavailable(_that);case GatewayTimeoutApiError() when gatewayTimeout != null:
-return gatewayTimeout(_that);case ServerOverloadApiError() when serverOverload != null:
-return serverOverload(_that);case ServerErrorApiError() when serverError != null:
-return serverError(_that);case ServerConnectionErrorApiError() when serverConnectionError != null:
-return serverConnectionError(_that);case NetworkErrorApiError() when networkError != null:
-return networkError(_that);case TimeoutApiError() when timeout != null:
-return timeout(_that);case UnknownApiError() when unknown != null:
-return unknown(_that);case MaintenanceApiError() when maintenance != null:
-return maintenance(_that);case _:
-  return null;
-
-}
-}
-/// A variant of `when` that fallback to an `orElse` callback.
-///
-/// It is equivalent to doing:
-/// ```dart
-/// switch (sealedClass) {
-///   case Subclass(:final field):
-///     return ...;
-///   case _:
-///     return orElse();
-/// }
-/// ```
-
-@optionalTypeArgs TResult maybeWhen<TResult extends Object?>({TResult Function( String? message)?  badRequest,TResult Function()?  unauthorized,TResult Function()?  forbidden,TResult Function()?  notFound,TResult Function()?  methodNotAllowed,TResult Function()?  conflict,TResult Function()?  unsupportedMediaType,TResult Function()?  tooManyRequests,TResult Function()?  preconditionFailed,TResult Function()?  payloadTooLarge,TResult Function()?  internalServerError,TResult Function()?  serviceUnavailable,TResult Function()?  gatewayTimeout,TResult Function()?  serverOverload,TResult Function()?  serverError,TResult Function( String? error)?  serverConnectionError,TResult Function()?  networkError,TResult Function()?  timeout,TResult Function( Object? error,  StackTrace? stackTrace)?  unknown,TResult Function()?  maintenance,required TResult orElse(),}) {final _that = this;
-switch (_that) {
-case BadRequestApiError() when badRequest != null:
-return badRequest(_that.message);case UnauthorizedApiError() when unauthorized != null:
-return unauthorized();case ForbiddenApiError() when forbidden != null:
-return forbidden();case NotFoundApiError() when notFound != null:
-return notFound();case MethodNotAllowedApiError() when methodNotAllowed != null:
-return methodNotAllowed();case ConflictApiError() when conflict != null:
-return conflict();case UnsupportedMediaType() when unsupportedMediaType != null:
-return unsupportedMediaType();case TooManyRequestsApiError() when tooManyRequests != null:
-return tooManyRequests();case PreconditionFailedApiError() when preconditionFailed != null:
-return preconditionFailed();case PayloadTooLargeApiError() when payloadTooLarge != null:
-return payloadTooLarge();case InternalServerErrorApiError() when internalServerError != null:
-return internalServerError();case ServiceUnavailableApiError() when serviceUnavailable != null:
-return serviceUnavailable();case GatewayTimeoutApiError() when gatewayTimeout != null:
-return gatewayTimeout();case ServerOverloadApiError() when serverOverload != null:
-return serverOverload();case ServerErrorApiError() when serverError != null:
-return serverError();case ServerConnectionErrorApiError() when serverConnectionError != null:
-return serverConnectionError(_that.error);case NetworkErrorApiError() when networkError != null:
-return networkError();case TimeoutApiError() when timeout != null:
-return timeout();case UnknownApiError() when unknown != null:
-return unknown(_that.error,_that.stackTrace);case MaintenanceApiError() when maintenance != null:
-return maintenance();case _:
-  return orElse();
-
-}
-}
-/// A `switch`-like method, using callbacks.
-///
-/// As opposed to `map`, this offers destructuring.
-/// It is equivalent to doing:
-/// ```dart
-/// switch (sealedClass) {
-///   case Subclass(:final field):
-///     return ...;
-///   case Subclass2(:final field2):
-///     return ...;
-/// }
-/// ```
-
-@optionalTypeArgs TResult when<TResult extends Object?>({required TResult Function( String? message)  badRequest,required TResult Function()  unauthorized,required TResult Function()  forbidden,required TResult Function()  notFound,required TResult Function()  methodNotAllowed,required TResult Function()  conflict,required TResult Function()  unsupportedMediaType,required TResult Function()  tooManyRequests,required TResult Function()  preconditionFailed,required TResult Function()  payloadTooLarge,required TResult Function()  internalServerError,required TResult Function()  serviceUnavailable,required TResult Function()  gatewayTimeout,required TResult Function()  serverOverload,required TResult Function()  serverError,required TResult Function( String? error)  serverConnectionError,required TResult Function()  networkError,required TResult Function()  timeout,required TResult Function( Object? error,  StackTrace? stackTrace)  unknown,required TResult Function()  maintenance,}) {final _that = this;
-switch (_that) {
-case BadRequestApiError():
-return badRequest(_that.message);case UnauthorizedApiError():
-return unauthorized();case ForbiddenApiError():
-return forbidden();case NotFoundApiError():
-return notFound();case MethodNotAllowedApiError():
-return methodNotAllowed();case ConflictApiError():
-return conflict();case UnsupportedMediaType():
-return unsupportedMediaType();case TooManyRequestsApiError():
-return tooManyRequests();case PreconditionFailedApiError():
-return preconditionFailed();case PayloadTooLargeApiError():
-return payloadTooLarge();case InternalServerErrorApiError():
-return internalServerError();case ServiceUnavailableApiError():
-return serviceUnavailable();case GatewayTimeoutApiError():
-return gatewayTimeout();case ServerOverloadApiError():
-return serverOverload();case ServerErrorApiError():
-return serverError();case ServerConnectionErrorApiError():
-return serverConnectionError(_that.error);case NetworkErrorApiError():
-return networkError();case TimeoutApiError():
-return timeout();case UnknownApiError():
-return unknown(_that.error,_that.stackTrace);case MaintenanceApiError():
-return maintenance();}
-}
-/// A variant of `when` that fallback to returning `null`
-///
-/// It is equivalent to doing:
-/// ```dart
-/// switch (sealedClass) {
-///   case Subclass(:final field):
-///     return ...;
-///   case _:
-///     return null;
-/// }
-/// ```
-
-@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>({TResult? Function( String? message)?  badRequest,TResult? Function()?  unauthorized,TResult? Function()?  forbidden,TResult? Function()?  notFound,TResult? Function()?  methodNotAllowed,TResult? Function()?  conflict,TResult? Function()?  unsupportedMediaType,TResult? Function()?  tooManyRequests,TResult? Function()?  preconditionFailed,TResult? Function()?  payloadTooLarge,TResult? Function()?  internalServerError,TResult? Function()?  serviceUnavailable,TResult? Function()?  gatewayTimeout,TResult? Function()?  serverOverload,TResult? Function()?  serverError,TResult? Function( String? error)?  serverConnectionError,TResult? Function()?  networkError,TResult? Function()?  timeout,TResult? Function( Object? error,  StackTrace? stackTrace)?  unknown,TResult? Function()?  maintenance,}) {final _that = this;
-switch (_that) {
-case BadRequestApiError() when badRequest != null:
-return badRequest(_that.message);case UnauthorizedApiError() when unauthorized != null:
-return unauthorized();case ForbiddenApiError() when forbidden != null:
-return forbidden();case NotFoundApiError() when notFound != null:
-return notFound();case MethodNotAllowedApiError() when methodNotAllowed != null:
-return methodNotAllowed();case ConflictApiError() when conflict != null:
-return conflict();case UnsupportedMediaType() when unsupportedMediaType != null:
-return unsupportedMediaType();case TooManyRequestsApiError() when tooManyRequests != null:
-return tooManyRequests();case PreconditionFailedApiError() when preconditionFailed != null:
-return preconditionFailed();case PayloadTooLargeApiError() when payloadTooLarge != null:
-return payloadTooLarge();case InternalServerErrorApiError() when internalServerError != null:
-return internalServerError();case ServiceUnavailableApiError() when serviceUnavailable != null:
-return serviceUnavailable();case GatewayTimeoutApiError() when gatewayTimeout != null:
-return gatewayTimeout();case ServerOverloadApiError() when serverOverload != null:
-return serverOverload();case ServerErrorApiError() when serverError != null:
-return serverError();case ServerConnectionErrorApiError() when serverConnectionError != null:
-return serverConnectionError(_that.error);case NetworkErrorApiError() when networkError != null:
-return networkError();case TimeoutApiError() when timeout != null:
-return timeout();case UnknownApiError() when unknown != null:
-return unknown(_that.error,_that.stackTrace);case MaintenanceApiError() when maintenance != null:
-return maintenance();case _:
-  return null;
-
-}
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
+/// @nodoc
+abstract class _$$BadRequestApiErrorImplCopyWith<$Res> {
+  factory _$$BadRequestApiErrorImplCopyWith(_$BadRequestApiErrorImpl value,
+          $Res Function(_$BadRequestApiErrorImpl) then) =
+      __$$BadRequestApiErrorImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({String? message});
+}
+
+/// @nodoc
+class __$$BadRequestApiErrorImplCopyWithImpl<$Res>
+    extends _$ApiErrorCopyWithImpl<$Res, _$BadRequestApiErrorImpl>
+    implements _$$BadRequestApiErrorImplCopyWith<$Res> {
+  __$$BadRequestApiErrorImplCopyWithImpl(_$BadRequestApiErrorImpl _value,
+      $Res Function(_$BadRequestApiErrorImpl) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? message = freezed,
+  }) {
+    return _then(_$BadRequestApiErrorImpl(
+      message: freezed == message
+          ? _value.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
+  }
 }
 
 /// @nodoc
 
+class _$BadRequestApiErrorImpl extends BadRequestApiError {
+  const _$BadRequestApiErrorImpl({this.message}) : super._();
 
-class BadRequestApiError extends ApiError {
-  const BadRequestApiError({this.message}): super._();
-  
+  @override
+  final String? message;
 
- final  String? message;
+  @override
+  String toString() {
+    return 'ApiError.badRequest(message: $message)';
+  }
 
-/// Create a copy of ApiError
-/// with the given fields replaced by the non-null parameter values.
-@JsonKey(includeFromJson: false, includeToJson: false)
-@pragma('vm:prefer-inline')
-$BadRequestApiErrorCopyWith<BadRequestApiError> get copyWith => _$BadRequestApiErrorCopyWithImpl<BadRequestApiError>(this, _$identity);
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$BadRequestApiErrorImpl &&
+            (identical(other.message, message) || other.message == message));
+  }
 
+  @override
+  int get hashCode => Object.hash(runtimeType, message);
 
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$BadRequestApiErrorImplCopyWith<_$BadRequestApiErrorImpl> get copyWith =>
+      __$$BadRequestApiErrorImplCopyWithImpl<_$BadRequestApiErrorImpl>(
+          this, _$identity);
 
-@override
-bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is BadRequestApiError&&(identical(other.message, message) || other.message == message));
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(String? message) badRequest,
+    required TResult Function() unauthorized,
+    required TResult Function() forbidden,
+    required TResult Function() notFound,
+    required TResult Function() methodNotAllowed,
+    required TResult Function() conflict,
+    required TResult Function() unsupportedMediaType,
+    required TResult Function() tooManyRequests,
+    required TResult Function() preconditionFailed,
+    required TResult Function() payloadTooLarge,
+    required TResult Function() internalServerError,
+    required TResult Function() serviceUnavailable,
+    required TResult Function() gatewayTimeout,
+    required TResult Function() serverOverload,
+    required TResult Function() serverError,
+    required TResult Function(String? error) serverConnectionError,
+    required TResult Function() networkError,
+    required TResult Function() timeout,
+    required TResult Function(Object? error, StackTrace? stackTrace) unknown,
+    required TResult Function() maintenance,
+  }) {
+    return badRequest(message);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String? message)? badRequest,
+    TResult? Function()? unauthorized,
+    TResult? Function()? forbidden,
+    TResult? Function()? notFound,
+    TResult? Function()? methodNotAllowed,
+    TResult? Function()? conflict,
+    TResult? Function()? unsupportedMediaType,
+    TResult? Function()? tooManyRequests,
+    TResult? Function()? preconditionFailed,
+    TResult? Function()? payloadTooLarge,
+    TResult? Function()? internalServerError,
+    TResult? Function()? serviceUnavailable,
+    TResult? Function()? gatewayTimeout,
+    TResult? Function()? serverOverload,
+    TResult? Function()? serverError,
+    TResult? Function(String? error)? serverConnectionError,
+    TResult? Function()? networkError,
+    TResult? Function()? timeout,
+    TResult? Function(Object? error, StackTrace? stackTrace)? unknown,
+    TResult? Function()? maintenance,
+  }) {
+    return badRequest?.call(message);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(String? message)? badRequest,
+    TResult Function()? unauthorized,
+    TResult Function()? forbidden,
+    TResult Function()? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? conflict,
+    TResult Function()? unsupportedMediaType,
+    TResult Function()? tooManyRequests,
+    TResult Function()? preconditionFailed,
+    TResult Function()? payloadTooLarge,
+    TResult Function()? internalServerError,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? gatewayTimeout,
+    TResult Function()? serverOverload,
+    TResult Function()? serverError,
+    TResult Function(String? error)? serverConnectionError,
+    TResult Function()? networkError,
+    TResult Function()? timeout,
+    TResult Function(Object? error, StackTrace? stackTrace)? unknown,
+    TResult Function()? maintenance,
+    required TResult orElse(),
+  }) {
+    if (badRequest != null) {
+      return badRequest(message);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(BadRequestApiError value) badRequest,
+    required TResult Function(UnauthorizedApiError value) unauthorized,
+    required TResult Function(ForbiddenApiError value) forbidden,
+    required TResult Function(NotFoundApiError value) notFound,
+    required TResult Function(MethodNotAllowedApiError value) methodNotAllowed,
+    required TResult Function(ConflictApiError value) conflict,
+    required TResult Function(UnsupportedMediaType value) unsupportedMediaType,
+    required TResult Function(TooManyRequestsApiError value) tooManyRequests,
+    required TResult Function(PreconditionFailedApiError value)
+        preconditionFailed,
+    required TResult Function(PayloadTooLargeApiError value) payloadTooLarge,
+    required TResult Function(InternalServerErrorApiError value)
+        internalServerError,
+    required TResult Function(ServiceUnavailableApiError value)
+        serviceUnavailable,
+    required TResult Function(GatewayTimeoutApiError value) gatewayTimeout,
+    required TResult Function(ServerOverloadApiError value) serverOverload,
+    required TResult Function(ServerErrorApiError value) serverError,
+    required TResult Function(ServerConnectionErrorApiError value)
+        serverConnectionError,
+    required TResult Function(NetworkErrorApiError value) networkError,
+    required TResult Function(TimeoutApiError value) timeout,
+    required TResult Function(UnknownApiError value) unknown,
+    required TResult Function(MaintenanceApiError value) maintenance,
+  }) {
+    return badRequest(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(BadRequestApiError value)? badRequest,
+    TResult? Function(UnauthorizedApiError value)? unauthorized,
+    TResult? Function(ForbiddenApiError value)? forbidden,
+    TResult? Function(NotFoundApiError value)? notFound,
+    TResult? Function(MethodNotAllowedApiError value)? methodNotAllowed,
+    TResult? Function(ConflictApiError value)? conflict,
+    TResult? Function(UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(TooManyRequestsApiError value)? tooManyRequests,
+    TResult? Function(PreconditionFailedApiError value)? preconditionFailed,
+    TResult? Function(PayloadTooLargeApiError value)? payloadTooLarge,
+    TResult? Function(InternalServerErrorApiError value)? internalServerError,
+    TResult? Function(ServiceUnavailableApiError value)? serviceUnavailable,
+    TResult? Function(GatewayTimeoutApiError value)? gatewayTimeout,
+    TResult? Function(ServerOverloadApiError value)? serverOverload,
+    TResult? Function(ServerErrorApiError value)? serverError,
+    TResult? Function(ServerConnectionErrorApiError value)?
+        serverConnectionError,
+    TResult? Function(NetworkErrorApiError value)? networkError,
+    TResult? Function(TimeoutApiError value)? timeout,
+    TResult? Function(UnknownApiError value)? unknown,
+    TResult? Function(MaintenanceApiError value)? maintenance,
+  }) {
+    return badRequest?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(BadRequestApiError value)? badRequest,
+    TResult Function(UnauthorizedApiError value)? unauthorized,
+    TResult Function(ForbiddenApiError value)? forbidden,
+    TResult Function(NotFoundApiError value)? notFound,
+    TResult Function(MethodNotAllowedApiError value)? methodNotAllowed,
+    TResult Function(ConflictApiError value)? conflict,
+    TResult Function(UnsupportedMediaType value)? unsupportedMediaType,
+    TResult Function(TooManyRequestsApiError value)? tooManyRequests,
+    TResult Function(PreconditionFailedApiError value)? preconditionFailed,
+    TResult Function(PayloadTooLargeApiError value)? payloadTooLarge,
+    TResult Function(InternalServerErrorApiError value)? internalServerError,
+    TResult Function(ServiceUnavailableApiError value)? serviceUnavailable,
+    TResult Function(GatewayTimeoutApiError value)? gatewayTimeout,
+    TResult Function(ServerOverloadApiError value)? serverOverload,
+    TResult Function(ServerErrorApiError value)? serverError,
+    TResult Function(ServerConnectionErrorApiError value)?
+        serverConnectionError,
+    TResult Function(NetworkErrorApiError value)? networkError,
+    TResult Function(TimeoutApiError value)? timeout,
+    TResult Function(UnknownApiError value)? unknown,
+    TResult Function(MaintenanceApiError value)? maintenance,
+    required TResult orElse(),
+  }) {
+    if (badRequest != null) {
+      return badRequest(this);
+    }
+    return orElse();
+  }
 }
 
-
-@override
-int get hashCode => Object.hash(runtimeType,message);
-
-@override
-String toString() {
-  return 'ApiError.badRequest(message: $message)';
-}
-
-
-}
-
-/// @nodoc
-abstract mixin class $BadRequestApiErrorCopyWith<$Res> implements $ApiErrorCopyWith<$Res> {
-  factory $BadRequestApiErrorCopyWith(BadRequestApiError value, $Res Function(BadRequestApiError) _then) = _$BadRequestApiErrorCopyWithImpl;
-@useResult
-$Res call({
- String? message
-});
-
-
-
-
-}
-/// @nodoc
-class _$BadRequestApiErrorCopyWithImpl<$Res>
-    implements $BadRequestApiErrorCopyWith<$Res> {
-  _$BadRequestApiErrorCopyWithImpl(this._self, this._then);
-
-  final BadRequestApiError _self;
-  final $Res Function(BadRequestApiError) _then;
-
-/// Create a copy of ApiError
-/// with the given fields replaced by the non-null parameter values.
-@pragma('vm:prefer-inline') $Res call({Object? message = freezed,}) {
-  return _then(BadRequestApiError(
-message: freezed == message ? _self.message : message // ignore: cast_nullable_to_non_nullable
-as String?,
-  ));
-}
-
-
-}
-
-/// @nodoc
-
-
-class UnauthorizedApiError extends ApiError {
-  const UnauthorizedApiError(): super._();
-  
-
-
-
-
-
-
-@override
-bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is UnauthorizedApiError);
-}
-
-
-@override
-int get hashCode => runtimeType.hashCode;
-
-@override
-String toString() {
-  return 'ApiError.unauthorized()';
-}
-
-
-}
-
-
-
-
-/// @nodoc
-
-
-class ForbiddenApiError extends ApiError {
-  const ForbiddenApiError(): super._();
-  
-
-
-
-
-
-
-@override
-bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is ForbiddenApiError);
-}
-
-
-@override
-int get hashCode => runtimeType.hashCode;
-
-@override
-String toString() {
-  return 'ApiError.forbidden()';
-}
-
-
-}
-
-
-
-
-/// @nodoc
-
-
-class NotFoundApiError extends ApiError {
-  const NotFoundApiError(): super._();
-  
-
-
-
-
-
-
-@override
-bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotFoundApiError);
-}
-
-
-@override
-int get hashCode => runtimeType.hashCode;
-
-@override
-String toString() {
-  return 'ApiError.notFound()';
-}
-
-
-}
-
-
-
-
-/// @nodoc
-
-
-class MethodNotAllowedApiError extends ApiError {
-  const MethodNotAllowedApiError(): super._();
-  
-
-
-
-
-
-
-@override
-bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is MethodNotAllowedApiError);
-}
-
-
-@override
-int get hashCode => runtimeType.hashCode;
-
-@override
-String toString() {
-  return 'ApiError.methodNotAllowed()';
-}
-
-
-}
-
-
-
-
-/// @nodoc
-
-
-class ConflictApiError extends ApiError {
-  const ConflictApiError(): super._();
-  
-
-
-
-
-
-
-@override
-bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is ConflictApiError);
-}
-
-
-@override
-int get hashCode => runtimeType.hashCode;
-
-@override
-String toString() {
-  return 'ApiError.conflict()';
-}
-
-
-}
-
-
-
-
-/// @nodoc
-
-
-class UnsupportedMediaType extends ApiError {
-  const UnsupportedMediaType(): super._();
-  
-
-
-
-
-
-
-@override
-bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is UnsupportedMediaType);
-}
-
-
-@override
-int get hashCode => runtimeType.hashCode;
-
-@override
-String toString() {
-  return 'ApiError.unsupportedMediaType()';
-}
-
-
-}
-
-
-
-
-/// @nodoc
-
-
-class TooManyRequestsApiError extends ApiError {
-  const TooManyRequestsApiError(): super._();
-  
-
-
-
-
-
-
-@override
-bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is TooManyRequestsApiError);
-}
-
-
-@override
-int get hashCode => runtimeType.hashCode;
-
-@override
-String toString() {
-  return 'ApiError.tooManyRequests()';
-}
-
-
-}
-
-
-
-
-/// @nodoc
-
-
-class PreconditionFailedApiError extends ApiError {
-  const PreconditionFailedApiError(): super._();
-  
-
-
-
-
-
-
-@override
-bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is PreconditionFailedApiError);
-}
-
-
-@override
-int get hashCode => runtimeType.hashCode;
-
-@override
-String toString() {
-  return 'ApiError.preconditionFailed()';
-}
-
-
-}
-
-
-
-
-/// @nodoc
-
-
-class PayloadTooLargeApiError extends ApiError {
-  const PayloadTooLargeApiError(): super._();
-  
-
-
-
-
-
-
-@override
-bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is PayloadTooLargeApiError);
-}
-
-
-@override
-int get hashCode => runtimeType.hashCode;
-
-@override
-String toString() {
-  return 'ApiError.payloadTooLarge()';
-}
-
-
-}
-
-
-
-
-/// @nodoc
-
-
-class InternalServerErrorApiError extends ApiError {
-  const InternalServerErrorApiError(): super._();
-  
-
-
-
-
-
-
-@override
-bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is InternalServerErrorApiError);
-}
-
-
-@override
-int get hashCode => runtimeType.hashCode;
-
-@override
-String toString() {
-  return 'ApiError.internalServerError()';
-}
-
-
-}
-
-
-
-
-/// @nodoc
-
-
-class ServiceUnavailableApiError extends ApiError {
-  const ServiceUnavailableApiError(): super._();
-  
-
-
-
-
-
-
-@override
-bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is ServiceUnavailableApiError);
-}
-
-
-@override
-int get hashCode => runtimeType.hashCode;
-
-@override
-String toString() {
-  return 'ApiError.serviceUnavailable()';
-}
-
-
-}
-
-
-
-
-/// @nodoc
-
-
-class GatewayTimeoutApiError extends ApiError {
-  const GatewayTimeoutApiError(): super._();
-  
-
-
-
-
-
-
-@override
-bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is GatewayTimeoutApiError);
-}
-
-
-@override
-int get hashCode => runtimeType.hashCode;
-
-@override
-String toString() {
-  return 'ApiError.gatewayTimeout()';
-}
-
-
-}
-
-
-
-
-/// @nodoc
-
-
-class ServerOverloadApiError extends ApiError {
-  const ServerOverloadApiError(): super._();
-  
-
-
-
-
-
-
-@override
-bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is ServerOverloadApiError);
-}
-
-
-@override
-int get hashCode => runtimeType.hashCode;
-
-@override
-String toString() {
-  return 'ApiError.serverOverload()';
-}
-
-
-}
-
-
-
-
-/// @nodoc
-
-
-class ServerErrorApiError extends ApiError {
-  const ServerErrorApiError(): super._();
-  
-
-
-
-
-
-
-@override
-bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is ServerErrorApiError);
-}
-
-
-@override
-int get hashCode => runtimeType.hashCode;
-
-@override
-String toString() {
-  return 'ApiError.serverError()';
-}
-
-
-}
-
-
-
-
-/// @nodoc
-
-
-class ServerConnectionErrorApiError extends ApiError {
-  const ServerConnectionErrorApiError({this.error}): super._();
-  
-
- final  String? error;
-
-/// Create a copy of ApiError
-/// with the given fields replaced by the non-null parameter values.
-@JsonKey(includeFromJson: false, includeToJson: false)
-@pragma('vm:prefer-inline')
-$ServerConnectionErrorApiErrorCopyWith<ServerConnectionErrorApiError> get copyWith => _$ServerConnectionErrorApiErrorCopyWithImpl<ServerConnectionErrorApiError>(this, _$identity);
-
-
-
-@override
-bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is ServerConnectionErrorApiError&&(identical(other.error, error) || other.error == error));
-}
-
-
-@override
-int get hashCode => Object.hash(runtimeType,error);
-
-@override
-String toString() {
-  return 'ApiError.serverConnectionError(error: $error)';
-}
-
-
+abstract class BadRequestApiError extends ApiError {
+  const factory BadRequestApiError({final String? message}) =
+      _$BadRequestApiErrorImpl;
+  const BadRequestApiError._() : super._();
+
+  String? get message;
+  @JsonKey(ignore: true)
+  _$$BadRequestApiErrorImplCopyWith<_$BadRequestApiErrorImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract mixin class $ServerConnectionErrorApiErrorCopyWith<$Res> implements $ApiErrorCopyWith<$Res> {
-  factory $ServerConnectionErrorApiErrorCopyWith(ServerConnectionErrorApiError value, $Res Function(ServerConnectionErrorApiError) _then) = _$ServerConnectionErrorApiErrorCopyWithImpl;
-@useResult
-$Res call({
- String? error
-});
-
-
-
-
+abstract class _$$UnauthorizedApiErrorImplCopyWith<$Res> {
+  factory _$$UnauthorizedApiErrorImplCopyWith(_$UnauthorizedApiErrorImpl value,
+          $Res Function(_$UnauthorizedApiErrorImpl) then) =
+      __$$UnauthorizedApiErrorImplCopyWithImpl<$Res>;
 }
+
 /// @nodoc
-class _$ServerConnectionErrorApiErrorCopyWithImpl<$Res>
-    implements $ServerConnectionErrorApiErrorCopyWith<$Res> {
-  _$ServerConnectionErrorApiErrorCopyWithImpl(this._self, this._then);
-
-  final ServerConnectionErrorApiError _self;
-  final $Res Function(ServerConnectionErrorApiError) _then;
-
-/// Create a copy of ApiError
-/// with the given fields replaced by the non-null parameter values.
-@pragma('vm:prefer-inline') $Res call({Object? error = freezed,}) {
-  return _then(ServerConnectionErrorApiError(
-error: freezed == error ? _self.error : error // ignore: cast_nullable_to_non_nullable
-as String?,
-  ));
-}
-
-
+class __$$UnauthorizedApiErrorImplCopyWithImpl<$Res>
+    extends _$ApiErrorCopyWithImpl<$Res, _$UnauthorizedApiErrorImpl>
+    implements _$$UnauthorizedApiErrorImplCopyWith<$Res> {
+  __$$UnauthorizedApiErrorImplCopyWithImpl(_$UnauthorizedApiErrorImpl _value,
+      $Res Function(_$UnauthorizedApiErrorImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
+class _$UnauthorizedApiErrorImpl extends UnauthorizedApiError {
+  const _$UnauthorizedApiErrorImpl() : super._();
 
-class NetworkErrorApiError extends ApiError {
-  const NetworkErrorApiError(): super._();
-  
+  @override
+  String toString() {
+    return 'ApiError.unauthorized()';
+  }
 
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$UnauthorizedApiErrorImpl);
+  }
 
+  @override
+  int get hashCode => runtimeType.hashCode;
 
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(String? message) badRequest,
+    required TResult Function() unauthorized,
+    required TResult Function() forbidden,
+    required TResult Function() notFound,
+    required TResult Function() methodNotAllowed,
+    required TResult Function() conflict,
+    required TResult Function() unsupportedMediaType,
+    required TResult Function() tooManyRequests,
+    required TResult Function() preconditionFailed,
+    required TResult Function() payloadTooLarge,
+    required TResult Function() internalServerError,
+    required TResult Function() serviceUnavailable,
+    required TResult Function() gatewayTimeout,
+    required TResult Function() serverOverload,
+    required TResult Function() serverError,
+    required TResult Function(String? error) serverConnectionError,
+    required TResult Function() networkError,
+    required TResult Function() timeout,
+    required TResult Function(Object? error, StackTrace? stackTrace) unknown,
+    required TResult Function() maintenance,
+  }) {
+    return unauthorized();
+  }
 
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String? message)? badRequest,
+    TResult? Function()? unauthorized,
+    TResult? Function()? forbidden,
+    TResult? Function()? notFound,
+    TResult? Function()? methodNotAllowed,
+    TResult? Function()? conflict,
+    TResult? Function()? unsupportedMediaType,
+    TResult? Function()? tooManyRequests,
+    TResult? Function()? preconditionFailed,
+    TResult? Function()? payloadTooLarge,
+    TResult? Function()? internalServerError,
+    TResult? Function()? serviceUnavailable,
+    TResult? Function()? gatewayTimeout,
+    TResult? Function()? serverOverload,
+    TResult? Function()? serverError,
+    TResult? Function(String? error)? serverConnectionError,
+    TResult? Function()? networkError,
+    TResult? Function()? timeout,
+    TResult? Function(Object? error, StackTrace? stackTrace)? unknown,
+    TResult? Function()? maintenance,
+  }) {
+    return unauthorized?.call();
+  }
 
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(String? message)? badRequest,
+    TResult Function()? unauthorized,
+    TResult Function()? forbidden,
+    TResult Function()? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? conflict,
+    TResult Function()? unsupportedMediaType,
+    TResult Function()? tooManyRequests,
+    TResult Function()? preconditionFailed,
+    TResult Function()? payloadTooLarge,
+    TResult Function()? internalServerError,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? gatewayTimeout,
+    TResult Function()? serverOverload,
+    TResult Function()? serverError,
+    TResult Function(String? error)? serverConnectionError,
+    TResult Function()? networkError,
+    TResult Function()? timeout,
+    TResult Function(Object? error, StackTrace? stackTrace)? unknown,
+    TResult Function()? maintenance,
+    required TResult orElse(),
+  }) {
+    if (unauthorized != null) {
+      return unauthorized();
+    }
+    return orElse();
+  }
 
-@override
-bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is NetworkErrorApiError);
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(BadRequestApiError value) badRequest,
+    required TResult Function(UnauthorizedApiError value) unauthorized,
+    required TResult Function(ForbiddenApiError value) forbidden,
+    required TResult Function(NotFoundApiError value) notFound,
+    required TResult Function(MethodNotAllowedApiError value) methodNotAllowed,
+    required TResult Function(ConflictApiError value) conflict,
+    required TResult Function(UnsupportedMediaType value) unsupportedMediaType,
+    required TResult Function(TooManyRequestsApiError value) tooManyRequests,
+    required TResult Function(PreconditionFailedApiError value)
+        preconditionFailed,
+    required TResult Function(PayloadTooLargeApiError value) payloadTooLarge,
+    required TResult Function(InternalServerErrorApiError value)
+        internalServerError,
+    required TResult Function(ServiceUnavailableApiError value)
+        serviceUnavailable,
+    required TResult Function(GatewayTimeoutApiError value) gatewayTimeout,
+    required TResult Function(ServerOverloadApiError value) serverOverload,
+    required TResult Function(ServerErrorApiError value) serverError,
+    required TResult Function(ServerConnectionErrorApiError value)
+        serverConnectionError,
+    required TResult Function(NetworkErrorApiError value) networkError,
+    required TResult Function(TimeoutApiError value) timeout,
+    required TResult Function(UnknownApiError value) unknown,
+    required TResult Function(MaintenanceApiError value) maintenance,
+  }) {
+    return unauthorized(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(BadRequestApiError value)? badRequest,
+    TResult? Function(UnauthorizedApiError value)? unauthorized,
+    TResult? Function(ForbiddenApiError value)? forbidden,
+    TResult? Function(NotFoundApiError value)? notFound,
+    TResult? Function(MethodNotAllowedApiError value)? methodNotAllowed,
+    TResult? Function(ConflictApiError value)? conflict,
+    TResult? Function(UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(TooManyRequestsApiError value)? tooManyRequests,
+    TResult? Function(PreconditionFailedApiError value)? preconditionFailed,
+    TResult? Function(PayloadTooLargeApiError value)? payloadTooLarge,
+    TResult? Function(InternalServerErrorApiError value)? internalServerError,
+    TResult? Function(ServiceUnavailableApiError value)? serviceUnavailable,
+    TResult? Function(GatewayTimeoutApiError value)? gatewayTimeout,
+    TResult? Function(ServerOverloadApiError value)? serverOverload,
+    TResult? Function(ServerErrorApiError value)? serverError,
+    TResult? Function(ServerConnectionErrorApiError value)?
+        serverConnectionError,
+    TResult? Function(NetworkErrorApiError value)? networkError,
+    TResult? Function(TimeoutApiError value)? timeout,
+    TResult? Function(UnknownApiError value)? unknown,
+    TResult? Function(MaintenanceApiError value)? maintenance,
+  }) {
+    return unauthorized?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(BadRequestApiError value)? badRequest,
+    TResult Function(UnauthorizedApiError value)? unauthorized,
+    TResult Function(ForbiddenApiError value)? forbidden,
+    TResult Function(NotFoundApiError value)? notFound,
+    TResult Function(MethodNotAllowedApiError value)? methodNotAllowed,
+    TResult Function(ConflictApiError value)? conflict,
+    TResult Function(UnsupportedMediaType value)? unsupportedMediaType,
+    TResult Function(TooManyRequestsApiError value)? tooManyRequests,
+    TResult Function(PreconditionFailedApiError value)? preconditionFailed,
+    TResult Function(PayloadTooLargeApiError value)? payloadTooLarge,
+    TResult Function(InternalServerErrorApiError value)? internalServerError,
+    TResult Function(ServiceUnavailableApiError value)? serviceUnavailable,
+    TResult Function(GatewayTimeoutApiError value)? gatewayTimeout,
+    TResult Function(ServerOverloadApiError value)? serverOverload,
+    TResult Function(ServerErrorApiError value)? serverError,
+    TResult Function(ServerConnectionErrorApiError value)?
+        serverConnectionError,
+    TResult Function(NetworkErrorApiError value)? networkError,
+    TResult Function(TimeoutApiError value)? timeout,
+    TResult Function(UnknownApiError value)? unknown,
+    TResult Function(MaintenanceApiError value)? maintenance,
+    required TResult orElse(),
+  }) {
+    if (unauthorized != null) {
+      return unauthorized(this);
+    }
+    return orElse();
+  }
 }
 
-
-@override
-int get hashCode => runtimeType.hashCode;
-
-@override
-String toString() {
-  return 'ApiError.networkError()';
+abstract class UnauthorizedApiError extends ApiError {
+  const factory UnauthorizedApiError() = _$UnauthorizedApiErrorImpl;
+  const UnauthorizedApiError._() : super._();
 }
 
-
+/// @nodoc
+abstract class _$$ForbiddenApiErrorImplCopyWith<$Res> {
+  factory _$$ForbiddenApiErrorImplCopyWith(_$ForbiddenApiErrorImpl value,
+          $Res Function(_$ForbiddenApiErrorImpl) then) =
+      __$$ForbiddenApiErrorImplCopyWithImpl<$Res>;
 }
 
-
-
+/// @nodoc
+class __$$ForbiddenApiErrorImplCopyWithImpl<$Res>
+    extends _$ApiErrorCopyWithImpl<$Res, _$ForbiddenApiErrorImpl>
+    implements _$$ForbiddenApiErrorImplCopyWith<$Res> {
+  __$$ForbiddenApiErrorImplCopyWithImpl(_$ForbiddenApiErrorImpl _value,
+      $Res Function(_$ForbiddenApiErrorImpl) _then)
+      : super(_value, _then);
+}
 
 /// @nodoc
 
+class _$ForbiddenApiErrorImpl extends ForbiddenApiError {
+  const _$ForbiddenApiErrorImpl() : super._();
 
-class TimeoutApiError extends ApiError {
-  const TimeoutApiError(): super._();
-  
+  @override
+  String toString() {
+    return 'ApiError.forbidden()';
+  }
 
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$ForbiddenApiErrorImpl);
+  }
 
+  @override
+  int get hashCode => runtimeType.hashCode;
 
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(String? message) badRequest,
+    required TResult Function() unauthorized,
+    required TResult Function() forbidden,
+    required TResult Function() notFound,
+    required TResult Function() methodNotAllowed,
+    required TResult Function() conflict,
+    required TResult Function() unsupportedMediaType,
+    required TResult Function() tooManyRequests,
+    required TResult Function() preconditionFailed,
+    required TResult Function() payloadTooLarge,
+    required TResult Function() internalServerError,
+    required TResult Function() serviceUnavailable,
+    required TResult Function() gatewayTimeout,
+    required TResult Function() serverOverload,
+    required TResult Function() serverError,
+    required TResult Function(String? error) serverConnectionError,
+    required TResult Function() networkError,
+    required TResult Function() timeout,
+    required TResult Function(Object? error, StackTrace? stackTrace) unknown,
+    required TResult Function() maintenance,
+  }) {
+    return forbidden();
+  }
 
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String? message)? badRequest,
+    TResult? Function()? unauthorized,
+    TResult? Function()? forbidden,
+    TResult? Function()? notFound,
+    TResult? Function()? methodNotAllowed,
+    TResult? Function()? conflict,
+    TResult? Function()? unsupportedMediaType,
+    TResult? Function()? tooManyRequests,
+    TResult? Function()? preconditionFailed,
+    TResult? Function()? payloadTooLarge,
+    TResult? Function()? internalServerError,
+    TResult? Function()? serviceUnavailable,
+    TResult? Function()? gatewayTimeout,
+    TResult? Function()? serverOverload,
+    TResult? Function()? serverError,
+    TResult? Function(String? error)? serverConnectionError,
+    TResult? Function()? networkError,
+    TResult? Function()? timeout,
+    TResult? Function(Object? error, StackTrace? stackTrace)? unknown,
+    TResult? Function()? maintenance,
+  }) {
+    return forbidden?.call();
+  }
 
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(String? message)? badRequest,
+    TResult Function()? unauthorized,
+    TResult Function()? forbidden,
+    TResult Function()? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? conflict,
+    TResult Function()? unsupportedMediaType,
+    TResult Function()? tooManyRequests,
+    TResult Function()? preconditionFailed,
+    TResult Function()? payloadTooLarge,
+    TResult Function()? internalServerError,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? gatewayTimeout,
+    TResult Function()? serverOverload,
+    TResult Function()? serverError,
+    TResult Function(String? error)? serverConnectionError,
+    TResult Function()? networkError,
+    TResult Function()? timeout,
+    TResult Function(Object? error, StackTrace? stackTrace)? unknown,
+    TResult Function()? maintenance,
+    required TResult orElse(),
+  }) {
+    if (forbidden != null) {
+      return forbidden();
+    }
+    return orElse();
+  }
 
-@override
-bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is TimeoutApiError);
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(BadRequestApiError value) badRequest,
+    required TResult Function(UnauthorizedApiError value) unauthorized,
+    required TResult Function(ForbiddenApiError value) forbidden,
+    required TResult Function(NotFoundApiError value) notFound,
+    required TResult Function(MethodNotAllowedApiError value) methodNotAllowed,
+    required TResult Function(ConflictApiError value) conflict,
+    required TResult Function(UnsupportedMediaType value) unsupportedMediaType,
+    required TResult Function(TooManyRequestsApiError value) tooManyRequests,
+    required TResult Function(PreconditionFailedApiError value)
+        preconditionFailed,
+    required TResult Function(PayloadTooLargeApiError value) payloadTooLarge,
+    required TResult Function(InternalServerErrorApiError value)
+        internalServerError,
+    required TResult Function(ServiceUnavailableApiError value)
+        serviceUnavailable,
+    required TResult Function(GatewayTimeoutApiError value) gatewayTimeout,
+    required TResult Function(ServerOverloadApiError value) serverOverload,
+    required TResult Function(ServerErrorApiError value) serverError,
+    required TResult Function(ServerConnectionErrorApiError value)
+        serverConnectionError,
+    required TResult Function(NetworkErrorApiError value) networkError,
+    required TResult Function(TimeoutApiError value) timeout,
+    required TResult Function(UnknownApiError value) unknown,
+    required TResult Function(MaintenanceApiError value) maintenance,
+  }) {
+    return forbidden(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(BadRequestApiError value)? badRequest,
+    TResult? Function(UnauthorizedApiError value)? unauthorized,
+    TResult? Function(ForbiddenApiError value)? forbidden,
+    TResult? Function(NotFoundApiError value)? notFound,
+    TResult? Function(MethodNotAllowedApiError value)? methodNotAllowed,
+    TResult? Function(ConflictApiError value)? conflict,
+    TResult? Function(UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(TooManyRequestsApiError value)? tooManyRequests,
+    TResult? Function(PreconditionFailedApiError value)? preconditionFailed,
+    TResult? Function(PayloadTooLargeApiError value)? payloadTooLarge,
+    TResult? Function(InternalServerErrorApiError value)? internalServerError,
+    TResult? Function(ServiceUnavailableApiError value)? serviceUnavailable,
+    TResult? Function(GatewayTimeoutApiError value)? gatewayTimeout,
+    TResult? Function(ServerOverloadApiError value)? serverOverload,
+    TResult? Function(ServerErrorApiError value)? serverError,
+    TResult? Function(ServerConnectionErrorApiError value)?
+        serverConnectionError,
+    TResult? Function(NetworkErrorApiError value)? networkError,
+    TResult? Function(TimeoutApiError value)? timeout,
+    TResult? Function(UnknownApiError value)? unknown,
+    TResult? Function(MaintenanceApiError value)? maintenance,
+  }) {
+    return forbidden?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(BadRequestApiError value)? badRequest,
+    TResult Function(UnauthorizedApiError value)? unauthorized,
+    TResult Function(ForbiddenApiError value)? forbidden,
+    TResult Function(NotFoundApiError value)? notFound,
+    TResult Function(MethodNotAllowedApiError value)? methodNotAllowed,
+    TResult Function(ConflictApiError value)? conflict,
+    TResult Function(UnsupportedMediaType value)? unsupportedMediaType,
+    TResult Function(TooManyRequestsApiError value)? tooManyRequests,
+    TResult Function(PreconditionFailedApiError value)? preconditionFailed,
+    TResult Function(PayloadTooLargeApiError value)? payloadTooLarge,
+    TResult Function(InternalServerErrorApiError value)? internalServerError,
+    TResult Function(ServiceUnavailableApiError value)? serviceUnavailable,
+    TResult Function(GatewayTimeoutApiError value)? gatewayTimeout,
+    TResult Function(ServerOverloadApiError value)? serverOverload,
+    TResult Function(ServerErrorApiError value)? serverError,
+    TResult Function(ServerConnectionErrorApiError value)?
+        serverConnectionError,
+    TResult Function(NetworkErrorApiError value)? networkError,
+    TResult Function(TimeoutApiError value)? timeout,
+    TResult Function(UnknownApiError value)? unknown,
+    TResult Function(MaintenanceApiError value)? maintenance,
+    required TResult orElse(),
+  }) {
+    if (forbidden != null) {
+      return forbidden(this);
+    }
+    return orElse();
+  }
 }
 
-
-@override
-int get hashCode => runtimeType.hashCode;
-
-@override
-String toString() {
-  return 'ApiError.timeout()';
+abstract class ForbiddenApiError extends ApiError {
+  const factory ForbiddenApiError() = _$ForbiddenApiErrorImpl;
+  const ForbiddenApiError._() : super._();
 }
 
-
+/// @nodoc
+abstract class _$$NotFoundApiErrorImplCopyWith<$Res> {
+  factory _$$NotFoundApiErrorImplCopyWith(_$NotFoundApiErrorImpl value,
+          $Res Function(_$NotFoundApiErrorImpl) then) =
+      __$$NotFoundApiErrorImplCopyWithImpl<$Res>;
 }
 
-
-
+/// @nodoc
+class __$$NotFoundApiErrorImplCopyWithImpl<$Res>
+    extends _$ApiErrorCopyWithImpl<$Res, _$NotFoundApiErrorImpl>
+    implements _$$NotFoundApiErrorImplCopyWith<$Res> {
+  __$$NotFoundApiErrorImplCopyWithImpl(_$NotFoundApiErrorImpl _value,
+      $Res Function(_$NotFoundApiErrorImpl) _then)
+      : super(_value, _then);
+}
 
 /// @nodoc
 
+class _$NotFoundApiErrorImpl extends NotFoundApiError {
+  const _$NotFoundApiErrorImpl() : super._();
 
-class UnknownApiError extends ApiError {
-  const UnknownApiError({this.error, this.stackTrace}): super._();
-  
+  @override
+  String toString() {
+    return 'ApiError.notFound()';
+  }
 
- final  Object? error;
- final  StackTrace? stackTrace;
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$NotFoundApiErrorImpl);
+  }
 
-/// Create a copy of ApiError
-/// with the given fields replaced by the non-null parameter values.
-@JsonKey(includeFromJson: false, includeToJson: false)
-@pragma('vm:prefer-inline')
-$UnknownApiErrorCopyWith<UnknownApiError> get copyWith => _$UnknownApiErrorCopyWithImpl<UnknownApiError>(this, _$identity);
+  @override
+  int get hashCode => runtimeType.hashCode;
 
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(String? message) badRequest,
+    required TResult Function() unauthorized,
+    required TResult Function() forbidden,
+    required TResult Function() notFound,
+    required TResult Function() methodNotAllowed,
+    required TResult Function() conflict,
+    required TResult Function() unsupportedMediaType,
+    required TResult Function() tooManyRequests,
+    required TResult Function() preconditionFailed,
+    required TResult Function() payloadTooLarge,
+    required TResult Function() internalServerError,
+    required TResult Function() serviceUnavailable,
+    required TResult Function() gatewayTimeout,
+    required TResult Function() serverOverload,
+    required TResult Function() serverError,
+    required TResult Function(String? error) serverConnectionError,
+    required TResult Function() networkError,
+    required TResult Function() timeout,
+    required TResult Function(Object? error, StackTrace? stackTrace) unknown,
+    required TResult Function() maintenance,
+  }) {
+    return notFound();
+  }
 
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String? message)? badRequest,
+    TResult? Function()? unauthorized,
+    TResult? Function()? forbidden,
+    TResult? Function()? notFound,
+    TResult? Function()? methodNotAllowed,
+    TResult? Function()? conflict,
+    TResult? Function()? unsupportedMediaType,
+    TResult? Function()? tooManyRequests,
+    TResult? Function()? preconditionFailed,
+    TResult? Function()? payloadTooLarge,
+    TResult? Function()? internalServerError,
+    TResult? Function()? serviceUnavailable,
+    TResult? Function()? gatewayTimeout,
+    TResult? Function()? serverOverload,
+    TResult? Function()? serverError,
+    TResult? Function(String? error)? serverConnectionError,
+    TResult? Function()? networkError,
+    TResult? Function()? timeout,
+    TResult? Function(Object? error, StackTrace? stackTrace)? unknown,
+    TResult? Function()? maintenance,
+  }) {
+    return notFound?.call();
+  }
 
-@override
-bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is UnknownApiError&&const DeepCollectionEquality().equals(other.error, error)&&(identical(other.stackTrace, stackTrace) || other.stackTrace == stackTrace));
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(String? message)? badRequest,
+    TResult Function()? unauthorized,
+    TResult Function()? forbidden,
+    TResult Function()? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? conflict,
+    TResult Function()? unsupportedMediaType,
+    TResult Function()? tooManyRequests,
+    TResult Function()? preconditionFailed,
+    TResult Function()? payloadTooLarge,
+    TResult Function()? internalServerError,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? gatewayTimeout,
+    TResult Function()? serverOverload,
+    TResult Function()? serverError,
+    TResult Function(String? error)? serverConnectionError,
+    TResult Function()? networkError,
+    TResult Function()? timeout,
+    TResult Function(Object? error, StackTrace? stackTrace)? unknown,
+    TResult Function()? maintenance,
+    required TResult orElse(),
+  }) {
+    if (notFound != null) {
+      return notFound();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(BadRequestApiError value) badRequest,
+    required TResult Function(UnauthorizedApiError value) unauthorized,
+    required TResult Function(ForbiddenApiError value) forbidden,
+    required TResult Function(NotFoundApiError value) notFound,
+    required TResult Function(MethodNotAllowedApiError value) methodNotAllowed,
+    required TResult Function(ConflictApiError value) conflict,
+    required TResult Function(UnsupportedMediaType value) unsupportedMediaType,
+    required TResult Function(TooManyRequestsApiError value) tooManyRequests,
+    required TResult Function(PreconditionFailedApiError value)
+        preconditionFailed,
+    required TResult Function(PayloadTooLargeApiError value) payloadTooLarge,
+    required TResult Function(InternalServerErrorApiError value)
+        internalServerError,
+    required TResult Function(ServiceUnavailableApiError value)
+        serviceUnavailable,
+    required TResult Function(GatewayTimeoutApiError value) gatewayTimeout,
+    required TResult Function(ServerOverloadApiError value) serverOverload,
+    required TResult Function(ServerErrorApiError value) serverError,
+    required TResult Function(ServerConnectionErrorApiError value)
+        serverConnectionError,
+    required TResult Function(NetworkErrorApiError value) networkError,
+    required TResult Function(TimeoutApiError value) timeout,
+    required TResult Function(UnknownApiError value) unknown,
+    required TResult Function(MaintenanceApiError value) maintenance,
+  }) {
+    return notFound(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(BadRequestApiError value)? badRequest,
+    TResult? Function(UnauthorizedApiError value)? unauthorized,
+    TResult? Function(ForbiddenApiError value)? forbidden,
+    TResult? Function(NotFoundApiError value)? notFound,
+    TResult? Function(MethodNotAllowedApiError value)? methodNotAllowed,
+    TResult? Function(ConflictApiError value)? conflict,
+    TResult? Function(UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(TooManyRequestsApiError value)? tooManyRequests,
+    TResult? Function(PreconditionFailedApiError value)? preconditionFailed,
+    TResult? Function(PayloadTooLargeApiError value)? payloadTooLarge,
+    TResult? Function(InternalServerErrorApiError value)? internalServerError,
+    TResult? Function(ServiceUnavailableApiError value)? serviceUnavailable,
+    TResult? Function(GatewayTimeoutApiError value)? gatewayTimeout,
+    TResult? Function(ServerOverloadApiError value)? serverOverload,
+    TResult? Function(ServerErrorApiError value)? serverError,
+    TResult? Function(ServerConnectionErrorApiError value)?
+        serverConnectionError,
+    TResult? Function(NetworkErrorApiError value)? networkError,
+    TResult? Function(TimeoutApiError value)? timeout,
+    TResult? Function(UnknownApiError value)? unknown,
+    TResult? Function(MaintenanceApiError value)? maintenance,
+  }) {
+    return notFound?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(BadRequestApiError value)? badRequest,
+    TResult Function(UnauthorizedApiError value)? unauthorized,
+    TResult Function(ForbiddenApiError value)? forbidden,
+    TResult Function(NotFoundApiError value)? notFound,
+    TResult Function(MethodNotAllowedApiError value)? methodNotAllowed,
+    TResult Function(ConflictApiError value)? conflict,
+    TResult Function(UnsupportedMediaType value)? unsupportedMediaType,
+    TResult Function(TooManyRequestsApiError value)? tooManyRequests,
+    TResult Function(PreconditionFailedApiError value)? preconditionFailed,
+    TResult Function(PayloadTooLargeApiError value)? payloadTooLarge,
+    TResult Function(InternalServerErrorApiError value)? internalServerError,
+    TResult Function(ServiceUnavailableApiError value)? serviceUnavailable,
+    TResult Function(GatewayTimeoutApiError value)? gatewayTimeout,
+    TResult Function(ServerOverloadApiError value)? serverOverload,
+    TResult Function(ServerErrorApiError value)? serverError,
+    TResult Function(ServerConnectionErrorApiError value)?
+        serverConnectionError,
+    TResult Function(NetworkErrorApiError value)? networkError,
+    TResult Function(TimeoutApiError value)? timeout,
+    TResult Function(UnknownApiError value)? unknown,
+    TResult Function(MaintenanceApiError value)? maintenance,
+    required TResult orElse(),
+  }) {
+    if (notFound != null) {
+      return notFound(this);
+    }
+    return orElse();
+  }
 }
 
-
-@override
-int get hashCode => Object.hash(runtimeType,const DeepCollectionEquality().hash(error),stackTrace);
-
-@override
-String toString() {
-  return 'ApiError.unknown(error: $error, stackTrace: $stackTrace)';
-}
-
-
+abstract class NotFoundApiError extends ApiError {
+  const factory NotFoundApiError() = _$NotFoundApiErrorImpl;
+  const NotFoundApiError._() : super._();
 }
 
 /// @nodoc
-abstract mixin class $UnknownApiErrorCopyWith<$Res> implements $ApiErrorCopyWith<$Res> {
-  factory $UnknownApiErrorCopyWith(UnknownApiError value, $Res Function(UnknownApiError) _then) = _$UnknownApiErrorCopyWithImpl;
-@useResult
-$Res call({
- Object? error, StackTrace? stackTrace
-});
-
-
-
-
+abstract class _$$MethodNotAllowedApiErrorImplCopyWith<$Res> {
+  factory _$$MethodNotAllowedApiErrorImplCopyWith(
+          _$MethodNotAllowedApiErrorImpl value,
+          $Res Function(_$MethodNotAllowedApiErrorImpl) then) =
+      __$$MethodNotAllowedApiErrorImplCopyWithImpl<$Res>;
 }
+
 /// @nodoc
-class _$UnknownApiErrorCopyWithImpl<$Res>
-    implements $UnknownApiErrorCopyWith<$Res> {
-  _$UnknownApiErrorCopyWithImpl(this._self, this._then);
-
-  final UnknownApiError _self;
-  final $Res Function(UnknownApiError) _then;
-
-/// Create a copy of ApiError
-/// with the given fields replaced by the non-null parameter values.
-@pragma('vm:prefer-inline') $Res call({Object? error = freezed,Object? stackTrace = freezed,}) {
-  return _then(UnknownApiError(
-error: freezed == error ? _self.error : error ,stackTrace: freezed == stackTrace ? _self.stackTrace : stackTrace // ignore: cast_nullable_to_non_nullable
-as StackTrace?,
-  ));
-}
-
-
+class __$$MethodNotAllowedApiErrorImplCopyWithImpl<$Res>
+    extends _$ApiErrorCopyWithImpl<$Res, _$MethodNotAllowedApiErrorImpl>
+    implements _$$MethodNotAllowedApiErrorImplCopyWith<$Res> {
+  __$$MethodNotAllowedApiErrorImplCopyWithImpl(
+      _$MethodNotAllowedApiErrorImpl _value,
+      $Res Function(_$MethodNotAllowedApiErrorImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
+class _$MethodNotAllowedApiErrorImpl extends MethodNotAllowedApiError {
+  const _$MethodNotAllowedApiErrorImpl() : super._();
 
-class MaintenanceApiError extends ApiError {
-  const MaintenanceApiError(): super._();
-  
+  @override
+  String toString() {
+    return 'ApiError.methodNotAllowed()';
+  }
 
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$MethodNotAllowedApiErrorImpl);
+  }
 
+  @override
+  int get hashCode => runtimeType.hashCode;
 
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(String? message) badRequest,
+    required TResult Function() unauthorized,
+    required TResult Function() forbidden,
+    required TResult Function() notFound,
+    required TResult Function() methodNotAllowed,
+    required TResult Function() conflict,
+    required TResult Function() unsupportedMediaType,
+    required TResult Function() tooManyRequests,
+    required TResult Function() preconditionFailed,
+    required TResult Function() payloadTooLarge,
+    required TResult Function() internalServerError,
+    required TResult Function() serviceUnavailable,
+    required TResult Function() gatewayTimeout,
+    required TResult Function() serverOverload,
+    required TResult Function() serverError,
+    required TResult Function(String? error) serverConnectionError,
+    required TResult Function() networkError,
+    required TResult Function() timeout,
+    required TResult Function(Object? error, StackTrace? stackTrace) unknown,
+    required TResult Function() maintenance,
+  }) {
+    return methodNotAllowed();
+  }
 
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String? message)? badRequest,
+    TResult? Function()? unauthorized,
+    TResult? Function()? forbidden,
+    TResult? Function()? notFound,
+    TResult? Function()? methodNotAllowed,
+    TResult? Function()? conflict,
+    TResult? Function()? unsupportedMediaType,
+    TResult? Function()? tooManyRequests,
+    TResult? Function()? preconditionFailed,
+    TResult? Function()? payloadTooLarge,
+    TResult? Function()? internalServerError,
+    TResult? Function()? serviceUnavailable,
+    TResult? Function()? gatewayTimeout,
+    TResult? Function()? serverOverload,
+    TResult? Function()? serverError,
+    TResult? Function(String? error)? serverConnectionError,
+    TResult? Function()? networkError,
+    TResult? Function()? timeout,
+    TResult? Function(Object? error, StackTrace? stackTrace)? unknown,
+    TResult? Function()? maintenance,
+  }) {
+    return methodNotAllowed?.call();
+  }
 
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(String? message)? badRequest,
+    TResult Function()? unauthorized,
+    TResult Function()? forbidden,
+    TResult Function()? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? conflict,
+    TResult Function()? unsupportedMediaType,
+    TResult Function()? tooManyRequests,
+    TResult Function()? preconditionFailed,
+    TResult Function()? payloadTooLarge,
+    TResult Function()? internalServerError,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? gatewayTimeout,
+    TResult Function()? serverOverload,
+    TResult Function()? serverError,
+    TResult Function(String? error)? serverConnectionError,
+    TResult Function()? networkError,
+    TResult Function()? timeout,
+    TResult Function(Object? error, StackTrace? stackTrace)? unknown,
+    TResult Function()? maintenance,
+    required TResult orElse(),
+  }) {
+    if (methodNotAllowed != null) {
+      return methodNotAllowed();
+    }
+    return orElse();
+  }
 
-@override
-bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is MaintenanceApiError);
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(BadRequestApiError value) badRequest,
+    required TResult Function(UnauthorizedApiError value) unauthorized,
+    required TResult Function(ForbiddenApiError value) forbidden,
+    required TResult Function(NotFoundApiError value) notFound,
+    required TResult Function(MethodNotAllowedApiError value) methodNotAllowed,
+    required TResult Function(ConflictApiError value) conflict,
+    required TResult Function(UnsupportedMediaType value) unsupportedMediaType,
+    required TResult Function(TooManyRequestsApiError value) tooManyRequests,
+    required TResult Function(PreconditionFailedApiError value)
+        preconditionFailed,
+    required TResult Function(PayloadTooLargeApiError value) payloadTooLarge,
+    required TResult Function(InternalServerErrorApiError value)
+        internalServerError,
+    required TResult Function(ServiceUnavailableApiError value)
+        serviceUnavailable,
+    required TResult Function(GatewayTimeoutApiError value) gatewayTimeout,
+    required TResult Function(ServerOverloadApiError value) serverOverload,
+    required TResult Function(ServerErrorApiError value) serverError,
+    required TResult Function(ServerConnectionErrorApiError value)
+        serverConnectionError,
+    required TResult Function(NetworkErrorApiError value) networkError,
+    required TResult Function(TimeoutApiError value) timeout,
+    required TResult Function(UnknownApiError value) unknown,
+    required TResult Function(MaintenanceApiError value) maintenance,
+  }) {
+    return methodNotAllowed(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(BadRequestApiError value)? badRequest,
+    TResult? Function(UnauthorizedApiError value)? unauthorized,
+    TResult? Function(ForbiddenApiError value)? forbidden,
+    TResult? Function(NotFoundApiError value)? notFound,
+    TResult? Function(MethodNotAllowedApiError value)? methodNotAllowed,
+    TResult? Function(ConflictApiError value)? conflict,
+    TResult? Function(UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(TooManyRequestsApiError value)? tooManyRequests,
+    TResult? Function(PreconditionFailedApiError value)? preconditionFailed,
+    TResult? Function(PayloadTooLargeApiError value)? payloadTooLarge,
+    TResult? Function(InternalServerErrorApiError value)? internalServerError,
+    TResult? Function(ServiceUnavailableApiError value)? serviceUnavailable,
+    TResult? Function(GatewayTimeoutApiError value)? gatewayTimeout,
+    TResult? Function(ServerOverloadApiError value)? serverOverload,
+    TResult? Function(ServerErrorApiError value)? serverError,
+    TResult? Function(ServerConnectionErrorApiError value)?
+        serverConnectionError,
+    TResult? Function(NetworkErrorApiError value)? networkError,
+    TResult? Function(TimeoutApiError value)? timeout,
+    TResult? Function(UnknownApiError value)? unknown,
+    TResult? Function(MaintenanceApiError value)? maintenance,
+  }) {
+    return methodNotAllowed?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(BadRequestApiError value)? badRequest,
+    TResult Function(UnauthorizedApiError value)? unauthorized,
+    TResult Function(ForbiddenApiError value)? forbidden,
+    TResult Function(NotFoundApiError value)? notFound,
+    TResult Function(MethodNotAllowedApiError value)? methodNotAllowed,
+    TResult Function(ConflictApiError value)? conflict,
+    TResult Function(UnsupportedMediaType value)? unsupportedMediaType,
+    TResult Function(TooManyRequestsApiError value)? tooManyRequests,
+    TResult Function(PreconditionFailedApiError value)? preconditionFailed,
+    TResult Function(PayloadTooLargeApiError value)? payloadTooLarge,
+    TResult Function(InternalServerErrorApiError value)? internalServerError,
+    TResult Function(ServiceUnavailableApiError value)? serviceUnavailable,
+    TResult Function(GatewayTimeoutApiError value)? gatewayTimeout,
+    TResult Function(ServerOverloadApiError value)? serverOverload,
+    TResult Function(ServerErrorApiError value)? serverError,
+    TResult Function(ServerConnectionErrorApiError value)?
+        serverConnectionError,
+    TResult Function(NetworkErrorApiError value)? networkError,
+    TResult Function(TimeoutApiError value)? timeout,
+    TResult Function(UnknownApiError value)? unknown,
+    TResult Function(MaintenanceApiError value)? maintenance,
+    required TResult orElse(),
+  }) {
+    if (methodNotAllowed != null) {
+      return methodNotAllowed(this);
+    }
+    return orElse();
+  }
 }
 
-
-@override
-int get hashCode => runtimeType.hashCode;
-
-@override
-String toString() {
-  return 'ApiError.maintenance()';
+abstract class MethodNotAllowedApiError extends ApiError {
+  const factory MethodNotAllowedApiError() = _$MethodNotAllowedApiErrorImpl;
+  const MethodNotAllowedApiError._() : super._();
 }
 
-
+/// @nodoc
+abstract class _$$ConflictApiErrorImplCopyWith<$Res> {
+  factory _$$ConflictApiErrorImplCopyWith(_$ConflictApiErrorImpl value,
+          $Res Function(_$ConflictApiErrorImpl) then) =
+      __$$ConflictApiErrorImplCopyWithImpl<$Res>;
 }
 
+/// @nodoc
+class __$$ConflictApiErrorImplCopyWithImpl<$Res>
+    extends _$ApiErrorCopyWithImpl<$Res, _$ConflictApiErrorImpl>
+    implements _$$ConflictApiErrorImplCopyWith<$Res> {
+  __$$ConflictApiErrorImplCopyWithImpl(_$ConflictApiErrorImpl _value,
+      $Res Function(_$ConflictApiErrorImpl) _then)
+      : super(_value, _then);
+}
 
+/// @nodoc
 
+class _$ConflictApiErrorImpl extends ConflictApiError {
+  const _$ConflictApiErrorImpl() : super._();
 
-// dart format on
+  @override
+  String toString() {
+    return 'ApiError.conflict()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$ConflictApiErrorImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(String? message) badRequest,
+    required TResult Function() unauthorized,
+    required TResult Function() forbidden,
+    required TResult Function() notFound,
+    required TResult Function() methodNotAllowed,
+    required TResult Function() conflict,
+    required TResult Function() unsupportedMediaType,
+    required TResult Function() tooManyRequests,
+    required TResult Function() preconditionFailed,
+    required TResult Function() payloadTooLarge,
+    required TResult Function() internalServerError,
+    required TResult Function() serviceUnavailable,
+    required TResult Function() gatewayTimeout,
+    required TResult Function() serverOverload,
+    required TResult Function() serverError,
+    required TResult Function(String? error) serverConnectionError,
+    required TResult Function() networkError,
+    required TResult Function() timeout,
+    required TResult Function(Object? error, StackTrace? stackTrace) unknown,
+    required TResult Function() maintenance,
+  }) {
+    return conflict();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String? message)? badRequest,
+    TResult? Function()? unauthorized,
+    TResult? Function()? forbidden,
+    TResult? Function()? notFound,
+    TResult? Function()? methodNotAllowed,
+    TResult? Function()? conflict,
+    TResult? Function()? unsupportedMediaType,
+    TResult? Function()? tooManyRequests,
+    TResult? Function()? preconditionFailed,
+    TResult? Function()? payloadTooLarge,
+    TResult? Function()? internalServerError,
+    TResult? Function()? serviceUnavailable,
+    TResult? Function()? gatewayTimeout,
+    TResult? Function()? serverOverload,
+    TResult? Function()? serverError,
+    TResult? Function(String? error)? serverConnectionError,
+    TResult? Function()? networkError,
+    TResult? Function()? timeout,
+    TResult? Function(Object? error, StackTrace? stackTrace)? unknown,
+    TResult? Function()? maintenance,
+  }) {
+    return conflict?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(String? message)? badRequest,
+    TResult Function()? unauthorized,
+    TResult Function()? forbidden,
+    TResult Function()? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? conflict,
+    TResult Function()? unsupportedMediaType,
+    TResult Function()? tooManyRequests,
+    TResult Function()? preconditionFailed,
+    TResult Function()? payloadTooLarge,
+    TResult Function()? internalServerError,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? gatewayTimeout,
+    TResult Function()? serverOverload,
+    TResult Function()? serverError,
+    TResult Function(String? error)? serverConnectionError,
+    TResult Function()? networkError,
+    TResult Function()? timeout,
+    TResult Function(Object? error, StackTrace? stackTrace)? unknown,
+    TResult Function()? maintenance,
+    required TResult orElse(),
+  }) {
+    if (conflict != null) {
+      return conflict();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(BadRequestApiError value) badRequest,
+    required TResult Function(UnauthorizedApiError value) unauthorized,
+    required TResult Function(ForbiddenApiError value) forbidden,
+    required TResult Function(NotFoundApiError value) notFound,
+    required TResult Function(MethodNotAllowedApiError value) methodNotAllowed,
+    required TResult Function(ConflictApiError value) conflict,
+    required TResult Function(UnsupportedMediaType value) unsupportedMediaType,
+    required TResult Function(TooManyRequestsApiError value) tooManyRequests,
+    required TResult Function(PreconditionFailedApiError value)
+        preconditionFailed,
+    required TResult Function(PayloadTooLargeApiError value) payloadTooLarge,
+    required TResult Function(InternalServerErrorApiError value)
+        internalServerError,
+    required TResult Function(ServiceUnavailableApiError value)
+        serviceUnavailable,
+    required TResult Function(GatewayTimeoutApiError value) gatewayTimeout,
+    required TResult Function(ServerOverloadApiError value) serverOverload,
+    required TResult Function(ServerErrorApiError value) serverError,
+    required TResult Function(ServerConnectionErrorApiError value)
+        serverConnectionError,
+    required TResult Function(NetworkErrorApiError value) networkError,
+    required TResult Function(TimeoutApiError value) timeout,
+    required TResult Function(UnknownApiError value) unknown,
+    required TResult Function(MaintenanceApiError value) maintenance,
+  }) {
+    return conflict(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(BadRequestApiError value)? badRequest,
+    TResult? Function(UnauthorizedApiError value)? unauthorized,
+    TResult? Function(ForbiddenApiError value)? forbidden,
+    TResult? Function(NotFoundApiError value)? notFound,
+    TResult? Function(MethodNotAllowedApiError value)? methodNotAllowed,
+    TResult? Function(ConflictApiError value)? conflict,
+    TResult? Function(UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(TooManyRequestsApiError value)? tooManyRequests,
+    TResult? Function(PreconditionFailedApiError value)? preconditionFailed,
+    TResult? Function(PayloadTooLargeApiError value)? payloadTooLarge,
+    TResult? Function(InternalServerErrorApiError value)? internalServerError,
+    TResult? Function(ServiceUnavailableApiError value)? serviceUnavailable,
+    TResult? Function(GatewayTimeoutApiError value)? gatewayTimeout,
+    TResult? Function(ServerOverloadApiError value)? serverOverload,
+    TResult? Function(ServerErrorApiError value)? serverError,
+    TResult? Function(ServerConnectionErrorApiError value)?
+        serverConnectionError,
+    TResult? Function(NetworkErrorApiError value)? networkError,
+    TResult? Function(TimeoutApiError value)? timeout,
+    TResult? Function(UnknownApiError value)? unknown,
+    TResult? Function(MaintenanceApiError value)? maintenance,
+  }) {
+    return conflict?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(BadRequestApiError value)? badRequest,
+    TResult Function(UnauthorizedApiError value)? unauthorized,
+    TResult Function(ForbiddenApiError value)? forbidden,
+    TResult Function(NotFoundApiError value)? notFound,
+    TResult Function(MethodNotAllowedApiError value)? methodNotAllowed,
+    TResult Function(ConflictApiError value)? conflict,
+    TResult Function(UnsupportedMediaType value)? unsupportedMediaType,
+    TResult Function(TooManyRequestsApiError value)? tooManyRequests,
+    TResult Function(PreconditionFailedApiError value)? preconditionFailed,
+    TResult Function(PayloadTooLargeApiError value)? payloadTooLarge,
+    TResult Function(InternalServerErrorApiError value)? internalServerError,
+    TResult Function(ServiceUnavailableApiError value)? serviceUnavailable,
+    TResult Function(GatewayTimeoutApiError value)? gatewayTimeout,
+    TResult Function(ServerOverloadApiError value)? serverOverload,
+    TResult Function(ServerErrorApiError value)? serverError,
+    TResult Function(ServerConnectionErrorApiError value)?
+        serverConnectionError,
+    TResult Function(NetworkErrorApiError value)? networkError,
+    TResult Function(TimeoutApiError value)? timeout,
+    TResult Function(UnknownApiError value)? unknown,
+    TResult Function(MaintenanceApiError value)? maintenance,
+    required TResult orElse(),
+  }) {
+    if (conflict != null) {
+      return conflict(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class ConflictApiError extends ApiError {
+  const factory ConflictApiError() = _$ConflictApiErrorImpl;
+  const ConflictApiError._() : super._();
+}
+
+/// @nodoc
+abstract class _$$UnsupportedMediaTypeImplCopyWith<$Res> {
+  factory _$$UnsupportedMediaTypeImplCopyWith(_$UnsupportedMediaTypeImpl value,
+          $Res Function(_$UnsupportedMediaTypeImpl) then) =
+      __$$UnsupportedMediaTypeImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$UnsupportedMediaTypeImplCopyWithImpl<$Res>
+    extends _$ApiErrorCopyWithImpl<$Res, _$UnsupportedMediaTypeImpl>
+    implements _$$UnsupportedMediaTypeImplCopyWith<$Res> {
+  __$$UnsupportedMediaTypeImplCopyWithImpl(_$UnsupportedMediaTypeImpl _value,
+      $Res Function(_$UnsupportedMediaTypeImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$UnsupportedMediaTypeImpl extends UnsupportedMediaType {
+  const _$UnsupportedMediaTypeImpl() : super._();
+
+  @override
+  String toString() {
+    return 'ApiError.unsupportedMediaType()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$UnsupportedMediaTypeImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(String? message) badRequest,
+    required TResult Function() unauthorized,
+    required TResult Function() forbidden,
+    required TResult Function() notFound,
+    required TResult Function() methodNotAllowed,
+    required TResult Function() conflict,
+    required TResult Function() unsupportedMediaType,
+    required TResult Function() tooManyRequests,
+    required TResult Function() preconditionFailed,
+    required TResult Function() payloadTooLarge,
+    required TResult Function() internalServerError,
+    required TResult Function() serviceUnavailable,
+    required TResult Function() gatewayTimeout,
+    required TResult Function() serverOverload,
+    required TResult Function() serverError,
+    required TResult Function(String? error) serverConnectionError,
+    required TResult Function() networkError,
+    required TResult Function() timeout,
+    required TResult Function(Object? error, StackTrace? stackTrace) unknown,
+    required TResult Function() maintenance,
+  }) {
+    return unsupportedMediaType();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String? message)? badRequest,
+    TResult? Function()? unauthorized,
+    TResult? Function()? forbidden,
+    TResult? Function()? notFound,
+    TResult? Function()? methodNotAllowed,
+    TResult? Function()? conflict,
+    TResult? Function()? unsupportedMediaType,
+    TResult? Function()? tooManyRequests,
+    TResult? Function()? preconditionFailed,
+    TResult? Function()? payloadTooLarge,
+    TResult? Function()? internalServerError,
+    TResult? Function()? serviceUnavailable,
+    TResult? Function()? gatewayTimeout,
+    TResult? Function()? serverOverload,
+    TResult? Function()? serverError,
+    TResult? Function(String? error)? serverConnectionError,
+    TResult? Function()? networkError,
+    TResult? Function()? timeout,
+    TResult? Function(Object? error, StackTrace? stackTrace)? unknown,
+    TResult? Function()? maintenance,
+  }) {
+    return unsupportedMediaType?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(String? message)? badRequest,
+    TResult Function()? unauthorized,
+    TResult Function()? forbidden,
+    TResult Function()? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? conflict,
+    TResult Function()? unsupportedMediaType,
+    TResult Function()? tooManyRequests,
+    TResult Function()? preconditionFailed,
+    TResult Function()? payloadTooLarge,
+    TResult Function()? internalServerError,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? gatewayTimeout,
+    TResult Function()? serverOverload,
+    TResult Function()? serverError,
+    TResult Function(String? error)? serverConnectionError,
+    TResult Function()? networkError,
+    TResult Function()? timeout,
+    TResult Function(Object? error, StackTrace? stackTrace)? unknown,
+    TResult Function()? maintenance,
+    required TResult orElse(),
+  }) {
+    if (unsupportedMediaType != null) {
+      return unsupportedMediaType();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(BadRequestApiError value) badRequest,
+    required TResult Function(UnauthorizedApiError value) unauthorized,
+    required TResult Function(ForbiddenApiError value) forbidden,
+    required TResult Function(NotFoundApiError value) notFound,
+    required TResult Function(MethodNotAllowedApiError value) methodNotAllowed,
+    required TResult Function(ConflictApiError value) conflict,
+    required TResult Function(UnsupportedMediaType value) unsupportedMediaType,
+    required TResult Function(TooManyRequestsApiError value) tooManyRequests,
+    required TResult Function(PreconditionFailedApiError value)
+        preconditionFailed,
+    required TResult Function(PayloadTooLargeApiError value) payloadTooLarge,
+    required TResult Function(InternalServerErrorApiError value)
+        internalServerError,
+    required TResult Function(ServiceUnavailableApiError value)
+        serviceUnavailable,
+    required TResult Function(GatewayTimeoutApiError value) gatewayTimeout,
+    required TResult Function(ServerOverloadApiError value) serverOverload,
+    required TResult Function(ServerErrorApiError value) serverError,
+    required TResult Function(ServerConnectionErrorApiError value)
+        serverConnectionError,
+    required TResult Function(NetworkErrorApiError value) networkError,
+    required TResult Function(TimeoutApiError value) timeout,
+    required TResult Function(UnknownApiError value) unknown,
+    required TResult Function(MaintenanceApiError value) maintenance,
+  }) {
+    return unsupportedMediaType(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(BadRequestApiError value)? badRequest,
+    TResult? Function(UnauthorizedApiError value)? unauthorized,
+    TResult? Function(ForbiddenApiError value)? forbidden,
+    TResult? Function(NotFoundApiError value)? notFound,
+    TResult? Function(MethodNotAllowedApiError value)? methodNotAllowed,
+    TResult? Function(ConflictApiError value)? conflict,
+    TResult? Function(UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(TooManyRequestsApiError value)? tooManyRequests,
+    TResult? Function(PreconditionFailedApiError value)? preconditionFailed,
+    TResult? Function(PayloadTooLargeApiError value)? payloadTooLarge,
+    TResult? Function(InternalServerErrorApiError value)? internalServerError,
+    TResult? Function(ServiceUnavailableApiError value)? serviceUnavailable,
+    TResult? Function(GatewayTimeoutApiError value)? gatewayTimeout,
+    TResult? Function(ServerOverloadApiError value)? serverOverload,
+    TResult? Function(ServerErrorApiError value)? serverError,
+    TResult? Function(ServerConnectionErrorApiError value)?
+        serverConnectionError,
+    TResult? Function(NetworkErrorApiError value)? networkError,
+    TResult? Function(TimeoutApiError value)? timeout,
+    TResult? Function(UnknownApiError value)? unknown,
+    TResult? Function(MaintenanceApiError value)? maintenance,
+  }) {
+    return unsupportedMediaType?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(BadRequestApiError value)? badRequest,
+    TResult Function(UnauthorizedApiError value)? unauthorized,
+    TResult Function(ForbiddenApiError value)? forbidden,
+    TResult Function(NotFoundApiError value)? notFound,
+    TResult Function(MethodNotAllowedApiError value)? methodNotAllowed,
+    TResult Function(ConflictApiError value)? conflict,
+    TResult Function(UnsupportedMediaType value)? unsupportedMediaType,
+    TResult Function(TooManyRequestsApiError value)? tooManyRequests,
+    TResult Function(PreconditionFailedApiError value)? preconditionFailed,
+    TResult Function(PayloadTooLargeApiError value)? payloadTooLarge,
+    TResult Function(InternalServerErrorApiError value)? internalServerError,
+    TResult Function(ServiceUnavailableApiError value)? serviceUnavailable,
+    TResult Function(GatewayTimeoutApiError value)? gatewayTimeout,
+    TResult Function(ServerOverloadApiError value)? serverOverload,
+    TResult Function(ServerErrorApiError value)? serverError,
+    TResult Function(ServerConnectionErrorApiError value)?
+        serverConnectionError,
+    TResult Function(NetworkErrorApiError value)? networkError,
+    TResult Function(TimeoutApiError value)? timeout,
+    TResult Function(UnknownApiError value)? unknown,
+    TResult Function(MaintenanceApiError value)? maintenance,
+    required TResult orElse(),
+  }) {
+    if (unsupportedMediaType != null) {
+      return unsupportedMediaType(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class UnsupportedMediaType extends ApiError {
+  const factory UnsupportedMediaType() = _$UnsupportedMediaTypeImpl;
+  const UnsupportedMediaType._() : super._();
+}
+
+/// @nodoc
+abstract class _$$TooManyRequestsApiErrorImplCopyWith<$Res> {
+  factory _$$TooManyRequestsApiErrorImplCopyWith(
+          _$TooManyRequestsApiErrorImpl value,
+          $Res Function(_$TooManyRequestsApiErrorImpl) then) =
+      __$$TooManyRequestsApiErrorImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$TooManyRequestsApiErrorImplCopyWithImpl<$Res>
+    extends _$ApiErrorCopyWithImpl<$Res, _$TooManyRequestsApiErrorImpl>
+    implements _$$TooManyRequestsApiErrorImplCopyWith<$Res> {
+  __$$TooManyRequestsApiErrorImplCopyWithImpl(
+      _$TooManyRequestsApiErrorImpl _value,
+      $Res Function(_$TooManyRequestsApiErrorImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$TooManyRequestsApiErrorImpl extends TooManyRequestsApiError {
+  const _$TooManyRequestsApiErrorImpl() : super._();
+
+  @override
+  String toString() {
+    return 'ApiError.tooManyRequests()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$TooManyRequestsApiErrorImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(String? message) badRequest,
+    required TResult Function() unauthorized,
+    required TResult Function() forbidden,
+    required TResult Function() notFound,
+    required TResult Function() methodNotAllowed,
+    required TResult Function() conflict,
+    required TResult Function() unsupportedMediaType,
+    required TResult Function() tooManyRequests,
+    required TResult Function() preconditionFailed,
+    required TResult Function() payloadTooLarge,
+    required TResult Function() internalServerError,
+    required TResult Function() serviceUnavailable,
+    required TResult Function() gatewayTimeout,
+    required TResult Function() serverOverload,
+    required TResult Function() serverError,
+    required TResult Function(String? error) serverConnectionError,
+    required TResult Function() networkError,
+    required TResult Function() timeout,
+    required TResult Function(Object? error, StackTrace? stackTrace) unknown,
+    required TResult Function() maintenance,
+  }) {
+    return tooManyRequests();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String? message)? badRequest,
+    TResult? Function()? unauthorized,
+    TResult? Function()? forbidden,
+    TResult? Function()? notFound,
+    TResult? Function()? methodNotAllowed,
+    TResult? Function()? conflict,
+    TResult? Function()? unsupportedMediaType,
+    TResult? Function()? tooManyRequests,
+    TResult? Function()? preconditionFailed,
+    TResult? Function()? payloadTooLarge,
+    TResult? Function()? internalServerError,
+    TResult? Function()? serviceUnavailable,
+    TResult? Function()? gatewayTimeout,
+    TResult? Function()? serverOverload,
+    TResult? Function()? serverError,
+    TResult? Function(String? error)? serverConnectionError,
+    TResult? Function()? networkError,
+    TResult? Function()? timeout,
+    TResult? Function(Object? error, StackTrace? stackTrace)? unknown,
+    TResult? Function()? maintenance,
+  }) {
+    return tooManyRequests?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(String? message)? badRequest,
+    TResult Function()? unauthorized,
+    TResult Function()? forbidden,
+    TResult Function()? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? conflict,
+    TResult Function()? unsupportedMediaType,
+    TResult Function()? tooManyRequests,
+    TResult Function()? preconditionFailed,
+    TResult Function()? payloadTooLarge,
+    TResult Function()? internalServerError,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? gatewayTimeout,
+    TResult Function()? serverOverload,
+    TResult Function()? serverError,
+    TResult Function(String? error)? serverConnectionError,
+    TResult Function()? networkError,
+    TResult Function()? timeout,
+    TResult Function(Object? error, StackTrace? stackTrace)? unknown,
+    TResult Function()? maintenance,
+    required TResult orElse(),
+  }) {
+    if (tooManyRequests != null) {
+      return tooManyRequests();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(BadRequestApiError value) badRequest,
+    required TResult Function(UnauthorizedApiError value) unauthorized,
+    required TResult Function(ForbiddenApiError value) forbidden,
+    required TResult Function(NotFoundApiError value) notFound,
+    required TResult Function(MethodNotAllowedApiError value) methodNotAllowed,
+    required TResult Function(ConflictApiError value) conflict,
+    required TResult Function(UnsupportedMediaType value) unsupportedMediaType,
+    required TResult Function(TooManyRequestsApiError value) tooManyRequests,
+    required TResult Function(PreconditionFailedApiError value)
+        preconditionFailed,
+    required TResult Function(PayloadTooLargeApiError value) payloadTooLarge,
+    required TResult Function(InternalServerErrorApiError value)
+        internalServerError,
+    required TResult Function(ServiceUnavailableApiError value)
+        serviceUnavailable,
+    required TResult Function(GatewayTimeoutApiError value) gatewayTimeout,
+    required TResult Function(ServerOverloadApiError value) serverOverload,
+    required TResult Function(ServerErrorApiError value) serverError,
+    required TResult Function(ServerConnectionErrorApiError value)
+        serverConnectionError,
+    required TResult Function(NetworkErrorApiError value) networkError,
+    required TResult Function(TimeoutApiError value) timeout,
+    required TResult Function(UnknownApiError value) unknown,
+    required TResult Function(MaintenanceApiError value) maintenance,
+  }) {
+    return tooManyRequests(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(BadRequestApiError value)? badRequest,
+    TResult? Function(UnauthorizedApiError value)? unauthorized,
+    TResult? Function(ForbiddenApiError value)? forbidden,
+    TResult? Function(NotFoundApiError value)? notFound,
+    TResult? Function(MethodNotAllowedApiError value)? methodNotAllowed,
+    TResult? Function(ConflictApiError value)? conflict,
+    TResult? Function(UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(TooManyRequestsApiError value)? tooManyRequests,
+    TResult? Function(PreconditionFailedApiError value)? preconditionFailed,
+    TResult? Function(PayloadTooLargeApiError value)? payloadTooLarge,
+    TResult? Function(InternalServerErrorApiError value)? internalServerError,
+    TResult? Function(ServiceUnavailableApiError value)? serviceUnavailable,
+    TResult? Function(GatewayTimeoutApiError value)? gatewayTimeout,
+    TResult? Function(ServerOverloadApiError value)? serverOverload,
+    TResult? Function(ServerErrorApiError value)? serverError,
+    TResult? Function(ServerConnectionErrorApiError value)?
+        serverConnectionError,
+    TResult? Function(NetworkErrorApiError value)? networkError,
+    TResult? Function(TimeoutApiError value)? timeout,
+    TResult? Function(UnknownApiError value)? unknown,
+    TResult? Function(MaintenanceApiError value)? maintenance,
+  }) {
+    return tooManyRequests?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(BadRequestApiError value)? badRequest,
+    TResult Function(UnauthorizedApiError value)? unauthorized,
+    TResult Function(ForbiddenApiError value)? forbidden,
+    TResult Function(NotFoundApiError value)? notFound,
+    TResult Function(MethodNotAllowedApiError value)? methodNotAllowed,
+    TResult Function(ConflictApiError value)? conflict,
+    TResult Function(UnsupportedMediaType value)? unsupportedMediaType,
+    TResult Function(TooManyRequestsApiError value)? tooManyRequests,
+    TResult Function(PreconditionFailedApiError value)? preconditionFailed,
+    TResult Function(PayloadTooLargeApiError value)? payloadTooLarge,
+    TResult Function(InternalServerErrorApiError value)? internalServerError,
+    TResult Function(ServiceUnavailableApiError value)? serviceUnavailable,
+    TResult Function(GatewayTimeoutApiError value)? gatewayTimeout,
+    TResult Function(ServerOverloadApiError value)? serverOverload,
+    TResult Function(ServerErrorApiError value)? serverError,
+    TResult Function(ServerConnectionErrorApiError value)?
+        serverConnectionError,
+    TResult Function(NetworkErrorApiError value)? networkError,
+    TResult Function(TimeoutApiError value)? timeout,
+    TResult Function(UnknownApiError value)? unknown,
+    TResult Function(MaintenanceApiError value)? maintenance,
+    required TResult orElse(),
+  }) {
+    if (tooManyRequests != null) {
+      return tooManyRequests(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class TooManyRequestsApiError extends ApiError {
+  const factory TooManyRequestsApiError() = _$TooManyRequestsApiErrorImpl;
+  const TooManyRequestsApiError._() : super._();
+}
+
+/// @nodoc
+abstract class _$$PreconditionFailedApiErrorImplCopyWith<$Res> {
+  factory _$$PreconditionFailedApiErrorImplCopyWith(
+          _$PreconditionFailedApiErrorImpl value,
+          $Res Function(_$PreconditionFailedApiErrorImpl) then) =
+      __$$PreconditionFailedApiErrorImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$PreconditionFailedApiErrorImplCopyWithImpl<$Res>
+    extends _$ApiErrorCopyWithImpl<$Res, _$PreconditionFailedApiErrorImpl>
+    implements _$$PreconditionFailedApiErrorImplCopyWith<$Res> {
+  __$$PreconditionFailedApiErrorImplCopyWithImpl(
+      _$PreconditionFailedApiErrorImpl _value,
+      $Res Function(_$PreconditionFailedApiErrorImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$PreconditionFailedApiErrorImpl extends PreconditionFailedApiError {
+  const _$PreconditionFailedApiErrorImpl() : super._();
+
+  @override
+  String toString() {
+    return 'ApiError.preconditionFailed()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$PreconditionFailedApiErrorImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(String? message) badRequest,
+    required TResult Function() unauthorized,
+    required TResult Function() forbidden,
+    required TResult Function() notFound,
+    required TResult Function() methodNotAllowed,
+    required TResult Function() conflict,
+    required TResult Function() unsupportedMediaType,
+    required TResult Function() tooManyRequests,
+    required TResult Function() preconditionFailed,
+    required TResult Function() payloadTooLarge,
+    required TResult Function() internalServerError,
+    required TResult Function() serviceUnavailable,
+    required TResult Function() gatewayTimeout,
+    required TResult Function() serverOverload,
+    required TResult Function() serverError,
+    required TResult Function(String? error) serverConnectionError,
+    required TResult Function() networkError,
+    required TResult Function() timeout,
+    required TResult Function(Object? error, StackTrace? stackTrace) unknown,
+    required TResult Function() maintenance,
+  }) {
+    return preconditionFailed();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String? message)? badRequest,
+    TResult? Function()? unauthorized,
+    TResult? Function()? forbidden,
+    TResult? Function()? notFound,
+    TResult? Function()? methodNotAllowed,
+    TResult? Function()? conflict,
+    TResult? Function()? unsupportedMediaType,
+    TResult? Function()? tooManyRequests,
+    TResult? Function()? preconditionFailed,
+    TResult? Function()? payloadTooLarge,
+    TResult? Function()? internalServerError,
+    TResult? Function()? serviceUnavailable,
+    TResult? Function()? gatewayTimeout,
+    TResult? Function()? serverOverload,
+    TResult? Function()? serverError,
+    TResult? Function(String? error)? serverConnectionError,
+    TResult? Function()? networkError,
+    TResult? Function()? timeout,
+    TResult? Function(Object? error, StackTrace? stackTrace)? unknown,
+    TResult? Function()? maintenance,
+  }) {
+    return preconditionFailed?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(String? message)? badRequest,
+    TResult Function()? unauthorized,
+    TResult Function()? forbidden,
+    TResult Function()? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? conflict,
+    TResult Function()? unsupportedMediaType,
+    TResult Function()? tooManyRequests,
+    TResult Function()? preconditionFailed,
+    TResult Function()? payloadTooLarge,
+    TResult Function()? internalServerError,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? gatewayTimeout,
+    TResult Function()? serverOverload,
+    TResult Function()? serverError,
+    TResult Function(String? error)? serverConnectionError,
+    TResult Function()? networkError,
+    TResult Function()? timeout,
+    TResult Function(Object? error, StackTrace? stackTrace)? unknown,
+    TResult Function()? maintenance,
+    required TResult orElse(),
+  }) {
+    if (preconditionFailed != null) {
+      return preconditionFailed();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(BadRequestApiError value) badRequest,
+    required TResult Function(UnauthorizedApiError value) unauthorized,
+    required TResult Function(ForbiddenApiError value) forbidden,
+    required TResult Function(NotFoundApiError value) notFound,
+    required TResult Function(MethodNotAllowedApiError value) methodNotAllowed,
+    required TResult Function(ConflictApiError value) conflict,
+    required TResult Function(UnsupportedMediaType value) unsupportedMediaType,
+    required TResult Function(TooManyRequestsApiError value) tooManyRequests,
+    required TResult Function(PreconditionFailedApiError value)
+        preconditionFailed,
+    required TResult Function(PayloadTooLargeApiError value) payloadTooLarge,
+    required TResult Function(InternalServerErrorApiError value)
+        internalServerError,
+    required TResult Function(ServiceUnavailableApiError value)
+        serviceUnavailable,
+    required TResult Function(GatewayTimeoutApiError value) gatewayTimeout,
+    required TResult Function(ServerOverloadApiError value) serverOverload,
+    required TResult Function(ServerErrorApiError value) serverError,
+    required TResult Function(ServerConnectionErrorApiError value)
+        serverConnectionError,
+    required TResult Function(NetworkErrorApiError value) networkError,
+    required TResult Function(TimeoutApiError value) timeout,
+    required TResult Function(UnknownApiError value) unknown,
+    required TResult Function(MaintenanceApiError value) maintenance,
+  }) {
+    return preconditionFailed(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(BadRequestApiError value)? badRequest,
+    TResult? Function(UnauthorizedApiError value)? unauthorized,
+    TResult? Function(ForbiddenApiError value)? forbidden,
+    TResult? Function(NotFoundApiError value)? notFound,
+    TResult? Function(MethodNotAllowedApiError value)? methodNotAllowed,
+    TResult? Function(ConflictApiError value)? conflict,
+    TResult? Function(UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(TooManyRequestsApiError value)? tooManyRequests,
+    TResult? Function(PreconditionFailedApiError value)? preconditionFailed,
+    TResult? Function(PayloadTooLargeApiError value)? payloadTooLarge,
+    TResult? Function(InternalServerErrorApiError value)? internalServerError,
+    TResult? Function(ServiceUnavailableApiError value)? serviceUnavailable,
+    TResult? Function(GatewayTimeoutApiError value)? gatewayTimeout,
+    TResult? Function(ServerOverloadApiError value)? serverOverload,
+    TResult? Function(ServerErrorApiError value)? serverError,
+    TResult? Function(ServerConnectionErrorApiError value)?
+        serverConnectionError,
+    TResult? Function(NetworkErrorApiError value)? networkError,
+    TResult? Function(TimeoutApiError value)? timeout,
+    TResult? Function(UnknownApiError value)? unknown,
+    TResult? Function(MaintenanceApiError value)? maintenance,
+  }) {
+    return preconditionFailed?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(BadRequestApiError value)? badRequest,
+    TResult Function(UnauthorizedApiError value)? unauthorized,
+    TResult Function(ForbiddenApiError value)? forbidden,
+    TResult Function(NotFoundApiError value)? notFound,
+    TResult Function(MethodNotAllowedApiError value)? methodNotAllowed,
+    TResult Function(ConflictApiError value)? conflict,
+    TResult Function(UnsupportedMediaType value)? unsupportedMediaType,
+    TResult Function(TooManyRequestsApiError value)? tooManyRequests,
+    TResult Function(PreconditionFailedApiError value)? preconditionFailed,
+    TResult Function(PayloadTooLargeApiError value)? payloadTooLarge,
+    TResult Function(InternalServerErrorApiError value)? internalServerError,
+    TResult Function(ServiceUnavailableApiError value)? serviceUnavailable,
+    TResult Function(GatewayTimeoutApiError value)? gatewayTimeout,
+    TResult Function(ServerOverloadApiError value)? serverOverload,
+    TResult Function(ServerErrorApiError value)? serverError,
+    TResult Function(ServerConnectionErrorApiError value)?
+        serverConnectionError,
+    TResult Function(NetworkErrorApiError value)? networkError,
+    TResult Function(TimeoutApiError value)? timeout,
+    TResult Function(UnknownApiError value)? unknown,
+    TResult Function(MaintenanceApiError value)? maintenance,
+    required TResult orElse(),
+  }) {
+    if (preconditionFailed != null) {
+      return preconditionFailed(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class PreconditionFailedApiError extends ApiError {
+  const factory PreconditionFailedApiError() = _$PreconditionFailedApiErrorImpl;
+  const PreconditionFailedApiError._() : super._();
+}
+
+/// @nodoc
+abstract class _$$PayloadTooLargeApiErrorImplCopyWith<$Res> {
+  factory _$$PayloadTooLargeApiErrorImplCopyWith(
+          _$PayloadTooLargeApiErrorImpl value,
+          $Res Function(_$PayloadTooLargeApiErrorImpl) then) =
+      __$$PayloadTooLargeApiErrorImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$PayloadTooLargeApiErrorImplCopyWithImpl<$Res>
+    extends _$ApiErrorCopyWithImpl<$Res, _$PayloadTooLargeApiErrorImpl>
+    implements _$$PayloadTooLargeApiErrorImplCopyWith<$Res> {
+  __$$PayloadTooLargeApiErrorImplCopyWithImpl(
+      _$PayloadTooLargeApiErrorImpl _value,
+      $Res Function(_$PayloadTooLargeApiErrorImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$PayloadTooLargeApiErrorImpl extends PayloadTooLargeApiError {
+  const _$PayloadTooLargeApiErrorImpl() : super._();
+
+  @override
+  String toString() {
+    return 'ApiError.payloadTooLarge()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$PayloadTooLargeApiErrorImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(String? message) badRequest,
+    required TResult Function() unauthorized,
+    required TResult Function() forbidden,
+    required TResult Function() notFound,
+    required TResult Function() methodNotAllowed,
+    required TResult Function() conflict,
+    required TResult Function() unsupportedMediaType,
+    required TResult Function() tooManyRequests,
+    required TResult Function() preconditionFailed,
+    required TResult Function() payloadTooLarge,
+    required TResult Function() internalServerError,
+    required TResult Function() serviceUnavailable,
+    required TResult Function() gatewayTimeout,
+    required TResult Function() serverOverload,
+    required TResult Function() serverError,
+    required TResult Function(String? error) serverConnectionError,
+    required TResult Function() networkError,
+    required TResult Function() timeout,
+    required TResult Function(Object? error, StackTrace? stackTrace) unknown,
+    required TResult Function() maintenance,
+  }) {
+    return payloadTooLarge();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String? message)? badRequest,
+    TResult? Function()? unauthorized,
+    TResult? Function()? forbidden,
+    TResult? Function()? notFound,
+    TResult? Function()? methodNotAllowed,
+    TResult? Function()? conflict,
+    TResult? Function()? unsupportedMediaType,
+    TResult? Function()? tooManyRequests,
+    TResult? Function()? preconditionFailed,
+    TResult? Function()? payloadTooLarge,
+    TResult? Function()? internalServerError,
+    TResult? Function()? serviceUnavailable,
+    TResult? Function()? gatewayTimeout,
+    TResult? Function()? serverOverload,
+    TResult? Function()? serverError,
+    TResult? Function(String? error)? serverConnectionError,
+    TResult? Function()? networkError,
+    TResult? Function()? timeout,
+    TResult? Function(Object? error, StackTrace? stackTrace)? unknown,
+    TResult? Function()? maintenance,
+  }) {
+    return payloadTooLarge?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(String? message)? badRequest,
+    TResult Function()? unauthorized,
+    TResult Function()? forbidden,
+    TResult Function()? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? conflict,
+    TResult Function()? unsupportedMediaType,
+    TResult Function()? tooManyRequests,
+    TResult Function()? preconditionFailed,
+    TResult Function()? payloadTooLarge,
+    TResult Function()? internalServerError,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? gatewayTimeout,
+    TResult Function()? serverOverload,
+    TResult Function()? serverError,
+    TResult Function(String? error)? serverConnectionError,
+    TResult Function()? networkError,
+    TResult Function()? timeout,
+    TResult Function(Object? error, StackTrace? stackTrace)? unknown,
+    TResult Function()? maintenance,
+    required TResult orElse(),
+  }) {
+    if (payloadTooLarge != null) {
+      return payloadTooLarge();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(BadRequestApiError value) badRequest,
+    required TResult Function(UnauthorizedApiError value) unauthorized,
+    required TResult Function(ForbiddenApiError value) forbidden,
+    required TResult Function(NotFoundApiError value) notFound,
+    required TResult Function(MethodNotAllowedApiError value) methodNotAllowed,
+    required TResult Function(ConflictApiError value) conflict,
+    required TResult Function(UnsupportedMediaType value) unsupportedMediaType,
+    required TResult Function(TooManyRequestsApiError value) tooManyRequests,
+    required TResult Function(PreconditionFailedApiError value)
+        preconditionFailed,
+    required TResult Function(PayloadTooLargeApiError value) payloadTooLarge,
+    required TResult Function(InternalServerErrorApiError value)
+        internalServerError,
+    required TResult Function(ServiceUnavailableApiError value)
+        serviceUnavailable,
+    required TResult Function(GatewayTimeoutApiError value) gatewayTimeout,
+    required TResult Function(ServerOverloadApiError value) serverOverload,
+    required TResult Function(ServerErrorApiError value) serverError,
+    required TResult Function(ServerConnectionErrorApiError value)
+        serverConnectionError,
+    required TResult Function(NetworkErrorApiError value) networkError,
+    required TResult Function(TimeoutApiError value) timeout,
+    required TResult Function(UnknownApiError value) unknown,
+    required TResult Function(MaintenanceApiError value) maintenance,
+  }) {
+    return payloadTooLarge(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(BadRequestApiError value)? badRequest,
+    TResult? Function(UnauthorizedApiError value)? unauthorized,
+    TResult? Function(ForbiddenApiError value)? forbidden,
+    TResult? Function(NotFoundApiError value)? notFound,
+    TResult? Function(MethodNotAllowedApiError value)? methodNotAllowed,
+    TResult? Function(ConflictApiError value)? conflict,
+    TResult? Function(UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(TooManyRequestsApiError value)? tooManyRequests,
+    TResult? Function(PreconditionFailedApiError value)? preconditionFailed,
+    TResult? Function(PayloadTooLargeApiError value)? payloadTooLarge,
+    TResult? Function(InternalServerErrorApiError value)? internalServerError,
+    TResult? Function(ServiceUnavailableApiError value)? serviceUnavailable,
+    TResult? Function(GatewayTimeoutApiError value)? gatewayTimeout,
+    TResult? Function(ServerOverloadApiError value)? serverOverload,
+    TResult? Function(ServerErrorApiError value)? serverError,
+    TResult? Function(ServerConnectionErrorApiError value)?
+        serverConnectionError,
+    TResult? Function(NetworkErrorApiError value)? networkError,
+    TResult? Function(TimeoutApiError value)? timeout,
+    TResult? Function(UnknownApiError value)? unknown,
+    TResult? Function(MaintenanceApiError value)? maintenance,
+  }) {
+    return payloadTooLarge?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(BadRequestApiError value)? badRequest,
+    TResult Function(UnauthorizedApiError value)? unauthorized,
+    TResult Function(ForbiddenApiError value)? forbidden,
+    TResult Function(NotFoundApiError value)? notFound,
+    TResult Function(MethodNotAllowedApiError value)? methodNotAllowed,
+    TResult Function(ConflictApiError value)? conflict,
+    TResult Function(UnsupportedMediaType value)? unsupportedMediaType,
+    TResult Function(TooManyRequestsApiError value)? tooManyRequests,
+    TResult Function(PreconditionFailedApiError value)? preconditionFailed,
+    TResult Function(PayloadTooLargeApiError value)? payloadTooLarge,
+    TResult Function(InternalServerErrorApiError value)? internalServerError,
+    TResult Function(ServiceUnavailableApiError value)? serviceUnavailable,
+    TResult Function(GatewayTimeoutApiError value)? gatewayTimeout,
+    TResult Function(ServerOverloadApiError value)? serverOverload,
+    TResult Function(ServerErrorApiError value)? serverError,
+    TResult Function(ServerConnectionErrorApiError value)?
+        serverConnectionError,
+    TResult Function(NetworkErrorApiError value)? networkError,
+    TResult Function(TimeoutApiError value)? timeout,
+    TResult Function(UnknownApiError value)? unknown,
+    TResult Function(MaintenanceApiError value)? maintenance,
+    required TResult orElse(),
+  }) {
+    if (payloadTooLarge != null) {
+      return payloadTooLarge(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class PayloadTooLargeApiError extends ApiError {
+  const factory PayloadTooLargeApiError() = _$PayloadTooLargeApiErrorImpl;
+  const PayloadTooLargeApiError._() : super._();
+}
+
+/// @nodoc
+abstract class _$$InternalServerErrorApiErrorImplCopyWith<$Res> {
+  factory _$$InternalServerErrorApiErrorImplCopyWith(
+          _$InternalServerErrorApiErrorImpl value,
+          $Res Function(_$InternalServerErrorApiErrorImpl) then) =
+      __$$InternalServerErrorApiErrorImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$InternalServerErrorApiErrorImplCopyWithImpl<$Res>
+    extends _$ApiErrorCopyWithImpl<$Res, _$InternalServerErrorApiErrorImpl>
+    implements _$$InternalServerErrorApiErrorImplCopyWith<$Res> {
+  __$$InternalServerErrorApiErrorImplCopyWithImpl(
+      _$InternalServerErrorApiErrorImpl _value,
+      $Res Function(_$InternalServerErrorApiErrorImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$InternalServerErrorApiErrorImpl extends InternalServerErrorApiError {
+  const _$InternalServerErrorApiErrorImpl() : super._();
+
+  @override
+  String toString() {
+    return 'ApiError.internalServerError()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$InternalServerErrorApiErrorImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(String? message) badRequest,
+    required TResult Function() unauthorized,
+    required TResult Function() forbidden,
+    required TResult Function() notFound,
+    required TResult Function() methodNotAllowed,
+    required TResult Function() conflict,
+    required TResult Function() unsupportedMediaType,
+    required TResult Function() tooManyRequests,
+    required TResult Function() preconditionFailed,
+    required TResult Function() payloadTooLarge,
+    required TResult Function() internalServerError,
+    required TResult Function() serviceUnavailable,
+    required TResult Function() gatewayTimeout,
+    required TResult Function() serverOverload,
+    required TResult Function() serverError,
+    required TResult Function(String? error) serverConnectionError,
+    required TResult Function() networkError,
+    required TResult Function() timeout,
+    required TResult Function(Object? error, StackTrace? stackTrace) unknown,
+    required TResult Function() maintenance,
+  }) {
+    return internalServerError();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String? message)? badRequest,
+    TResult? Function()? unauthorized,
+    TResult? Function()? forbidden,
+    TResult? Function()? notFound,
+    TResult? Function()? methodNotAllowed,
+    TResult? Function()? conflict,
+    TResult? Function()? unsupportedMediaType,
+    TResult? Function()? tooManyRequests,
+    TResult? Function()? preconditionFailed,
+    TResult? Function()? payloadTooLarge,
+    TResult? Function()? internalServerError,
+    TResult? Function()? serviceUnavailable,
+    TResult? Function()? gatewayTimeout,
+    TResult? Function()? serverOverload,
+    TResult? Function()? serverError,
+    TResult? Function(String? error)? serverConnectionError,
+    TResult? Function()? networkError,
+    TResult? Function()? timeout,
+    TResult? Function(Object? error, StackTrace? stackTrace)? unknown,
+    TResult? Function()? maintenance,
+  }) {
+    return internalServerError?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(String? message)? badRequest,
+    TResult Function()? unauthorized,
+    TResult Function()? forbidden,
+    TResult Function()? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? conflict,
+    TResult Function()? unsupportedMediaType,
+    TResult Function()? tooManyRequests,
+    TResult Function()? preconditionFailed,
+    TResult Function()? payloadTooLarge,
+    TResult Function()? internalServerError,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? gatewayTimeout,
+    TResult Function()? serverOverload,
+    TResult Function()? serverError,
+    TResult Function(String? error)? serverConnectionError,
+    TResult Function()? networkError,
+    TResult Function()? timeout,
+    TResult Function(Object? error, StackTrace? stackTrace)? unknown,
+    TResult Function()? maintenance,
+    required TResult orElse(),
+  }) {
+    if (internalServerError != null) {
+      return internalServerError();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(BadRequestApiError value) badRequest,
+    required TResult Function(UnauthorizedApiError value) unauthorized,
+    required TResult Function(ForbiddenApiError value) forbidden,
+    required TResult Function(NotFoundApiError value) notFound,
+    required TResult Function(MethodNotAllowedApiError value) methodNotAllowed,
+    required TResult Function(ConflictApiError value) conflict,
+    required TResult Function(UnsupportedMediaType value) unsupportedMediaType,
+    required TResult Function(TooManyRequestsApiError value) tooManyRequests,
+    required TResult Function(PreconditionFailedApiError value)
+        preconditionFailed,
+    required TResult Function(PayloadTooLargeApiError value) payloadTooLarge,
+    required TResult Function(InternalServerErrorApiError value)
+        internalServerError,
+    required TResult Function(ServiceUnavailableApiError value)
+        serviceUnavailable,
+    required TResult Function(GatewayTimeoutApiError value) gatewayTimeout,
+    required TResult Function(ServerOverloadApiError value) serverOverload,
+    required TResult Function(ServerErrorApiError value) serverError,
+    required TResult Function(ServerConnectionErrorApiError value)
+        serverConnectionError,
+    required TResult Function(NetworkErrorApiError value) networkError,
+    required TResult Function(TimeoutApiError value) timeout,
+    required TResult Function(UnknownApiError value) unknown,
+    required TResult Function(MaintenanceApiError value) maintenance,
+  }) {
+    return internalServerError(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(BadRequestApiError value)? badRequest,
+    TResult? Function(UnauthorizedApiError value)? unauthorized,
+    TResult? Function(ForbiddenApiError value)? forbidden,
+    TResult? Function(NotFoundApiError value)? notFound,
+    TResult? Function(MethodNotAllowedApiError value)? methodNotAllowed,
+    TResult? Function(ConflictApiError value)? conflict,
+    TResult? Function(UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(TooManyRequestsApiError value)? tooManyRequests,
+    TResult? Function(PreconditionFailedApiError value)? preconditionFailed,
+    TResult? Function(PayloadTooLargeApiError value)? payloadTooLarge,
+    TResult? Function(InternalServerErrorApiError value)? internalServerError,
+    TResult? Function(ServiceUnavailableApiError value)? serviceUnavailable,
+    TResult? Function(GatewayTimeoutApiError value)? gatewayTimeout,
+    TResult? Function(ServerOverloadApiError value)? serverOverload,
+    TResult? Function(ServerErrorApiError value)? serverError,
+    TResult? Function(ServerConnectionErrorApiError value)?
+        serverConnectionError,
+    TResult? Function(NetworkErrorApiError value)? networkError,
+    TResult? Function(TimeoutApiError value)? timeout,
+    TResult? Function(UnknownApiError value)? unknown,
+    TResult? Function(MaintenanceApiError value)? maintenance,
+  }) {
+    return internalServerError?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(BadRequestApiError value)? badRequest,
+    TResult Function(UnauthorizedApiError value)? unauthorized,
+    TResult Function(ForbiddenApiError value)? forbidden,
+    TResult Function(NotFoundApiError value)? notFound,
+    TResult Function(MethodNotAllowedApiError value)? methodNotAllowed,
+    TResult Function(ConflictApiError value)? conflict,
+    TResult Function(UnsupportedMediaType value)? unsupportedMediaType,
+    TResult Function(TooManyRequestsApiError value)? tooManyRequests,
+    TResult Function(PreconditionFailedApiError value)? preconditionFailed,
+    TResult Function(PayloadTooLargeApiError value)? payloadTooLarge,
+    TResult Function(InternalServerErrorApiError value)? internalServerError,
+    TResult Function(ServiceUnavailableApiError value)? serviceUnavailable,
+    TResult Function(GatewayTimeoutApiError value)? gatewayTimeout,
+    TResult Function(ServerOverloadApiError value)? serverOverload,
+    TResult Function(ServerErrorApiError value)? serverError,
+    TResult Function(ServerConnectionErrorApiError value)?
+        serverConnectionError,
+    TResult Function(NetworkErrorApiError value)? networkError,
+    TResult Function(TimeoutApiError value)? timeout,
+    TResult Function(UnknownApiError value)? unknown,
+    TResult Function(MaintenanceApiError value)? maintenance,
+    required TResult orElse(),
+  }) {
+    if (internalServerError != null) {
+      return internalServerError(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class InternalServerErrorApiError extends ApiError {
+  const factory InternalServerErrorApiError() =
+      _$InternalServerErrorApiErrorImpl;
+  const InternalServerErrorApiError._() : super._();
+}
+
+/// @nodoc
+abstract class _$$ServiceUnavailableApiErrorImplCopyWith<$Res> {
+  factory _$$ServiceUnavailableApiErrorImplCopyWith(
+          _$ServiceUnavailableApiErrorImpl value,
+          $Res Function(_$ServiceUnavailableApiErrorImpl) then) =
+      __$$ServiceUnavailableApiErrorImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$ServiceUnavailableApiErrorImplCopyWithImpl<$Res>
+    extends _$ApiErrorCopyWithImpl<$Res, _$ServiceUnavailableApiErrorImpl>
+    implements _$$ServiceUnavailableApiErrorImplCopyWith<$Res> {
+  __$$ServiceUnavailableApiErrorImplCopyWithImpl(
+      _$ServiceUnavailableApiErrorImpl _value,
+      $Res Function(_$ServiceUnavailableApiErrorImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$ServiceUnavailableApiErrorImpl extends ServiceUnavailableApiError {
+  const _$ServiceUnavailableApiErrorImpl() : super._();
+
+  @override
+  String toString() {
+    return 'ApiError.serviceUnavailable()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$ServiceUnavailableApiErrorImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(String? message) badRequest,
+    required TResult Function() unauthorized,
+    required TResult Function() forbidden,
+    required TResult Function() notFound,
+    required TResult Function() methodNotAllowed,
+    required TResult Function() conflict,
+    required TResult Function() unsupportedMediaType,
+    required TResult Function() tooManyRequests,
+    required TResult Function() preconditionFailed,
+    required TResult Function() payloadTooLarge,
+    required TResult Function() internalServerError,
+    required TResult Function() serviceUnavailable,
+    required TResult Function() gatewayTimeout,
+    required TResult Function() serverOverload,
+    required TResult Function() serverError,
+    required TResult Function(String? error) serverConnectionError,
+    required TResult Function() networkError,
+    required TResult Function() timeout,
+    required TResult Function(Object? error, StackTrace? stackTrace) unknown,
+    required TResult Function() maintenance,
+  }) {
+    return serviceUnavailable();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String? message)? badRequest,
+    TResult? Function()? unauthorized,
+    TResult? Function()? forbidden,
+    TResult? Function()? notFound,
+    TResult? Function()? methodNotAllowed,
+    TResult? Function()? conflict,
+    TResult? Function()? unsupportedMediaType,
+    TResult? Function()? tooManyRequests,
+    TResult? Function()? preconditionFailed,
+    TResult? Function()? payloadTooLarge,
+    TResult? Function()? internalServerError,
+    TResult? Function()? serviceUnavailable,
+    TResult? Function()? gatewayTimeout,
+    TResult? Function()? serverOverload,
+    TResult? Function()? serverError,
+    TResult? Function(String? error)? serverConnectionError,
+    TResult? Function()? networkError,
+    TResult? Function()? timeout,
+    TResult? Function(Object? error, StackTrace? stackTrace)? unknown,
+    TResult? Function()? maintenance,
+  }) {
+    return serviceUnavailable?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(String? message)? badRequest,
+    TResult Function()? unauthorized,
+    TResult Function()? forbidden,
+    TResult Function()? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? conflict,
+    TResult Function()? unsupportedMediaType,
+    TResult Function()? tooManyRequests,
+    TResult Function()? preconditionFailed,
+    TResult Function()? payloadTooLarge,
+    TResult Function()? internalServerError,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? gatewayTimeout,
+    TResult Function()? serverOverload,
+    TResult Function()? serverError,
+    TResult Function(String? error)? serverConnectionError,
+    TResult Function()? networkError,
+    TResult Function()? timeout,
+    TResult Function(Object? error, StackTrace? stackTrace)? unknown,
+    TResult Function()? maintenance,
+    required TResult orElse(),
+  }) {
+    if (serviceUnavailable != null) {
+      return serviceUnavailable();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(BadRequestApiError value) badRequest,
+    required TResult Function(UnauthorizedApiError value) unauthorized,
+    required TResult Function(ForbiddenApiError value) forbidden,
+    required TResult Function(NotFoundApiError value) notFound,
+    required TResult Function(MethodNotAllowedApiError value) methodNotAllowed,
+    required TResult Function(ConflictApiError value) conflict,
+    required TResult Function(UnsupportedMediaType value) unsupportedMediaType,
+    required TResult Function(TooManyRequestsApiError value) tooManyRequests,
+    required TResult Function(PreconditionFailedApiError value)
+        preconditionFailed,
+    required TResult Function(PayloadTooLargeApiError value) payloadTooLarge,
+    required TResult Function(InternalServerErrorApiError value)
+        internalServerError,
+    required TResult Function(ServiceUnavailableApiError value)
+        serviceUnavailable,
+    required TResult Function(GatewayTimeoutApiError value) gatewayTimeout,
+    required TResult Function(ServerOverloadApiError value) serverOverload,
+    required TResult Function(ServerErrorApiError value) serverError,
+    required TResult Function(ServerConnectionErrorApiError value)
+        serverConnectionError,
+    required TResult Function(NetworkErrorApiError value) networkError,
+    required TResult Function(TimeoutApiError value) timeout,
+    required TResult Function(UnknownApiError value) unknown,
+    required TResult Function(MaintenanceApiError value) maintenance,
+  }) {
+    return serviceUnavailable(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(BadRequestApiError value)? badRequest,
+    TResult? Function(UnauthorizedApiError value)? unauthorized,
+    TResult? Function(ForbiddenApiError value)? forbidden,
+    TResult? Function(NotFoundApiError value)? notFound,
+    TResult? Function(MethodNotAllowedApiError value)? methodNotAllowed,
+    TResult? Function(ConflictApiError value)? conflict,
+    TResult? Function(UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(TooManyRequestsApiError value)? tooManyRequests,
+    TResult? Function(PreconditionFailedApiError value)? preconditionFailed,
+    TResult? Function(PayloadTooLargeApiError value)? payloadTooLarge,
+    TResult? Function(InternalServerErrorApiError value)? internalServerError,
+    TResult? Function(ServiceUnavailableApiError value)? serviceUnavailable,
+    TResult? Function(GatewayTimeoutApiError value)? gatewayTimeout,
+    TResult? Function(ServerOverloadApiError value)? serverOverload,
+    TResult? Function(ServerErrorApiError value)? serverError,
+    TResult? Function(ServerConnectionErrorApiError value)?
+        serverConnectionError,
+    TResult? Function(NetworkErrorApiError value)? networkError,
+    TResult? Function(TimeoutApiError value)? timeout,
+    TResult? Function(UnknownApiError value)? unknown,
+    TResult? Function(MaintenanceApiError value)? maintenance,
+  }) {
+    return serviceUnavailable?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(BadRequestApiError value)? badRequest,
+    TResult Function(UnauthorizedApiError value)? unauthorized,
+    TResult Function(ForbiddenApiError value)? forbidden,
+    TResult Function(NotFoundApiError value)? notFound,
+    TResult Function(MethodNotAllowedApiError value)? methodNotAllowed,
+    TResult Function(ConflictApiError value)? conflict,
+    TResult Function(UnsupportedMediaType value)? unsupportedMediaType,
+    TResult Function(TooManyRequestsApiError value)? tooManyRequests,
+    TResult Function(PreconditionFailedApiError value)? preconditionFailed,
+    TResult Function(PayloadTooLargeApiError value)? payloadTooLarge,
+    TResult Function(InternalServerErrorApiError value)? internalServerError,
+    TResult Function(ServiceUnavailableApiError value)? serviceUnavailable,
+    TResult Function(GatewayTimeoutApiError value)? gatewayTimeout,
+    TResult Function(ServerOverloadApiError value)? serverOverload,
+    TResult Function(ServerErrorApiError value)? serverError,
+    TResult Function(ServerConnectionErrorApiError value)?
+        serverConnectionError,
+    TResult Function(NetworkErrorApiError value)? networkError,
+    TResult Function(TimeoutApiError value)? timeout,
+    TResult Function(UnknownApiError value)? unknown,
+    TResult Function(MaintenanceApiError value)? maintenance,
+    required TResult orElse(),
+  }) {
+    if (serviceUnavailable != null) {
+      return serviceUnavailable(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class ServiceUnavailableApiError extends ApiError {
+  const factory ServiceUnavailableApiError() = _$ServiceUnavailableApiErrorImpl;
+  const ServiceUnavailableApiError._() : super._();
+}
+
+/// @nodoc
+abstract class _$$GatewayTimeoutApiErrorImplCopyWith<$Res> {
+  factory _$$GatewayTimeoutApiErrorImplCopyWith(
+          _$GatewayTimeoutApiErrorImpl value,
+          $Res Function(_$GatewayTimeoutApiErrorImpl) then) =
+      __$$GatewayTimeoutApiErrorImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$GatewayTimeoutApiErrorImplCopyWithImpl<$Res>
+    extends _$ApiErrorCopyWithImpl<$Res, _$GatewayTimeoutApiErrorImpl>
+    implements _$$GatewayTimeoutApiErrorImplCopyWith<$Res> {
+  __$$GatewayTimeoutApiErrorImplCopyWithImpl(
+      _$GatewayTimeoutApiErrorImpl _value,
+      $Res Function(_$GatewayTimeoutApiErrorImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$GatewayTimeoutApiErrorImpl extends GatewayTimeoutApiError {
+  const _$GatewayTimeoutApiErrorImpl() : super._();
+
+  @override
+  String toString() {
+    return 'ApiError.gatewayTimeout()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$GatewayTimeoutApiErrorImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(String? message) badRequest,
+    required TResult Function() unauthorized,
+    required TResult Function() forbidden,
+    required TResult Function() notFound,
+    required TResult Function() methodNotAllowed,
+    required TResult Function() conflict,
+    required TResult Function() unsupportedMediaType,
+    required TResult Function() tooManyRequests,
+    required TResult Function() preconditionFailed,
+    required TResult Function() payloadTooLarge,
+    required TResult Function() internalServerError,
+    required TResult Function() serviceUnavailable,
+    required TResult Function() gatewayTimeout,
+    required TResult Function() serverOverload,
+    required TResult Function() serverError,
+    required TResult Function(String? error) serverConnectionError,
+    required TResult Function() networkError,
+    required TResult Function() timeout,
+    required TResult Function(Object? error, StackTrace? stackTrace) unknown,
+    required TResult Function() maintenance,
+  }) {
+    return gatewayTimeout();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String? message)? badRequest,
+    TResult? Function()? unauthorized,
+    TResult? Function()? forbidden,
+    TResult? Function()? notFound,
+    TResult? Function()? methodNotAllowed,
+    TResult? Function()? conflict,
+    TResult? Function()? unsupportedMediaType,
+    TResult? Function()? tooManyRequests,
+    TResult? Function()? preconditionFailed,
+    TResult? Function()? payloadTooLarge,
+    TResult? Function()? internalServerError,
+    TResult? Function()? serviceUnavailable,
+    TResult? Function()? gatewayTimeout,
+    TResult? Function()? serverOverload,
+    TResult? Function()? serverError,
+    TResult? Function(String? error)? serverConnectionError,
+    TResult? Function()? networkError,
+    TResult? Function()? timeout,
+    TResult? Function(Object? error, StackTrace? stackTrace)? unknown,
+    TResult? Function()? maintenance,
+  }) {
+    return gatewayTimeout?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(String? message)? badRequest,
+    TResult Function()? unauthorized,
+    TResult Function()? forbidden,
+    TResult Function()? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? conflict,
+    TResult Function()? unsupportedMediaType,
+    TResult Function()? tooManyRequests,
+    TResult Function()? preconditionFailed,
+    TResult Function()? payloadTooLarge,
+    TResult Function()? internalServerError,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? gatewayTimeout,
+    TResult Function()? serverOverload,
+    TResult Function()? serverError,
+    TResult Function(String? error)? serverConnectionError,
+    TResult Function()? networkError,
+    TResult Function()? timeout,
+    TResult Function(Object? error, StackTrace? stackTrace)? unknown,
+    TResult Function()? maintenance,
+    required TResult orElse(),
+  }) {
+    if (gatewayTimeout != null) {
+      return gatewayTimeout();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(BadRequestApiError value) badRequest,
+    required TResult Function(UnauthorizedApiError value) unauthorized,
+    required TResult Function(ForbiddenApiError value) forbidden,
+    required TResult Function(NotFoundApiError value) notFound,
+    required TResult Function(MethodNotAllowedApiError value) methodNotAllowed,
+    required TResult Function(ConflictApiError value) conflict,
+    required TResult Function(UnsupportedMediaType value) unsupportedMediaType,
+    required TResult Function(TooManyRequestsApiError value) tooManyRequests,
+    required TResult Function(PreconditionFailedApiError value)
+        preconditionFailed,
+    required TResult Function(PayloadTooLargeApiError value) payloadTooLarge,
+    required TResult Function(InternalServerErrorApiError value)
+        internalServerError,
+    required TResult Function(ServiceUnavailableApiError value)
+        serviceUnavailable,
+    required TResult Function(GatewayTimeoutApiError value) gatewayTimeout,
+    required TResult Function(ServerOverloadApiError value) serverOverload,
+    required TResult Function(ServerErrorApiError value) serverError,
+    required TResult Function(ServerConnectionErrorApiError value)
+        serverConnectionError,
+    required TResult Function(NetworkErrorApiError value) networkError,
+    required TResult Function(TimeoutApiError value) timeout,
+    required TResult Function(UnknownApiError value) unknown,
+    required TResult Function(MaintenanceApiError value) maintenance,
+  }) {
+    return gatewayTimeout(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(BadRequestApiError value)? badRequest,
+    TResult? Function(UnauthorizedApiError value)? unauthorized,
+    TResult? Function(ForbiddenApiError value)? forbidden,
+    TResult? Function(NotFoundApiError value)? notFound,
+    TResult? Function(MethodNotAllowedApiError value)? methodNotAllowed,
+    TResult? Function(ConflictApiError value)? conflict,
+    TResult? Function(UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(TooManyRequestsApiError value)? tooManyRequests,
+    TResult? Function(PreconditionFailedApiError value)? preconditionFailed,
+    TResult? Function(PayloadTooLargeApiError value)? payloadTooLarge,
+    TResult? Function(InternalServerErrorApiError value)? internalServerError,
+    TResult? Function(ServiceUnavailableApiError value)? serviceUnavailable,
+    TResult? Function(GatewayTimeoutApiError value)? gatewayTimeout,
+    TResult? Function(ServerOverloadApiError value)? serverOverload,
+    TResult? Function(ServerErrorApiError value)? serverError,
+    TResult? Function(ServerConnectionErrorApiError value)?
+        serverConnectionError,
+    TResult? Function(NetworkErrorApiError value)? networkError,
+    TResult? Function(TimeoutApiError value)? timeout,
+    TResult? Function(UnknownApiError value)? unknown,
+    TResult? Function(MaintenanceApiError value)? maintenance,
+  }) {
+    return gatewayTimeout?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(BadRequestApiError value)? badRequest,
+    TResult Function(UnauthorizedApiError value)? unauthorized,
+    TResult Function(ForbiddenApiError value)? forbidden,
+    TResult Function(NotFoundApiError value)? notFound,
+    TResult Function(MethodNotAllowedApiError value)? methodNotAllowed,
+    TResult Function(ConflictApiError value)? conflict,
+    TResult Function(UnsupportedMediaType value)? unsupportedMediaType,
+    TResult Function(TooManyRequestsApiError value)? tooManyRequests,
+    TResult Function(PreconditionFailedApiError value)? preconditionFailed,
+    TResult Function(PayloadTooLargeApiError value)? payloadTooLarge,
+    TResult Function(InternalServerErrorApiError value)? internalServerError,
+    TResult Function(ServiceUnavailableApiError value)? serviceUnavailable,
+    TResult Function(GatewayTimeoutApiError value)? gatewayTimeout,
+    TResult Function(ServerOverloadApiError value)? serverOverload,
+    TResult Function(ServerErrorApiError value)? serverError,
+    TResult Function(ServerConnectionErrorApiError value)?
+        serverConnectionError,
+    TResult Function(NetworkErrorApiError value)? networkError,
+    TResult Function(TimeoutApiError value)? timeout,
+    TResult Function(UnknownApiError value)? unknown,
+    TResult Function(MaintenanceApiError value)? maintenance,
+    required TResult orElse(),
+  }) {
+    if (gatewayTimeout != null) {
+      return gatewayTimeout(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class GatewayTimeoutApiError extends ApiError {
+  const factory GatewayTimeoutApiError() = _$GatewayTimeoutApiErrorImpl;
+  const GatewayTimeoutApiError._() : super._();
+}
+
+/// @nodoc
+abstract class _$$ServerOverloadApiErrorImplCopyWith<$Res> {
+  factory _$$ServerOverloadApiErrorImplCopyWith(
+          _$ServerOverloadApiErrorImpl value,
+          $Res Function(_$ServerOverloadApiErrorImpl) then) =
+      __$$ServerOverloadApiErrorImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$ServerOverloadApiErrorImplCopyWithImpl<$Res>
+    extends _$ApiErrorCopyWithImpl<$Res, _$ServerOverloadApiErrorImpl>
+    implements _$$ServerOverloadApiErrorImplCopyWith<$Res> {
+  __$$ServerOverloadApiErrorImplCopyWithImpl(
+      _$ServerOverloadApiErrorImpl _value,
+      $Res Function(_$ServerOverloadApiErrorImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$ServerOverloadApiErrorImpl extends ServerOverloadApiError {
+  const _$ServerOverloadApiErrorImpl() : super._();
+
+  @override
+  String toString() {
+    return 'ApiError.serverOverload()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$ServerOverloadApiErrorImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(String? message) badRequest,
+    required TResult Function() unauthorized,
+    required TResult Function() forbidden,
+    required TResult Function() notFound,
+    required TResult Function() methodNotAllowed,
+    required TResult Function() conflict,
+    required TResult Function() unsupportedMediaType,
+    required TResult Function() tooManyRequests,
+    required TResult Function() preconditionFailed,
+    required TResult Function() payloadTooLarge,
+    required TResult Function() internalServerError,
+    required TResult Function() serviceUnavailable,
+    required TResult Function() gatewayTimeout,
+    required TResult Function() serverOverload,
+    required TResult Function() serverError,
+    required TResult Function(String? error) serverConnectionError,
+    required TResult Function() networkError,
+    required TResult Function() timeout,
+    required TResult Function(Object? error, StackTrace? stackTrace) unknown,
+    required TResult Function() maintenance,
+  }) {
+    return serverOverload();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String? message)? badRequest,
+    TResult? Function()? unauthorized,
+    TResult? Function()? forbidden,
+    TResult? Function()? notFound,
+    TResult? Function()? methodNotAllowed,
+    TResult? Function()? conflict,
+    TResult? Function()? unsupportedMediaType,
+    TResult? Function()? tooManyRequests,
+    TResult? Function()? preconditionFailed,
+    TResult? Function()? payloadTooLarge,
+    TResult? Function()? internalServerError,
+    TResult? Function()? serviceUnavailable,
+    TResult? Function()? gatewayTimeout,
+    TResult? Function()? serverOverload,
+    TResult? Function()? serverError,
+    TResult? Function(String? error)? serverConnectionError,
+    TResult? Function()? networkError,
+    TResult? Function()? timeout,
+    TResult? Function(Object? error, StackTrace? stackTrace)? unknown,
+    TResult? Function()? maintenance,
+  }) {
+    return serverOverload?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(String? message)? badRequest,
+    TResult Function()? unauthorized,
+    TResult Function()? forbidden,
+    TResult Function()? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? conflict,
+    TResult Function()? unsupportedMediaType,
+    TResult Function()? tooManyRequests,
+    TResult Function()? preconditionFailed,
+    TResult Function()? payloadTooLarge,
+    TResult Function()? internalServerError,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? gatewayTimeout,
+    TResult Function()? serverOverload,
+    TResult Function()? serverError,
+    TResult Function(String? error)? serverConnectionError,
+    TResult Function()? networkError,
+    TResult Function()? timeout,
+    TResult Function(Object? error, StackTrace? stackTrace)? unknown,
+    TResult Function()? maintenance,
+    required TResult orElse(),
+  }) {
+    if (serverOverload != null) {
+      return serverOverload();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(BadRequestApiError value) badRequest,
+    required TResult Function(UnauthorizedApiError value) unauthorized,
+    required TResult Function(ForbiddenApiError value) forbidden,
+    required TResult Function(NotFoundApiError value) notFound,
+    required TResult Function(MethodNotAllowedApiError value) methodNotAllowed,
+    required TResult Function(ConflictApiError value) conflict,
+    required TResult Function(UnsupportedMediaType value) unsupportedMediaType,
+    required TResult Function(TooManyRequestsApiError value) tooManyRequests,
+    required TResult Function(PreconditionFailedApiError value)
+        preconditionFailed,
+    required TResult Function(PayloadTooLargeApiError value) payloadTooLarge,
+    required TResult Function(InternalServerErrorApiError value)
+        internalServerError,
+    required TResult Function(ServiceUnavailableApiError value)
+        serviceUnavailable,
+    required TResult Function(GatewayTimeoutApiError value) gatewayTimeout,
+    required TResult Function(ServerOverloadApiError value) serverOverload,
+    required TResult Function(ServerErrorApiError value) serverError,
+    required TResult Function(ServerConnectionErrorApiError value)
+        serverConnectionError,
+    required TResult Function(NetworkErrorApiError value) networkError,
+    required TResult Function(TimeoutApiError value) timeout,
+    required TResult Function(UnknownApiError value) unknown,
+    required TResult Function(MaintenanceApiError value) maintenance,
+  }) {
+    return serverOverload(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(BadRequestApiError value)? badRequest,
+    TResult? Function(UnauthorizedApiError value)? unauthorized,
+    TResult? Function(ForbiddenApiError value)? forbidden,
+    TResult? Function(NotFoundApiError value)? notFound,
+    TResult? Function(MethodNotAllowedApiError value)? methodNotAllowed,
+    TResult? Function(ConflictApiError value)? conflict,
+    TResult? Function(UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(TooManyRequestsApiError value)? tooManyRequests,
+    TResult? Function(PreconditionFailedApiError value)? preconditionFailed,
+    TResult? Function(PayloadTooLargeApiError value)? payloadTooLarge,
+    TResult? Function(InternalServerErrorApiError value)? internalServerError,
+    TResult? Function(ServiceUnavailableApiError value)? serviceUnavailable,
+    TResult? Function(GatewayTimeoutApiError value)? gatewayTimeout,
+    TResult? Function(ServerOverloadApiError value)? serverOverload,
+    TResult? Function(ServerErrorApiError value)? serverError,
+    TResult? Function(ServerConnectionErrorApiError value)?
+        serverConnectionError,
+    TResult? Function(NetworkErrorApiError value)? networkError,
+    TResult? Function(TimeoutApiError value)? timeout,
+    TResult? Function(UnknownApiError value)? unknown,
+    TResult? Function(MaintenanceApiError value)? maintenance,
+  }) {
+    return serverOverload?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(BadRequestApiError value)? badRequest,
+    TResult Function(UnauthorizedApiError value)? unauthorized,
+    TResult Function(ForbiddenApiError value)? forbidden,
+    TResult Function(NotFoundApiError value)? notFound,
+    TResult Function(MethodNotAllowedApiError value)? methodNotAllowed,
+    TResult Function(ConflictApiError value)? conflict,
+    TResult Function(UnsupportedMediaType value)? unsupportedMediaType,
+    TResult Function(TooManyRequestsApiError value)? tooManyRequests,
+    TResult Function(PreconditionFailedApiError value)? preconditionFailed,
+    TResult Function(PayloadTooLargeApiError value)? payloadTooLarge,
+    TResult Function(InternalServerErrorApiError value)? internalServerError,
+    TResult Function(ServiceUnavailableApiError value)? serviceUnavailable,
+    TResult Function(GatewayTimeoutApiError value)? gatewayTimeout,
+    TResult Function(ServerOverloadApiError value)? serverOverload,
+    TResult Function(ServerErrorApiError value)? serverError,
+    TResult Function(ServerConnectionErrorApiError value)?
+        serverConnectionError,
+    TResult Function(NetworkErrorApiError value)? networkError,
+    TResult Function(TimeoutApiError value)? timeout,
+    TResult Function(UnknownApiError value)? unknown,
+    TResult Function(MaintenanceApiError value)? maintenance,
+    required TResult orElse(),
+  }) {
+    if (serverOverload != null) {
+      return serverOverload(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class ServerOverloadApiError extends ApiError {
+  const factory ServerOverloadApiError() = _$ServerOverloadApiErrorImpl;
+  const ServerOverloadApiError._() : super._();
+}
+
+/// @nodoc
+abstract class _$$ServerErrorApiErrorImplCopyWith<$Res> {
+  factory _$$ServerErrorApiErrorImplCopyWith(_$ServerErrorApiErrorImpl value,
+          $Res Function(_$ServerErrorApiErrorImpl) then) =
+      __$$ServerErrorApiErrorImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$ServerErrorApiErrorImplCopyWithImpl<$Res>
+    extends _$ApiErrorCopyWithImpl<$Res, _$ServerErrorApiErrorImpl>
+    implements _$$ServerErrorApiErrorImplCopyWith<$Res> {
+  __$$ServerErrorApiErrorImplCopyWithImpl(_$ServerErrorApiErrorImpl _value,
+      $Res Function(_$ServerErrorApiErrorImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$ServerErrorApiErrorImpl extends ServerErrorApiError {
+  const _$ServerErrorApiErrorImpl() : super._();
+
+  @override
+  String toString() {
+    return 'ApiError.serverError()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$ServerErrorApiErrorImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(String? message) badRequest,
+    required TResult Function() unauthorized,
+    required TResult Function() forbidden,
+    required TResult Function() notFound,
+    required TResult Function() methodNotAllowed,
+    required TResult Function() conflict,
+    required TResult Function() unsupportedMediaType,
+    required TResult Function() tooManyRequests,
+    required TResult Function() preconditionFailed,
+    required TResult Function() payloadTooLarge,
+    required TResult Function() internalServerError,
+    required TResult Function() serviceUnavailable,
+    required TResult Function() gatewayTimeout,
+    required TResult Function() serverOverload,
+    required TResult Function() serverError,
+    required TResult Function(String? error) serverConnectionError,
+    required TResult Function() networkError,
+    required TResult Function() timeout,
+    required TResult Function(Object? error, StackTrace? stackTrace) unknown,
+    required TResult Function() maintenance,
+  }) {
+    return serverError();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String? message)? badRequest,
+    TResult? Function()? unauthorized,
+    TResult? Function()? forbidden,
+    TResult? Function()? notFound,
+    TResult? Function()? methodNotAllowed,
+    TResult? Function()? conflict,
+    TResult? Function()? unsupportedMediaType,
+    TResult? Function()? tooManyRequests,
+    TResult? Function()? preconditionFailed,
+    TResult? Function()? payloadTooLarge,
+    TResult? Function()? internalServerError,
+    TResult? Function()? serviceUnavailable,
+    TResult? Function()? gatewayTimeout,
+    TResult? Function()? serverOverload,
+    TResult? Function()? serverError,
+    TResult? Function(String? error)? serverConnectionError,
+    TResult? Function()? networkError,
+    TResult? Function()? timeout,
+    TResult? Function(Object? error, StackTrace? stackTrace)? unknown,
+    TResult? Function()? maintenance,
+  }) {
+    return serverError?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(String? message)? badRequest,
+    TResult Function()? unauthorized,
+    TResult Function()? forbidden,
+    TResult Function()? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? conflict,
+    TResult Function()? unsupportedMediaType,
+    TResult Function()? tooManyRequests,
+    TResult Function()? preconditionFailed,
+    TResult Function()? payloadTooLarge,
+    TResult Function()? internalServerError,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? gatewayTimeout,
+    TResult Function()? serverOverload,
+    TResult Function()? serverError,
+    TResult Function(String? error)? serverConnectionError,
+    TResult Function()? networkError,
+    TResult Function()? timeout,
+    TResult Function(Object? error, StackTrace? stackTrace)? unknown,
+    TResult Function()? maintenance,
+    required TResult orElse(),
+  }) {
+    if (serverError != null) {
+      return serverError();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(BadRequestApiError value) badRequest,
+    required TResult Function(UnauthorizedApiError value) unauthorized,
+    required TResult Function(ForbiddenApiError value) forbidden,
+    required TResult Function(NotFoundApiError value) notFound,
+    required TResult Function(MethodNotAllowedApiError value) methodNotAllowed,
+    required TResult Function(ConflictApiError value) conflict,
+    required TResult Function(UnsupportedMediaType value) unsupportedMediaType,
+    required TResult Function(TooManyRequestsApiError value) tooManyRequests,
+    required TResult Function(PreconditionFailedApiError value)
+        preconditionFailed,
+    required TResult Function(PayloadTooLargeApiError value) payloadTooLarge,
+    required TResult Function(InternalServerErrorApiError value)
+        internalServerError,
+    required TResult Function(ServiceUnavailableApiError value)
+        serviceUnavailable,
+    required TResult Function(GatewayTimeoutApiError value) gatewayTimeout,
+    required TResult Function(ServerOverloadApiError value) serverOverload,
+    required TResult Function(ServerErrorApiError value) serverError,
+    required TResult Function(ServerConnectionErrorApiError value)
+        serverConnectionError,
+    required TResult Function(NetworkErrorApiError value) networkError,
+    required TResult Function(TimeoutApiError value) timeout,
+    required TResult Function(UnknownApiError value) unknown,
+    required TResult Function(MaintenanceApiError value) maintenance,
+  }) {
+    return serverError(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(BadRequestApiError value)? badRequest,
+    TResult? Function(UnauthorizedApiError value)? unauthorized,
+    TResult? Function(ForbiddenApiError value)? forbidden,
+    TResult? Function(NotFoundApiError value)? notFound,
+    TResult? Function(MethodNotAllowedApiError value)? methodNotAllowed,
+    TResult? Function(ConflictApiError value)? conflict,
+    TResult? Function(UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(TooManyRequestsApiError value)? tooManyRequests,
+    TResult? Function(PreconditionFailedApiError value)? preconditionFailed,
+    TResult? Function(PayloadTooLargeApiError value)? payloadTooLarge,
+    TResult? Function(InternalServerErrorApiError value)? internalServerError,
+    TResult? Function(ServiceUnavailableApiError value)? serviceUnavailable,
+    TResult? Function(GatewayTimeoutApiError value)? gatewayTimeout,
+    TResult? Function(ServerOverloadApiError value)? serverOverload,
+    TResult? Function(ServerErrorApiError value)? serverError,
+    TResult? Function(ServerConnectionErrorApiError value)?
+        serverConnectionError,
+    TResult? Function(NetworkErrorApiError value)? networkError,
+    TResult? Function(TimeoutApiError value)? timeout,
+    TResult? Function(UnknownApiError value)? unknown,
+    TResult? Function(MaintenanceApiError value)? maintenance,
+  }) {
+    return serverError?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(BadRequestApiError value)? badRequest,
+    TResult Function(UnauthorizedApiError value)? unauthorized,
+    TResult Function(ForbiddenApiError value)? forbidden,
+    TResult Function(NotFoundApiError value)? notFound,
+    TResult Function(MethodNotAllowedApiError value)? methodNotAllowed,
+    TResult Function(ConflictApiError value)? conflict,
+    TResult Function(UnsupportedMediaType value)? unsupportedMediaType,
+    TResult Function(TooManyRequestsApiError value)? tooManyRequests,
+    TResult Function(PreconditionFailedApiError value)? preconditionFailed,
+    TResult Function(PayloadTooLargeApiError value)? payloadTooLarge,
+    TResult Function(InternalServerErrorApiError value)? internalServerError,
+    TResult Function(ServiceUnavailableApiError value)? serviceUnavailable,
+    TResult Function(GatewayTimeoutApiError value)? gatewayTimeout,
+    TResult Function(ServerOverloadApiError value)? serverOverload,
+    TResult Function(ServerErrorApiError value)? serverError,
+    TResult Function(ServerConnectionErrorApiError value)?
+        serverConnectionError,
+    TResult Function(NetworkErrorApiError value)? networkError,
+    TResult Function(TimeoutApiError value)? timeout,
+    TResult Function(UnknownApiError value)? unknown,
+    TResult Function(MaintenanceApiError value)? maintenance,
+    required TResult orElse(),
+  }) {
+    if (serverError != null) {
+      return serverError(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class ServerErrorApiError extends ApiError {
+  const factory ServerErrorApiError() = _$ServerErrorApiErrorImpl;
+  const ServerErrorApiError._() : super._();
+}
+
+/// @nodoc
+abstract class _$$ServerConnectionErrorApiErrorImplCopyWith<$Res> {
+  factory _$$ServerConnectionErrorApiErrorImplCopyWith(
+          _$ServerConnectionErrorApiErrorImpl value,
+          $Res Function(_$ServerConnectionErrorApiErrorImpl) then) =
+      __$$ServerConnectionErrorApiErrorImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({String? error});
+}
+
+/// @nodoc
+class __$$ServerConnectionErrorApiErrorImplCopyWithImpl<$Res>
+    extends _$ApiErrorCopyWithImpl<$Res, _$ServerConnectionErrorApiErrorImpl>
+    implements _$$ServerConnectionErrorApiErrorImplCopyWith<$Res> {
+  __$$ServerConnectionErrorApiErrorImplCopyWithImpl(
+      _$ServerConnectionErrorApiErrorImpl _value,
+      $Res Function(_$ServerConnectionErrorApiErrorImpl) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? error = freezed,
+  }) {
+    return _then(_$ServerConnectionErrorApiErrorImpl(
+      error: freezed == error
+          ? _value.error
+          : error // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$ServerConnectionErrorApiErrorImpl
+    extends ServerConnectionErrorApiError {
+  const _$ServerConnectionErrorApiErrorImpl({this.error}) : super._();
+
+  @override
+  final String? error;
+
+  @override
+  String toString() {
+    return 'ApiError.serverConnectionError(error: $error)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$ServerConnectionErrorApiErrorImpl &&
+            (identical(other.error, error) || other.error == error));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, error);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$ServerConnectionErrorApiErrorImplCopyWith<
+          _$ServerConnectionErrorApiErrorImpl>
+      get copyWith => __$$ServerConnectionErrorApiErrorImplCopyWithImpl<
+          _$ServerConnectionErrorApiErrorImpl>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(String? message) badRequest,
+    required TResult Function() unauthorized,
+    required TResult Function() forbidden,
+    required TResult Function() notFound,
+    required TResult Function() methodNotAllowed,
+    required TResult Function() conflict,
+    required TResult Function() unsupportedMediaType,
+    required TResult Function() tooManyRequests,
+    required TResult Function() preconditionFailed,
+    required TResult Function() payloadTooLarge,
+    required TResult Function() internalServerError,
+    required TResult Function() serviceUnavailable,
+    required TResult Function() gatewayTimeout,
+    required TResult Function() serverOverload,
+    required TResult Function() serverError,
+    required TResult Function(String? error) serverConnectionError,
+    required TResult Function() networkError,
+    required TResult Function() timeout,
+    required TResult Function(Object? error, StackTrace? stackTrace) unknown,
+    required TResult Function() maintenance,
+  }) {
+    return serverConnectionError(error);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String? message)? badRequest,
+    TResult? Function()? unauthorized,
+    TResult? Function()? forbidden,
+    TResult? Function()? notFound,
+    TResult? Function()? methodNotAllowed,
+    TResult? Function()? conflict,
+    TResult? Function()? unsupportedMediaType,
+    TResult? Function()? tooManyRequests,
+    TResult? Function()? preconditionFailed,
+    TResult? Function()? payloadTooLarge,
+    TResult? Function()? internalServerError,
+    TResult? Function()? serviceUnavailable,
+    TResult? Function()? gatewayTimeout,
+    TResult? Function()? serverOverload,
+    TResult? Function()? serverError,
+    TResult? Function(String? error)? serverConnectionError,
+    TResult? Function()? networkError,
+    TResult? Function()? timeout,
+    TResult? Function(Object? error, StackTrace? stackTrace)? unknown,
+    TResult? Function()? maintenance,
+  }) {
+    return serverConnectionError?.call(error);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(String? message)? badRequest,
+    TResult Function()? unauthorized,
+    TResult Function()? forbidden,
+    TResult Function()? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? conflict,
+    TResult Function()? unsupportedMediaType,
+    TResult Function()? tooManyRequests,
+    TResult Function()? preconditionFailed,
+    TResult Function()? payloadTooLarge,
+    TResult Function()? internalServerError,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? gatewayTimeout,
+    TResult Function()? serverOverload,
+    TResult Function()? serverError,
+    TResult Function(String? error)? serverConnectionError,
+    TResult Function()? networkError,
+    TResult Function()? timeout,
+    TResult Function(Object? error, StackTrace? stackTrace)? unknown,
+    TResult Function()? maintenance,
+    required TResult orElse(),
+  }) {
+    if (serverConnectionError != null) {
+      return serverConnectionError(error);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(BadRequestApiError value) badRequest,
+    required TResult Function(UnauthorizedApiError value) unauthorized,
+    required TResult Function(ForbiddenApiError value) forbidden,
+    required TResult Function(NotFoundApiError value) notFound,
+    required TResult Function(MethodNotAllowedApiError value) methodNotAllowed,
+    required TResult Function(ConflictApiError value) conflict,
+    required TResult Function(UnsupportedMediaType value) unsupportedMediaType,
+    required TResult Function(TooManyRequestsApiError value) tooManyRequests,
+    required TResult Function(PreconditionFailedApiError value)
+        preconditionFailed,
+    required TResult Function(PayloadTooLargeApiError value) payloadTooLarge,
+    required TResult Function(InternalServerErrorApiError value)
+        internalServerError,
+    required TResult Function(ServiceUnavailableApiError value)
+        serviceUnavailable,
+    required TResult Function(GatewayTimeoutApiError value) gatewayTimeout,
+    required TResult Function(ServerOverloadApiError value) serverOverload,
+    required TResult Function(ServerErrorApiError value) serverError,
+    required TResult Function(ServerConnectionErrorApiError value)
+        serverConnectionError,
+    required TResult Function(NetworkErrorApiError value) networkError,
+    required TResult Function(TimeoutApiError value) timeout,
+    required TResult Function(UnknownApiError value) unknown,
+    required TResult Function(MaintenanceApiError value) maintenance,
+  }) {
+    return serverConnectionError(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(BadRequestApiError value)? badRequest,
+    TResult? Function(UnauthorizedApiError value)? unauthorized,
+    TResult? Function(ForbiddenApiError value)? forbidden,
+    TResult? Function(NotFoundApiError value)? notFound,
+    TResult? Function(MethodNotAllowedApiError value)? methodNotAllowed,
+    TResult? Function(ConflictApiError value)? conflict,
+    TResult? Function(UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(TooManyRequestsApiError value)? tooManyRequests,
+    TResult? Function(PreconditionFailedApiError value)? preconditionFailed,
+    TResult? Function(PayloadTooLargeApiError value)? payloadTooLarge,
+    TResult? Function(InternalServerErrorApiError value)? internalServerError,
+    TResult? Function(ServiceUnavailableApiError value)? serviceUnavailable,
+    TResult? Function(GatewayTimeoutApiError value)? gatewayTimeout,
+    TResult? Function(ServerOverloadApiError value)? serverOverload,
+    TResult? Function(ServerErrorApiError value)? serverError,
+    TResult? Function(ServerConnectionErrorApiError value)?
+        serverConnectionError,
+    TResult? Function(NetworkErrorApiError value)? networkError,
+    TResult? Function(TimeoutApiError value)? timeout,
+    TResult? Function(UnknownApiError value)? unknown,
+    TResult? Function(MaintenanceApiError value)? maintenance,
+  }) {
+    return serverConnectionError?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(BadRequestApiError value)? badRequest,
+    TResult Function(UnauthorizedApiError value)? unauthorized,
+    TResult Function(ForbiddenApiError value)? forbidden,
+    TResult Function(NotFoundApiError value)? notFound,
+    TResult Function(MethodNotAllowedApiError value)? methodNotAllowed,
+    TResult Function(ConflictApiError value)? conflict,
+    TResult Function(UnsupportedMediaType value)? unsupportedMediaType,
+    TResult Function(TooManyRequestsApiError value)? tooManyRequests,
+    TResult Function(PreconditionFailedApiError value)? preconditionFailed,
+    TResult Function(PayloadTooLargeApiError value)? payloadTooLarge,
+    TResult Function(InternalServerErrorApiError value)? internalServerError,
+    TResult Function(ServiceUnavailableApiError value)? serviceUnavailable,
+    TResult Function(GatewayTimeoutApiError value)? gatewayTimeout,
+    TResult Function(ServerOverloadApiError value)? serverOverload,
+    TResult Function(ServerErrorApiError value)? serverError,
+    TResult Function(ServerConnectionErrorApiError value)?
+        serverConnectionError,
+    TResult Function(NetworkErrorApiError value)? networkError,
+    TResult Function(TimeoutApiError value)? timeout,
+    TResult Function(UnknownApiError value)? unknown,
+    TResult Function(MaintenanceApiError value)? maintenance,
+    required TResult orElse(),
+  }) {
+    if (serverConnectionError != null) {
+      return serverConnectionError(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class ServerConnectionErrorApiError extends ApiError {
+  const factory ServerConnectionErrorApiError({final String? error}) =
+      _$ServerConnectionErrorApiErrorImpl;
+  const ServerConnectionErrorApiError._() : super._();
+
+  String? get error;
+  @JsonKey(ignore: true)
+  _$$ServerConnectionErrorApiErrorImplCopyWith<
+          _$ServerConnectionErrorApiErrorImpl>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$NetworkErrorApiErrorImplCopyWith<$Res> {
+  factory _$$NetworkErrorApiErrorImplCopyWith(_$NetworkErrorApiErrorImpl value,
+          $Res Function(_$NetworkErrorApiErrorImpl) then) =
+      __$$NetworkErrorApiErrorImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$NetworkErrorApiErrorImplCopyWithImpl<$Res>
+    extends _$ApiErrorCopyWithImpl<$Res, _$NetworkErrorApiErrorImpl>
+    implements _$$NetworkErrorApiErrorImplCopyWith<$Res> {
+  __$$NetworkErrorApiErrorImplCopyWithImpl(_$NetworkErrorApiErrorImpl _value,
+      $Res Function(_$NetworkErrorApiErrorImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$NetworkErrorApiErrorImpl extends NetworkErrorApiError {
+  const _$NetworkErrorApiErrorImpl() : super._();
+
+  @override
+  String toString() {
+    return 'ApiError.networkError()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$NetworkErrorApiErrorImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(String? message) badRequest,
+    required TResult Function() unauthorized,
+    required TResult Function() forbidden,
+    required TResult Function() notFound,
+    required TResult Function() methodNotAllowed,
+    required TResult Function() conflict,
+    required TResult Function() unsupportedMediaType,
+    required TResult Function() tooManyRequests,
+    required TResult Function() preconditionFailed,
+    required TResult Function() payloadTooLarge,
+    required TResult Function() internalServerError,
+    required TResult Function() serviceUnavailable,
+    required TResult Function() gatewayTimeout,
+    required TResult Function() serverOverload,
+    required TResult Function() serverError,
+    required TResult Function(String? error) serverConnectionError,
+    required TResult Function() networkError,
+    required TResult Function() timeout,
+    required TResult Function(Object? error, StackTrace? stackTrace) unknown,
+    required TResult Function() maintenance,
+  }) {
+    return networkError();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String? message)? badRequest,
+    TResult? Function()? unauthorized,
+    TResult? Function()? forbidden,
+    TResult? Function()? notFound,
+    TResult? Function()? methodNotAllowed,
+    TResult? Function()? conflict,
+    TResult? Function()? unsupportedMediaType,
+    TResult? Function()? tooManyRequests,
+    TResult? Function()? preconditionFailed,
+    TResult? Function()? payloadTooLarge,
+    TResult? Function()? internalServerError,
+    TResult? Function()? serviceUnavailable,
+    TResult? Function()? gatewayTimeout,
+    TResult? Function()? serverOverload,
+    TResult? Function()? serverError,
+    TResult? Function(String? error)? serverConnectionError,
+    TResult? Function()? networkError,
+    TResult? Function()? timeout,
+    TResult? Function(Object? error, StackTrace? stackTrace)? unknown,
+    TResult? Function()? maintenance,
+  }) {
+    return networkError?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(String? message)? badRequest,
+    TResult Function()? unauthorized,
+    TResult Function()? forbidden,
+    TResult Function()? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? conflict,
+    TResult Function()? unsupportedMediaType,
+    TResult Function()? tooManyRequests,
+    TResult Function()? preconditionFailed,
+    TResult Function()? payloadTooLarge,
+    TResult Function()? internalServerError,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? gatewayTimeout,
+    TResult Function()? serverOverload,
+    TResult Function()? serverError,
+    TResult Function(String? error)? serverConnectionError,
+    TResult Function()? networkError,
+    TResult Function()? timeout,
+    TResult Function(Object? error, StackTrace? stackTrace)? unknown,
+    TResult Function()? maintenance,
+    required TResult orElse(),
+  }) {
+    if (networkError != null) {
+      return networkError();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(BadRequestApiError value) badRequest,
+    required TResult Function(UnauthorizedApiError value) unauthorized,
+    required TResult Function(ForbiddenApiError value) forbidden,
+    required TResult Function(NotFoundApiError value) notFound,
+    required TResult Function(MethodNotAllowedApiError value) methodNotAllowed,
+    required TResult Function(ConflictApiError value) conflict,
+    required TResult Function(UnsupportedMediaType value) unsupportedMediaType,
+    required TResult Function(TooManyRequestsApiError value) tooManyRequests,
+    required TResult Function(PreconditionFailedApiError value)
+        preconditionFailed,
+    required TResult Function(PayloadTooLargeApiError value) payloadTooLarge,
+    required TResult Function(InternalServerErrorApiError value)
+        internalServerError,
+    required TResult Function(ServiceUnavailableApiError value)
+        serviceUnavailable,
+    required TResult Function(GatewayTimeoutApiError value) gatewayTimeout,
+    required TResult Function(ServerOverloadApiError value) serverOverload,
+    required TResult Function(ServerErrorApiError value) serverError,
+    required TResult Function(ServerConnectionErrorApiError value)
+        serverConnectionError,
+    required TResult Function(NetworkErrorApiError value) networkError,
+    required TResult Function(TimeoutApiError value) timeout,
+    required TResult Function(UnknownApiError value) unknown,
+    required TResult Function(MaintenanceApiError value) maintenance,
+  }) {
+    return networkError(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(BadRequestApiError value)? badRequest,
+    TResult? Function(UnauthorizedApiError value)? unauthorized,
+    TResult? Function(ForbiddenApiError value)? forbidden,
+    TResult? Function(NotFoundApiError value)? notFound,
+    TResult? Function(MethodNotAllowedApiError value)? methodNotAllowed,
+    TResult? Function(ConflictApiError value)? conflict,
+    TResult? Function(UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(TooManyRequestsApiError value)? tooManyRequests,
+    TResult? Function(PreconditionFailedApiError value)? preconditionFailed,
+    TResult? Function(PayloadTooLargeApiError value)? payloadTooLarge,
+    TResult? Function(InternalServerErrorApiError value)? internalServerError,
+    TResult? Function(ServiceUnavailableApiError value)? serviceUnavailable,
+    TResult? Function(GatewayTimeoutApiError value)? gatewayTimeout,
+    TResult? Function(ServerOverloadApiError value)? serverOverload,
+    TResult? Function(ServerErrorApiError value)? serverError,
+    TResult? Function(ServerConnectionErrorApiError value)?
+        serverConnectionError,
+    TResult? Function(NetworkErrorApiError value)? networkError,
+    TResult? Function(TimeoutApiError value)? timeout,
+    TResult? Function(UnknownApiError value)? unknown,
+    TResult? Function(MaintenanceApiError value)? maintenance,
+  }) {
+    return networkError?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(BadRequestApiError value)? badRequest,
+    TResult Function(UnauthorizedApiError value)? unauthorized,
+    TResult Function(ForbiddenApiError value)? forbidden,
+    TResult Function(NotFoundApiError value)? notFound,
+    TResult Function(MethodNotAllowedApiError value)? methodNotAllowed,
+    TResult Function(ConflictApiError value)? conflict,
+    TResult Function(UnsupportedMediaType value)? unsupportedMediaType,
+    TResult Function(TooManyRequestsApiError value)? tooManyRequests,
+    TResult Function(PreconditionFailedApiError value)? preconditionFailed,
+    TResult Function(PayloadTooLargeApiError value)? payloadTooLarge,
+    TResult Function(InternalServerErrorApiError value)? internalServerError,
+    TResult Function(ServiceUnavailableApiError value)? serviceUnavailable,
+    TResult Function(GatewayTimeoutApiError value)? gatewayTimeout,
+    TResult Function(ServerOverloadApiError value)? serverOverload,
+    TResult Function(ServerErrorApiError value)? serverError,
+    TResult Function(ServerConnectionErrorApiError value)?
+        serverConnectionError,
+    TResult Function(NetworkErrorApiError value)? networkError,
+    TResult Function(TimeoutApiError value)? timeout,
+    TResult Function(UnknownApiError value)? unknown,
+    TResult Function(MaintenanceApiError value)? maintenance,
+    required TResult orElse(),
+  }) {
+    if (networkError != null) {
+      return networkError(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class NetworkErrorApiError extends ApiError {
+  const factory NetworkErrorApiError() = _$NetworkErrorApiErrorImpl;
+  const NetworkErrorApiError._() : super._();
+}
+
+/// @nodoc
+abstract class _$$TimeoutApiErrorImplCopyWith<$Res> {
+  factory _$$TimeoutApiErrorImplCopyWith(_$TimeoutApiErrorImpl value,
+          $Res Function(_$TimeoutApiErrorImpl) then) =
+      __$$TimeoutApiErrorImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$TimeoutApiErrorImplCopyWithImpl<$Res>
+    extends _$ApiErrorCopyWithImpl<$Res, _$TimeoutApiErrorImpl>
+    implements _$$TimeoutApiErrorImplCopyWith<$Res> {
+  __$$TimeoutApiErrorImplCopyWithImpl(
+      _$TimeoutApiErrorImpl _value, $Res Function(_$TimeoutApiErrorImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$TimeoutApiErrorImpl extends TimeoutApiError {
+  const _$TimeoutApiErrorImpl() : super._();
+
+  @override
+  String toString() {
+    return 'ApiError.timeout()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$TimeoutApiErrorImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(String? message) badRequest,
+    required TResult Function() unauthorized,
+    required TResult Function() forbidden,
+    required TResult Function() notFound,
+    required TResult Function() methodNotAllowed,
+    required TResult Function() conflict,
+    required TResult Function() unsupportedMediaType,
+    required TResult Function() tooManyRequests,
+    required TResult Function() preconditionFailed,
+    required TResult Function() payloadTooLarge,
+    required TResult Function() internalServerError,
+    required TResult Function() serviceUnavailable,
+    required TResult Function() gatewayTimeout,
+    required TResult Function() serverOverload,
+    required TResult Function() serverError,
+    required TResult Function(String? error) serverConnectionError,
+    required TResult Function() networkError,
+    required TResult Function() timeout,
+    required TResult Function(Object? error, StackTrace? stackTrace) unknown,
+    required TResult Function() maintenance,
+  }) {
+    return timeout();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String? message)? badRequest,
+    TResult? Function()? unauthorized,
+    TResult? Function()? forbidden,
+    TResult? Function()? notFound,
+    TResult? Function()? methodNotAllowed,
+    TResult? Function()? conflict,
+    TResult? Function()? unsupportedMediaType,
+    TResult? Function()? tooManyRequests,
+    TResult? Function()? preconditionFailed,
+    TResult? Function()? payloadTooLarge,
+    TResult? Function()? internalServerError,
+    TResult? Function()? serviceUnavailable,
+    TResult? Function()? gatewayTimeout,
+    TResult? Function()? serverOverload,
+    TResult? Function()? serverError,
+    TResult? Function(String? error)? serverConnectionError,
+    TResult? Function()? networkError,
+    TResult? Function()? timeout,
+    TResult? Function(Object? error, StackTrace? stackTrace)? unknown,
+    TResult? Function()? maintenance,
+  }) {
+    return timeout?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(String? message)? badRequest,
+    TResult Function()? unauthorized,
+    TResult Function()? forbidden,
+    TResult Function()? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? conflict,
+    TResult Function()? unsupportedMediaType,
+    TResult Function()? tooManyRequests,
+    TResult Function()? preconditionFailed,
+    TResult Function()? payloadTooLarge,
+    TResult Function()? internalServerError,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? gatewayTimeout,
+    TResult Function()? serverOverload,
+    TResult Function()? serverError,
+    TResult Function(String? error)? serverConnectionError,
+    TResult Function()? networkError,
+    TResult Function()? timeout,
+    TResult Function(Object? error, StackTrace? stackTrace)? unknown,
+    TResult Function()? maintenance,
+    required TResult orElse(),
+  }) {
+    if (timeout != null) {
+      return timeout();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(BadRequestApiError value) badRequest,
+    required TResult Function(UnauthorizedApiError value) unauthorized,
+    required TResult Function(ForbiddenApiError value) forbidden,
+    required TResult Function(NotFoundApiError value) notFound,
+    required TResult Function(MethodNotAllowedApiError value) methodNotAllowed,
+    required TResult Function(ConflictApiError value) conflict,
+    required TResult Function(UnsupportedMediaType value) unsupportedMediaType,
+    required TResult Function(TooManyRequestsApiError value) tooManyRequests,
+    required TResult Function(PreconditionFailedApiError value)
+        preconditionFailed,
+    required TResult Function(PayloadTooLargeApiError value) payloadTooLarge,
+    required TResult Function(InternalServerErrorApiError value)
+        internalServerError,
+    required TResult Function(ServiceUnavailableApiError value)
+        serviceUnavailable,
+    required TResult Function(GatewayTimeoutApiError value) gatewayTimeout,
+    required TResult Function(ServerOverloadApiError value) serverOverload,
+    required TResult Function(ServerErrorApiError value) serverError,
+    required TResult Function(ServerConnectionErrorApiError value)
+        serverConnectionError,
+    required TResult Function(NetworkErrorApiError value) networkError,
+    required TResult Function(TimeoutApiError value) timeout,
+    required TResult Function(UnknownApiError value) unknown,
+    required TResult Function(MaintenanceApiError value) maintenance,
+  }) {
+    return timeout(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(BadRequestApiError value)? badRequest,
+    TResult? Function(UnauthorizedApiError value)? unauthorized,
+    TResult? Function(ForbiddenApiError value)? forbidden,
+    TResult? Function(NotFoundApiError value)? notFound,
+    TResult? Function(MethodNotAllowedApiError value)? methodNotAllowed,
+    TResult? Function(ConflictApiError value)? conflict,
+    TResult? Function(UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(TooManyRequestsApiError value)? tooManyRequests,
+    TResult? Function(PreconditionFailedApiError value)? preconditionFailed,
+    TResult? Function(PayloadTooLargeApiError value)? payloadTooLarge,
+    TResult? Function(InternalServerErrorApiError value)? internalServerError,
+    TResult? Function(ServiceUnavailableApiError value)? serviceUnavailable,
+    TResult? Function(GatewayTimeoutApiError value)? gatewayTimeout,
+    TResult? Function(ServerOverloadApiError value)? serverOverload,
+    TResult? Function(ServerErrorApiError value)? serverError,
+    TResult? Function(ServerConnectionErrorApiError value)?
+        serverConnectionError,
+    TResult? Function(NetworkErrorApiError value)? networkError,
+    TResult? Function(TimeoutApiError value)? timeout,
+    TResult? Function(UnknownApiError value)? unknown,
+    TResult? Function(MaintenanceApiError value)? maintenance,
+  }) {
+    return timeout?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(BadRequestApiError value)? badRequest,
+    TResult Function(UnauthorizedApiError value)? unauthorized,
+    TResult Function(ForbiddenApiError value)? forbidden,
+    TResult Function(NotFoundApiError value)? notFound,
+    TResult Function(MethodNotAllowedApiError value)? methodNotAllowed,
+    TResult Function(ConflictApiError value)? conflict,
+    TResult Function(UnsupportedMediaType value)? unsupportedMediaType,
+    TResult Function(TooManyRequestsApiError value)? tooManyRequests,
+    TResult Function(PreconditionFailedApiError value)? preconditionFailed,
+    TResult Function(PayloadTooLargeApiError value)? payloadTooLarge,
+    TResult Function(InternalServerErrorApiError value)? internalServerError,
+    TResult Function(ServiceUnavailableApiError value)? serviceUnavailable,
+    TResult Function(GatewayTimeoutApiError value)? gatewayTimeout,
+    TResult Function(ServerOverloadApiError value)? serverOverload,
+    TResult Function(ServerErrorApiError value)? serverError,
+    TResult Function(ServerConnectionErrorApiError value)?
+        serverConnectionError,
+    TResult Function(NetworkErrorApiError value)? networkError,
+    TResult Function(TimeoutApiError value)? timeout,
+    TResult Function(UnknownApiError value)? unknown,
+    TResult Function(MaintenanceApiError value)? maintenance,
+    required TResult orElse(),
+  }) {
+    if (timeout != null) {
+      return timeout(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class TimeoutApiError extends ApiError {
+  const factory TimeoutApiError() = _$TimeoutApiErrorImpl;
+  const TimeoutApiError._() : super._();
+}
+
+/// @nodoc
+abstract class _$$UnknownApiErrorImplCopyWith<$Res> {
+  factory _$$UnknownApiErrorImplCopyWith(_$UnknownApiErrorImpl value,
+          $Res Function(_$UnknownApiErrorImpl) then) =
+      __$$UnknownApiErrorImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({Object? error, StackTrace? stackTrace});
+}
+
+/// @nodoc
+class __$$UnknownApiErrorImplCopyWithImpl<$Res>
+    extends _$ApiErrorCopyWithImpl<$Res, _$UnknownApiErrorImpl>
+    implements _$$UnknownApiErrorImplCopyWith<$Res> {
+  __$$UnknownApiErrorImplCopyWithImpl(
+      _$UnknownApiErrorImpl _value, $Res Function(_$UnknownApiErrorImpl) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? error = freezed,
+    Object? stackTrace = freezed,
+  }) {
+    return _then(_$UnknownApiErrorImpl(
+      error: freezed == error ? _value.error : error,
+      stackTrace: freezed == stackTrace
+          ? _value.stackTrace
+          : stackTrace // ignore: cast_nullable_to_non_nullable
+              as StackTrace?,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$UnknownApiErrorImpl extends UnknownApiError {
+  const _$UnknownApiErrorImpl({this.error, this.stackTrace}) : super._();
+
+  @override
+  final Object? error;
+  @override
+  final StackTrace? stackTrace;
+
+  @override
+  String toString() {
+    return 'ApiError.unknown(error: $error, stackTrace: $stackTrace)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$UnknownApiErrorImpl &&
+            const DeepCollectionEquality().equals(other.error, error) &&
+            (identical(other.stackTrace, stackTrace) ||
+                other.stackTrace == stackTrace));
+  }
+
+  @override
+  int get hashCode => Object.hash(
+      runtimeType, const DeepCollectionEquality().hash(error), stackTrace);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$UnknownApiErrorImplCopyWith<_$UnknownApiErrorImpl> get copyWith =>
+      __$$UnknownApiErrorImplCopyWithImpl<_$UnknownApiErrorImpl>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(String? message) badRequest,
+    required TResult Function() unauthorized,
+    required TResult Function() forbidden,
+    required TResult Function() notFound,
+    required TResult Function() methodNotAllowed,
+    required TResult Function() conflict,
+    required TResult Function() unsupportedMediaType,
+    required TResult Function() tooManyRequests,
+    required TResult Function() preconditionFailed,
+    required TResult Function() payloadTooLarge,
+    required TResult Function() internalServerError,
+    required TResult Function() serviceUnavailable,
+    required TResult Function() gatewayTimeout,
+    required TResult Function() serverOverload,
+    required TResult Function() serverError,
+    required TResult Function(String? error) serverConnectionError,
+    required TResult Function() networkError,
+    required TResult Function() timeout,
+    required TResult Function(Object? error, StackTrace? stackTrace) unknown,
+    required TResult Function() maintenance,
+  }) {
+    return unknown(error, stackTrace);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String? message)? badRequest,
+    TResult? Function()? unauthorized,
+    TResult? Function()? forbidden,
+    TResult? Function()? notFound,
+    TResult? Function()? methodNotAllowed,
+    TResult? Function()? conflict,
+    TResult? Function()? unsupportedMediaType,
+    TResult? Function()? tooManyRequests,
+    TResult? Function()? preconditionFailed,
+    TResult? Function()? payloadTooLarge,
+    TResult? Function()? internalServerError,
+    TResult? Function()? serviceUnavailable,
+    TResult? Function()? gatewayTimeout,
+    TResult? Function()? serverOverload,
+    TResult? Function()? serverError,
+    TResult? Function(String? error)? serverConnectionError,
+    TResult? Function()? networkError,
+    TResult? Function()? timeout,
+    TResult? Function(Object? error, StackTrace? stackTrace)? unknown,
+    TResult? Function()? maintenance,
+  }) {
+    return unknown?.call(error, stackTrace);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(String? message)? badRequest,
+    TResult Function()? unauthorized,
+    TResult Function()? forbidden,
+    TResult Function()? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? conflict,
+    TResult Function()? unsupportedMediaType,
+    TResult Function()? tooManyRequests,
+    TResult Function()? preconditionFailed,
+    TResult Function()? payloadTooLarge,
+    TResult Function()? internalServerError,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? gatewayTimeout,
+    TResult Function()? serverOverload,
+    TResult Function()? serverError,
+    TResult Function(String? error)? serverConnectionError,
+    TResult Function()? networkError,
+    TResult Function()? timeout,
+    TResult Function(Object? error, StackTrace? stackTrace)? unknown,
+    TResult Function()? maintenance,
+    required TResult orElse(),
+  }) {
+    if (unknown != null) {
+      return unknown(error, stackTrace);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(BadRequestApiError value) badRequest,
+    required TResult Function(UnauthorizedApiError value) unauthorized,
+    required TResult Function(ForbiddenApiError value) forbidden,
+    required TResult Function(NotFoundApiError value) notFound,
+    required TResult Function(MethodNotAllowedApiError value) methodNotAllowed,
+    required TResult Function(ConflictApiError value) conflict,
+    required TResult Function(UnsupportedMediaType value) unsupportedMediaType,
+    required TResult Function(TooManyRequestsApiError value) tooManyRequests,
+    required TResult Function(PreconditionFailedApiError value)
+        preconditionFailed,
+    required TResult Function(PayloadTooLargeApiError value) payloadTooLarge,
+    required TResult Function(InternalServerErrorApiError value)
+        internalServerError,
+    required TResult Function(ServiceUnavailableApiError value)
+        serviceUnavailable,
+    required TResult Function(GatewayTimeoutApiError value) gatewayTimeout,
+    required TResult Function(ServerOverloadApiError value) serverOverload,
+    required TResult Function(ServerErrorApiError value) serverError,
+    required TResult Function(ServerConnectionErrorApiError value)
+        serverConnectionError,
+    required TResult Function(NetworkErrorApiError value) networkError,
+    required TResult Function(TimeoutApiError value) timeout,
+    required TResult Function(UnknownApiError value) unknown,
+    required TResult Function(MaintenanceApiError value) maintenance,
+  }) {
+    return unknown(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(BadRequestApiError value)? badRequest,
+    TResult? Function(UnauthorizedApiError value)? unauthorized,
+    TResult? Function(ForbiddenApiError value)? forbidden,
+    TResult? Function(NotFoundApiError value)? notFound,
+    TResult? Function(MethodNotAllowedApiError value)? methodNotAllowed,
+    TResult? Function(ConflictApiError value)? conflict,
+    TResult? Function(UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(TooManyRequestsApiError value)? tooManyRequests,
+    TResult? Function(PreconditionFailedApiError value)? preconditionFailed,
+    TResult? Function(PayloadTooLargeApiError value)? payloadTooLarge,
+    TResult? Function(InternalServerErrorApiError value)? internalServerError,
+    TResult? Function(ServiceUnavailableApiError value)? serviceUnavailable,
+    TResult? Function(GatewayTimeoutApiError value)? gatewayTimeout,
+    TResult? Function(ServerOverloadApiError value)? serverOverload,
+    TResult? Function(ServerErrorApiError value)? serverError,
+    TResult? Function(ServerConnectionErrorApiError value)?
+        serverConnectionError,
+    TResult? Function(NetworkErrorApiError value)? networkError,
+    TResult? Function(TimeoutApiError value)? timeout,
+    TResult? Function(UnknownApiError value)? unknown,
+    TResult? Function(MaintenanceApiError value)? maintenance,
+  }) {
+    return unknown?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(BadRequestApiError value)? badRequest,
+    TResult Function(UnauthorizedApiError value)? unauthorized,
+    TResult Function(ForbiddenApiError value)? forbidden,
+    TResult Function(NotFoundApiError value)? notFound,
+    TResult Function(MethodNotAllowedApiError value)? methodNotAllowed,
+    TResult Function(ConflictApiError value)? conflict,
+    TResult Function(UnsupportedMediaType value)? unsupportedMediaType,
+    TResult Function(TooManyRequestsApiError value)? tooManyRequests,
+    TResult Function(PreconditionFailedApiError value)? preconditionFailed,
+    TResult Function(PayloadTooLargeApiError value)? payloadTooLarge,
+    TResult Function(InternalServerErrorApiError value)? internalServerError,
+    TResult Function(ServiceUnavailableApiError value)? serviceUnavailable,
+    TResult Function(GatewayTimeoutApiError value)? gatewayTimeout,
+    TResult Function(ServerOverloadApiError value)? serverOverload,
+    TResult Function(ServerErrorApiError value)? serverError,
+    TResult Function(ServerConnectionErrorApiError value)?
+        serverConnectionError,
+    TResult Function(NetworkErrorApiError value)? networkError,
+    TResult Function(TimeoutApiError value)? timeout,
+    TResult Function(UnknownApiError value)? unknown,
+    TResult Function(MaintenanceApiError value)? maintenance,
+    required TResult orElse(),
+  }) {
+    if (unknown != null) {
+      return unknown(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class UnknownApiError extends ApiError {
+  const factory UnknownApiError(
+      {final Object? error,
+      final StackTrace? stackTrace}) = _$UnknownApiErrorImpl;
+  const UnknownApiError._() : super._();
+
+  Object? get error;
+  StackTrace? get stackTrace;
+  @JsonKey(ignore: true)
+  _$$UnknownApiErrorImplCopyWith<_$UnknownApiErrorImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$MaintenanceApiErrorImplCopyWith<$Res> {
+  factory _$$MaintenanceApiErrorImplCopyWith(_$MaintenanceApiErrorImpl value,
+          $Res Function(_$MaintenanceApiErrorImpl) then) =
+      __$$MaintenanceApiErrorImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$MaintenanceApiErrorImplCopyWithImpl<$Res>
+    extends _$ApiErrorCopyWithImpl<$Res, _$MaintenanceApiErrorImpl>
+    implements _$$MaintenanceApiErrorImplCopyWith<$Res> {
+  __$$MaintenanceApiErrorImplCopyWithImpl(_$MaintenanceApiErrorImpl _value,
+      $Res Function(_$MaintenanceApiErrorImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$MaintenanceApiErrorImpl extends MaintenanceApiError {
+  const _$MaintenanceApiErrorImpl() : super._();
+
+  @override
+  String toString() {
+    return 'ApiError.maintenance()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$MaintenanceApiErrorImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(String? message) badRequest,
+    required TResult Function() unauthorized,
+    required TResult Function() forbidden,
+    required TResult Function() notFound,
+    required TResult Function() methodNotAllowed,
+    required TResult Function() conflict,
+    required TResult Function() unsupportedMediaType,
+    required TResult Function() tooManyRequests,
+    required TResult Function() preconditionFailed,
+    required TResult Function() payloadTooLarge,
+    required TResult Function() internalServerError,
+    required TResult Function() serviceUnavailable,
+    required TResult Function() gatewayTimeout,
+    required TResult Function() serverOverload,
+    required TResult Function() serverError,
+    required TResult Function(String? error) serverConnectionError,
+    required TResult Function() networkError,
+    required TResult Function() timeout,
+    required TResult Function(Object? error, StackTrace? stackTrace) unknown,
+    required TResult Function() maintenance,
+  }) {
+    return maintenance();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String? message)? badRequest,
+    TResult? Function()? unauthorized,
+    TResult? Function()? forbidden,
+    TResult? Function()? notFound,
+    TResult? Function()? methodNotAllowed,
+    TResult? Function()? conflict,
+    TResult? Function()? unsupportedMediaType,
+    TResult? Function()? tooManyRequests,
+    TResult? Function()? preconditionFailed,
+    TResult? Function()? payloadTooLarge,
+    TResult? Function()? internalServerError,
+    TResult? Function()? serviceUnavailable,
+    TResult? Function()? gatewayTimeout,
+    TResult? Function()? serverOverload,
+    TResult? Function()? serverError,
+    TResult? Function(String? error)? serverConnectionError,
+    TResult? Function()? networkError,
+    TResult? Function()? timeout,
+    TResult? Function(Object? error, StackTrace? stackTrace)? unknown,
+    TResult? Function()? maintenance,
+  }) {
+    return maintenance?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(String? message)? badRequest,
+    TResult Function()? unauthorized,
+    TResult Function()? forbidden,
+    TResult Function()? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? conflict,
+    TResult Function()? unsupportedMediaType,
+    TResult Function()? tooManyRequests,
+    TResult Function()? preconditionFailed,
+    TResult Function()? payloadTooLarge,
+    TResult Function()? internalServerError,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? gatewayTimeout,
+    TResult Function()? serverOverload,
+    TResult Function()? serverError,
+    TResult Function(String? error)? serverConnectionError,
+    TResult Function()? networkError,
+    TResult Function()? timeout,
+    TResult Function(Object? error, StackTrace? stackTrace)? unknown,
+    TResult Function()? maintenance,
+    required TResult orElse(),
+  }) {
+    if (maintenance != null) {
+      return maintenance();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(BadRequestApiError value) badRequest,
+    required TResult Function(UnauthorizedApiError value) unauthorized,
+    required TResult Function(ForbiddenApiError value) forbidden,
+    required TResult Function(NotFoundApiError value) notFound,
+    required TResult Function(MethodNotAllowedApiError value) methodNotAllowed,
+    required TResult Function(ConflictApiError value) conflict,
+    required TResult Function(UnsupportedMediaType value) unsupportedMediaType,
+    required TResult Function(TooManyRequestsApiError value) tooManyRequests,
+    required TResult Function(PreconditionFailedApiError value)
+        preconditionFailed,
+    required TResult Function(PayloadTooLargeApiError value) payloadTooLarge,
+    required TResult Function(InternalServerErrorApiError value)
+        internalServerError,
+    required TResult Function(ServiceUnavailableApiError value)
+        serviceUnavailable,
+    required TResult Function(GatewayTimeoutApiError value) gatewayTimeout,
+    required TResult Function(ServerOverloadApiError value) serverOverload,
+    required TResult Function(ServerErrorApiError value) serverError,
+    required TResult Function(ServerConnectionErrorApiError value)
+        serverConnectionError,
+    required TResult Function(NetworkErrorApiError value) networkError,
+    required TResult Function(TimeoutApiError value) timeout,
+    required TResult Function(UnknownApiError value) unknown,
+    required TResult Function(MaintenanceApiError value) maintenance,
+  }) {
+    return maintenance(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(BadRequestApiError value)? badRequest,
+    TResult? Function(UnauthorizedApiError value)? unauthorized,
+    TResult? Function(ForbiddenApiError value)? forbidden,
+    TResult? Function(NotFoundApiError value)? notFound,
+    TResult? Function(MethodNotAllowedApiError value)? methodNotAllowed,
+    TResult? Function(ConflictApiError value)? conflict,
+    TResult? Function(UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(TooManyRequestsApiError value)? tooManyRequests,
+    TResult? Function(PreconditionFailedApiError value)? preconditionFailed,
+    TResult? Function(PayloadTooLargeApiError value)? payloadTooLarge,
+    TResult? Function(InternalServerErrorApiError value)? internalServerError,
+    TResult? Function(ServiceUnavailableApiError value)? serviceUnavailable,
+    TResult? Function(GatewayTimeoutApiError value)? gatewayTimeout,
+    TResult? Function(ServerOverloadApiError value)? serverOverload,
+    TResult? Function(ServerErrorApiError value)? serverError,
+    TResult? Function(ServerConnectionErrorApiError value)?
+        serverConnectionError,
+    TResult? Function(NetworkErrorApiError value)? networkError,
+    TResult? Function(TimeoutApiError value)? timeout,
+    TResult? Function(UnknownApiError value)? unknown,
+    TResult? Function(MaintenanceApiError value)? maintenance,
+  }) {
+    return maintenance?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(BadRequestApiError value)? badRequest,
+    TResult Function(UnauthorizedApiError value)? unauthorized,
+    TResult Function(ForbiddenApiError value)? forbidden,
+    TResult Function(NotFoundApiError value)? notFound,
+    TResult Function(MethodNotAllowedApiError value)? methodNotAllowed,
+    TResult Function(ConflictApiError value)? conflict,
+    TResult Function(UnsupportedMediaType value)? unsupportedMediaType,
+    TResult Function(TooManyRequestsApiError value)? tooManyRequests,
+    TResult Function(PreconditionFailedApiError value)? preconditionFailed,
+    TResult Function(PayloadTooLargeApiError value)? payloadTooLarge,
+    TResult Function(InternalServerErrorApiError value)? internalServerError,
+    TResult Function(ServiceUnavailableApiError value)? serviceUnavailable,
+    TResult Function(GatewayTimeoutApiError value)? gatewayTimeout,
+    TResult Function(ServerOverloadApiError value)? serverOverload,
+    TResult Function(ServerErrorApiError value)? serverError,
+    TResult Function(ServerConnectionErrorApiError value)?
+        serverConnectionError,
+    TResult Function(NetworkErrorApiError value)? networkError,
+    TResult Function(TimeoutApiError value)? timeout,
+    TResult Function(UnknownApiError value)? unknown,
+    TResult Function(MaintenanceApiError value)? maintenance,
+    required TResult orElse(),
+  }) {
+    if (maintenance != null) {
+      return maintenance(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class MaintenanceApiError extends ApiError {
+  const factory MaintenanceApiError() = _$MaintenanceApiErrorImpl;
+  const MaintenanceApiError._() : super._();
+}

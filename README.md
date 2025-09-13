@@ -7,7 +7,7 @@ A Flutter application that implements an infinite scrolling list of products wit
 - **Infinite Scrolling**: Load 20 products at a time as the user scrolls to the bottom of the list
 - **Product Display**: Show product name, price, image, and other relevant information
 - **Search Functionality**: Search products by name with debounced API calls
-- **Favorites**: Save favorite products to local database using Hive
+- **Favorites**: Save favorite products to local database using Isar
 - **Error Handling**: Proper UI feedback for network issues, loading states, and empty results
 
 ## Technical Implementation
@@ -21,7 +21,7 @@ A Flutter application that implements an infinite scrolling list of products wit
 ### Architecture & Libraries
 - **State Management**: Riverpod
 - **API Client**: Dio
-- **Local Storage**: Hive
+- **Local Storage**: Isar
 - **Data Serialization**: Freezed or json_serializable
 - **Notifications**: FlutterToast
 - **Infinite Scrolling**: Easy Refresh
