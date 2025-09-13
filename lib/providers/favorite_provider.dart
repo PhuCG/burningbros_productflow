@@ -16,25 +16,28 @@ class FavoriteNotifier extends _$FavoriteNotifier {
   @override
   FavoriteState build() {
     repository = ref.read(favoriteRepositoryProvider);
-    _favoritesSubscription();
 
     ref.onDispose(() {
-      favoritesSubscription?.cancel();
-      favoritesSubscription = null;
+      _cancelFavoritesSubscription();
     });
 
     return FavoriteState.initial();
   }
 
   void _favoritesSubscription() {
+    _cancelFavoritesSubscription();
     favoritesSubscription = repository.watchFavorites().listen((favorites) {
       if (favorites.length >= AppConstants.pageSize) {
-        favoritesSubscription?.cancel();
-        favoritesSubscription = null;
+        _cancelFavoritesSubscription();
         return;
       }
       state = state.copyWith(favorites: AsyncValue.data(favorites));
     });
+  }
+
+  void _cancelFavoritesSubscription() {
+    favoritesSubscription?.cancel();
+    favoritesSubscription = null;
   }
 
   Future<void> refreshFavorites() async {
@@ -49,8 +52,6 @@ class FavoriteNotifier extends _$FavoriteNotifier {
 
   Future<void> loadFavorites() async {
     try {
-      final repository = ref.read(favoriteRepositoryProvider);
-
       final favorites = await repository.getFavorites(
         skip: state.currentSkip,
         limit: AppConstants.pageSize,
@@ -61,6 +62,7 @@ class FavoriteNotifier extends _$FavoriteNotifier {
         exception: null,
         currentSkip: favorites.length,
       );
+      _favoritesSubscription();
     } catch (e, stackTrace) {
       state = state.copyWith(
         favorites: AsyncValue.error(e, stackTrace),
@@ -75,8 +77,6 @@ class FavoriteNotifier extends _$FavoriteNotifier {
     }
 
     try {
-      final repository = ref.read(favoriteRepositoryProvider);
-
       final favorites = await repository.getFavorites(
         skip: state.currentSkip,
         limit: AppConstants.pageSize,
@@ -111,18 +111,14 @@ class FavoriteNotifier extends _$FavoriteNotifier {
     }
   }
 
-  Future<void> removeFavorite(int favoriteId) async {
-    try {
-      state.favorites.whenData((data) async {
-        await ref.read(favoriteRepositoryProvider).removeFavorite(favoriteId);
-        state = state.copyWith(
-          favorites: AsyncValue.data(
-            data.where((e) => e.id != favoriteId).toList(),
-          ),
-        );
-      });
-    } catch (e) {
-      rethrow;
-    }
+  Future<void> removeFavorite(Favorite favorite) async {
+    state.favorites.whenData((data) async {
+      await repository.removeFavorite(favorite.productId);
+      state = state.copyWith(
+        favorites: AsyncValue.data(
+          data.where((e) => e.productId != favorite.productId).toList(),
+        ),
+      );
+    });
   }
 }

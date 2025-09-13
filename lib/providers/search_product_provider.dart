@@ -130,15 +130,15 @@ class SearchProductNotifier extends _$SearchProductNotifier {
   }
 
   Future<void> toggleFavorite(Product product) async {
-    final repository = ref.read(favoriteRepositoryProvider);
-    var isFavorite = true;
-    if (product.isFavorite) {
-      isFavorite = false;
-      await repository.removeFavorite(product.id);
-    } else {
-      await repository.addFavorite(Favorite.fromProduct(product));
-    }
-    state.products.whenData((data) {
+    state.products.whenData((data) async {
+      final repository = ref.read(favoriteRepositoryProvider);
+      var isFavorite = true;
+      if (product.isFavorite) {
+        isFavorite = false;
+        await repository.removeFavorite(product.id);
+      } else {
+        await repository.addFavorite(Favorite.fromProduct(product));
+      }
       state = state.copyWith(
         products: AsyncValue.data(
           data.map((e) {

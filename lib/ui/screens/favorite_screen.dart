@@ -23,9 +23,9 @@ class _FavoriteScreenState extends ConsumerState<FavoriteScreen> {
   @override
   void initState() {
     super.initState();
+    favoriteNotifier = ref.read(favoriteNotifierProvider.notifier);
     // Load favorites when screen initializes
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      favoriteNotifier = ref.read(favoriteNotifierProvider.notifier);
       favoriteNotifier.loadFavorites();
     });
   }
@@ -38,7 +38,9 @@ class _FavoriteScreenState extends ConsumerState<FavoriteScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final favoriteState = ref.watch(favoriteNotifierProvider);
+    final favoriteState = ref.watch(
+      favoriteNotifierProvider.select((state) => state.favorites),
+    );
 
     return Scaffold(
       appBar: AppBar(title: const Text('Favorites'), centerTitle: true),
@@ -64,7 +66,7 @@ class _FavoriteScreenState extends ConsumerState<FavoriteScreen> {
               break;
           }
         },
-        child: favoriteState.favorites.when(
+        child: favoriteState.when(
           data: (favorites) {
             if (favorites.isEmpty) {
               return const Center(
@@ -92,7 +94,7 @@ class _FavoriteScreenState extends ConsumerState<FavoriteScreen> {
                   isFavorite: true,
 
                   onFavoriteToggle: () {
-                    favoriteNotifier.removeFavorite(favorite.id);
+                    favoriteNotifier.removeFavorite(favorite);
                   },
                 );
               },
