@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:easy_refresh/easy_refresh.dart';
 import '../../providers/favorite_provider.dart';
+import '../../utils/load_more_result.dart';
 import '../widgets/product_card.dart';
 
 class FavoriteScreen extends ConsumerStatefulWidget {
@@ -18,12 +19,14 @@ class _FavoriteScreenState extends ConsumerState<FavoriteScreen> {
     controlFinishLoad: true,
   );
 
+  late FavoriteNotifier favoriteNotifier;
   @override
   void initState() {
     super.initState();
     // Load favorites when screen initializes
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      ref.read(favoriteNotifierProvider.notifier).loadFavorites();
+      favoriteNotifier = ref.read(favoriteNotifierProvider.notifier);
+      favoriteNotifier.loadFavorites();
     });
   }
 
@@ -42,10 +45,26 @@ class _FavoriteScreenState extends ConsumerState<FavoriteScreen> {
       body: EasyRefresh(
         controller: _refreshController,
         onRefresh: () async {
-          await ref.read(favoriteNotifierProvider.notifier).loadFavorites();
+          await favoriteNotifier.refreshFavorites();
           _refreshController.finishRefresh();
+          _refreshController.resetFooter();
         },
-        child: favoriteState.when(
+        onLoad: () async {
+          final result = await favoriteNotifier.loadMore();
+
+          switch (result) {
+            case LoadMoreResult.success:
+              _refreshController.finishLoad(IndicatorResult.success);
+              break;
+            case LoadMoreResult.noMore:
+              _refreshController.finishLoad(IndicatorResult.noMore);
+              break;
+            case LoadMoreResult.fail:
+              _refreshController.finishLoad(IndicatorResult.fail);
+              break;
+          }
+        },
+        child: favoriteState.favorites.when(
           data: (favorites) {
             if (favorites.isEmpty) {
               return const Center(
@@ -71,13 +90,9 @@ class _FavoriteScreenState extends ConsumerState<FavoriteScreen> {
                 return ProductCard(
                   product: favorite.toProduct(),
                   isFavorite: true,
-                  onTap: () {
-                    // TODO: Navigate to product detail screen
-                  },
+
                   onFavoriteToggle: () {
-                    ref
-                        .read(favoriteNotifierProvider.notifier)
-                        .removeFavorite(favorite.id);
+                    favoriteNotifier.removeFavorite(favorite.id);
                   },
                 );
               },

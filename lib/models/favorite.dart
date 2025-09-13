@@ -7,7 +7,7 @@ part 'favorite.g.dart';
 class Favorite {
   Id id = Isar.autoIncrement;
 
-  @Index()
+  @Index(unique: true, replace: true)
   late int productId;
 
   late String title;

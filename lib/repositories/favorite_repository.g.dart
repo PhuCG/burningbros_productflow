@@ -7,7 +7,7 @@ part of 'favorite_repository.dart';
 // **************************************************************************
 
 String _$favoriteRepositoryHash() =>
-    r'c810e8ec3d7c46ffb5105726751f86e2cc078f68';
+    r'1a259cbb7ac20a51465bd95ee531c5706b5c6181';
 
 /// See also [FavoriteRepository].
 @ProviderFor(FavoriteRepository)

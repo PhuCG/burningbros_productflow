@@ -77,8 +77,8 @@ const FavoriteSchema = CollectionSchema(
     r'productId': IndexSchema(
       id: 5580769080710688203,
       name: r'productId',
-      unique: false,
-      replace: false,
+      unique: true,
+      replace: true,
       properties: [
         IndexPropertySchema(
           name: r'productId',
@@ -198,6 +198,61 @@ List<IsarLinkBase<dynamic>> _favoriteGetLinks(Favorite object) {
 
 void _favoriteAttach(IsarCollection<dynamic> col, Id id, Favorite object) {
   object.id = id;
+}
+
+extension FavoriteByIndex on IsarCollection<Favorite> {
+  Future<Favorite?> getByProductId(int productId) {
+    return getByIndex(r'productId', [productId]);
+  }
+
+  Favorite? getByProductIdSync(int productId) {
+    return getByIndexSync(r'productId', [productId]);
+  }
+
+  Future<bool> deleteByProductId(int productId) {
+    return deleteByIndex(r'productId', [productId]);
+  }
+
+  bool deleteByProductIdSync(int productId) {
+    return deleteByIndexSync(r'productId', [productId]);
+  }
+
+  Future<List<Favorite?>> getAllByProductId(List<int> productIdValues) {
+    final values = productIdValues.map((e) => [e]).toList();
+    return getAllByIndex(r'productId', values);
+  }
+
+  List<Favorite?> getAllByProductIdSync(List<int> productIdValues) {
+    final values = productIdValues.map((e) => [e]).toList();
+    return getAllByIndexSync(r'productId', values);
+  }
+
+  Future<int> deleteAllByProductId(List<int> productIdValues) {
+    final values = productIdValues.map((e) => [e]).toList();
+    return deleteAllByIndex(r'productId', values);
+  }
+
+  int deleteAllByProductIdSync(List<int> productIdValues) {
+    final values = productIdValues.map((e) => [e]).toList();
+    return deleteAllByIndexSync(r'productId', values);
+  }
+
+  Future<Id> putByProductId(Favorite object) {
+    return putByIndex(r'productId', object);
+  }
+
+  Id putByProductIdSync(Favorite object, {bool saveLinks = true}) {
+    return putByIndexSync(r'productId', object, saveLinks: saveLinks);
+  }
+
+  Future<List<Id>> putAllByProductId(List<Favorite> objects) {
+    return putAllByIndex(r'productId', objects);
+  }
+
+  List<Id> putAllByProductIdSync(List<Favorite> objects,
+      {bool saveLinks = true}) {
+    return putAllByIndexSync(r'productId', objects, saveLinks: saveLinks);
+  }
 }
 
 extension FavoriteQueryWhereSort on QueryBuilder<Favorite, Favorite, QWhere> {

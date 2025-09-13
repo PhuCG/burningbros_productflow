@@ -6,12 +6,12 @@ part of 'favorite_provider.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$favoriteNotifierHash() => r'2b02de1407e0815480a87487fc261f2f3f868062';
+String _$favoriteNotifierHash() => r'7eb2215378498425b201628de1365ac44a3df6d0';
 
 /// See also [FavoriteNotifier].
 @ProviderFor(FavoriteNotifier)
 final favoriteNotifierProvider =
-    AutoDisposeAsyncNotifierProvider<FavoriteNotifier, List<Favorite>>.internal(
+    AutoDisposeNotifierProvider<FavoriteNotifier, FavoriteState>.internal(
   FavoriteNotifier.new,
   name: r'favoriteNotifierProvider',
   debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
@@ -21,6 +21,6 @@ final favoriteNotifierProvider =
   allTransitiveDependencies: null,
 );
 
-typedef _$FavoriteNotifier = AutoDisposeAsyncNotifier<List<Favorite>>;
+typedef _$FavoriteNotifier = AutoDisposeNotifier<FavoriteState>;
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member
