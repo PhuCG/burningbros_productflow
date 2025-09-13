@@ -22,13 +22,18 @@ const FavoriteSchema = CollectionSchema(
       name: r'price',
       type: IsarType.double,
     ),
-    r'thumbnail': PropertySchema(
+    r'productId': PropertySchema(
       id: 1,
+      name: r'productId',
+      type: IsarType.long,
+    ),
+    r'thumbnail': PropertySchema(
+      id: 2,
       name: r'thumbnail',
       type: IsarType.string,
     ),
     r'title': PropertySchema(
-      id: 2,
+      id: 3,
       name: r'title',
       type: IsarType.string,
     )
@@ -38,7 +43,21 @@ const FavoriteSchema = CollectionSchema(
   deserialize: _favoriteDeserialize,
   deserializeProp: _favoriteDeserializeProp,
   idName: r'id',
-  indexes: {},
+  indexes: {
+    r'productId': IndexSchema(
+      id: 5580769080710688203,
+      name: r'productId',
+      unique: false,
+      replace: false,
+      properties: [
+        IndexPropertySchema(
+          name: r'productId',
+          type: IndexType.value,
+          caseSensitive: false,
+        )
+      ],
+    )
+  },
   links: {},
   embeddedSchemas: {},
   getId: _favoriteGetId,
@@ -65,8 +84,9 @@ void _favoriteSerialize(
   Map<Type, List<int>> allOffsets,
 ) {
   writer.writeDouble(offsets[0], object.price);
-  writer.writeString(offsets[1], object.thumbnail);
-  writer.writeString(offsets[2], object.title);
+  writer.writeLong(offsets[1], object.productId);
+  writer.writeString(offsets[2], object.thumbnail);
+  writer.writeString(offsets[3], object.title);
 }
 
 Favorite _favoriteDeserialize(
@@ -76,11 +96,12 @@ Favorite _favoriteDeserialize(
   Map<Type, List<int>> allOffsets,
 ) {
   final object = Favorite(
-    id: id,
     price: reader.readDouble(offsets[0]),
-    thumbnail: reader.readString(offsets[1]),
-    title: reader.readString(offsets[2]),
+    productId: reader.readLong(offsets[1]),
+    thumbnail: reader.readString(offsets[2]),
+    title: reader.readString(offsets[3]),
   );
+  object.id = id;
   return object;
 }
 
@@ -94,8 +115,10 @@ P _favoriteDeserializeProp<P>(
     case 0:
       return (reader.readDouble(offset)) as P;
     case 1:
-      return (reader.readString(offset)) as P;
+      return (reader.readLong(offset)) as P;
     case 2:
+      return (reader.readString(offset)) as P;
+    case 3:
       return (reader.readString(offset)) as P;
     default:
       throw IsarError('Unknown property with id $propertyId');
@@ -118,6 +141,14 @@ extension FavoriteQueryWhereSort on QueryBuilder<Favorite, Favorite, QWhere> {
   QueryBuilder<Favorite, Favorite, QAfterWhere> anyId() {
     return QueryBuilder.apply(this, (query) {
       return query.addWhereClause(const IdWhereClause.any());
+    });
+  }
+
+  QueryBuilder<Favorite, Favorite, QAfterWhere> anyProductId() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addWhereClause(
+        const IndexWhereClause.any(indexName: r'productId'),
+      );
     });
   }
 }
@@ -183,6 +214,96 @@ extension FavoriteQueryWhere on QueryBuilder<Favorite, Favorite, QWhereClause> {
         lower: lowerId,
         includeLower: includeLower,
         upper: upperId,
+        includeUpper: includeUpper,
+      ));
+    });
+  }
+
+  QueryBuilder<Favorite, Favorite, QAfterWhereClause> productIdEqualTo(
+      int productId) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addWhereClause(IndexWhereClause.equalTo(
+        indexName: r'productId',
+        value: [productId],
+      ));
+    });
+  }
+
+  QueryBuilder<Favorite, Favorite, QAfterWhereClause> productIdNotEqualTo(
+      int productId) {
+    return QueryBuilder.apply(this, (query) {
+      if (query.whereSort == Sort.asc) {
+        return query
+            .addWhereClause(IndexWhereClause.between(
+              indexName: r'productId',
+              lower: [],
+              upper: [productId],
+              includeUpper: false,
+            ))
+            .addWhereClause(IndexWhereClause.between(
+              indexName: r'productId',
+              lower: [productId],
+              includeLower: false,
+              upper: [],
+            ));
+      } else {
+        return query
+            .addWhereClause(IndexWhereClause.between(
+              indexName: r'productId',
+              lower: [productId],
+              includeLower: false,
+              upper: [],
+            ))
+            .addWhereClause(IndexWhereClause.between(
+              indexName: r'productId',
+              lower: [],
+              upper: [productId],
+              includeUpper: false,
+            ));
+      }
+    });
+  }
+
+  QueryBuilder<Favorite, Favorite, QAfterWhereClause> productIdGreaterThan(
+    int productId, {
+    bool include = false,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addWhereClause(IndexWhereClause.between(
+        indexName: r'productId',
+        lower: [productId],
+        includeLower: include,
+        upper: [],
+      ));
+    });
+  }
+
+  QueryBuilder<Favorite, Favorite, QAfterWhereClause> productIdLessThan(
+    int productId, {
+    bool include = false,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addWhereClause(IndexWhereClause.between(
+        indexName: r'productId',
+        lower: [],
+        upper: [productId],
+        includeUpper: include,
+      ));
+    });
+  }
+
+  QueryBuilder<Favorite, Favorite, QAfterWhereClause> productIdBetween(
+    int lowerProductId,
+    int upperProductId, {
+    bool includeLower = true,
+    bool includeUpper = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addWhereClause(IndexWhereClause.between(
+        indexName: r'productId',
+        lower: [lowerProductId],
+        includeLower: includeLower,
+        upper: [upperProductId],
         includeUpper: includeUpper,
       ));
     });
@@ -301,6 +422,59 @@ extension FavoriteQueryFilter
         upper: upper,
         includeUpper: includeUpper,
         epsilon: epsilon,
+      ));
+    });
+  }
+
+  QueryBuilder<Favorite, Favorite, QAfterFilterCondition> productIdEqualTo(
+      int value) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.equalTo(
+        property: r'productId',
+        value: value,
+      ));
+    });
+  }
+
+  QueryBuilder<Favorite, Favorite, QAfterFilterCondition> productIdGreaterThan(
+    int value, {
+    bool include = false,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.greaterThan(
+        include: include,
+        property: r'productId',
+        value: value,
+      ));
+    });
+  }
+
+  QueryBuilder<Favorite, Favorite, QAfterFilterCondition> productIdLessThan(
+    int value, {
+    bool include = false,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.lessThan(
+        include: include,
+        property: r'productId',
+        value: value,
+      ));
+    });
+  }
+
+  QueryBuilder<Favorite, Favorite, QAfterFilterCondition> productIdBetween(
+    int lower,
+    int upper, {
+    bool includeLower = true,
+    bool includeUpper = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.between(
+        property: r'productId',
+        lower: lower,
+        includeLower: includeLower,
+        upper: upper,
+        includeUpper: includeUpper,
       ));
     });
   }
@@ -586,6 +760,18 @@ extension FavoriteQuerySortBy on QueryBuilder<Favorite, Favorite, QSortBy> {
     });
   }
 
+  QueryBuilder<Favorite, Favorite, QAfterSortBy> sortByProductId() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'productId', Sort.asc);
+    });
+  }
+
+  QueryBuilder<Favorite, Favorite, QAfterSortBy> sortByProductIdDesc() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'productId', Sort.desc);
+    });
+  }
+
   QueryBuilder<Favorite, Favorite, QAfterSortBy> sortByThumbnail() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'thumbnail', Sort.asc);
@@ -637,6 +823,18 @@ extension FavoriteQuerySortThenBy
     });
   }
 
+  QueryBuilder<Favorite, Favorite, QAfterSortBy> thenByProductId() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'productId', Sort.asc);
+    });
+  }
+
+  QueryBuilder<Favorite, Favorite, QAfterSortBy> thenByProductIdDesc() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'productId', Sort.desc);
+    });
+  }
+
   QueryBuilder<Favorite, Favorite, QAfterSortBy> thenByThumbnail() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'thumbnail', Sort.asc);
@@ -670,6 +868,12 @@ extension FavoriteQueryWhereDistinct
     });
   }
 
+  QueryBuilder<Favorite, Favorite, QDistinct> distinctByProductId() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addDistinctBy(r'productId');
+    });
+  }
+
   QueryBuilder<Favorite, Favorite, QDistinct> distinctByThumbnail(
       {bool caseSensitive = true}) {
     return QueryBuilder.apply(this, (query) {
@@ -696,6 +900,12 @@ extension FavoriteQueryProperty
   QueryBuilder<Favorite, double, QQueryOperations> priceProperty() {
     return QueryBuilder.apply(this, (query) {
       return query.addPropertyName(r'price');
+    });
+  }
+
+  QueryBuilder<Favorite, int, QQueryOperations> productIdProperty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addPropertyName(r'productId');
     });
   }
 

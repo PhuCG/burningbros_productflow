@@ -4,16 +4,19 @@ part 'favorite.g.dart';
 
 @collection
 class Favorite {
-  Id id; // This maps to the product id
+  Id id = Isar.autoIncrement;
 
-  String title;
+  @Index()
+  late int productId;
 
-  double price;
+  late String title;
 
-  String thumbnail;
+  late double price;
+
+  late String thumbnail;
 
   Favorite({
-    required this.id,
+    required this.productId,
     required this.title,
     required this.price,
     required this.thumbnail,

@@ -15,7 +15,6 @@ _$ProductImpl _$$ProductImplFromJson(Map<String, dynamic> json) =>
       discountPercentage: (json['discountPercentage'] as num).toDouble(),
       rating: (json['rating'] as num).toDouble(),
       stock: (json['stock'] as num).toInt(),
-      brand: json['brand'] as String,
       category: json['category'] as String,
       thumbnail: json['thumbnail'] as String,
       images:
@@ -31,7 +30,6 @@ Map<String, dynamic> _$$ProductImplToJson(_$ProductImpl instance) =>
       'discountPercentage': instance.discountPercentage,
       'rating': instance.rating,
       'stock': instance.stock,
-      'brand': instance.brand,
       'category': instance.category,
       'thumbnail': instance.thumbnail,
       'images': instance.images,

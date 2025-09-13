@@ -27,7 +27,6 @@ mixin _$Product {
   double get discountPercentage => throw _privateConstructorUsedError;
   double get rating => throw _privateConstructorUsedError;
   int get stock => throw _privateConstructorUsedError;
-  String get brand => throw _privateConstructorUsedError;
   String get category => throw _privateConstructorUsedError;
   String get thumbnail => throw _privateConstructorUsedError;
   List<String> get images => throw _privateConstructorUsedError;
@@ -50,7 +49,6 @@ abstract class $ProductCopyWith<$Res> {
       double discountPercentage,
       double rating,
       int stock,
-      String brand,
       String category,
       String thumbnail,
       List<String> images});
@@ -76,7 +74,6 @@ class _$ProductCopyWithImpl<$Res, $Val extends Product>
     Object? discountPercentage = null,
     Object? rating = null,
     Object? stock = null,
-    Object? brand = null,
     Object? category = null,
     Object? thumbnail = null,
     Object? images = null,
@@ -110,10 +107,6 @@ class _$ProductCopyWithImpl<$Res, $Val extends Product>
           ? _value.stock
           : stock // ignore: cast_nullable_to_non_nullable
               as int,
-      brand: null == brand
-          ? _value.brand
-          : brand // ignore: cast_nullable_to_non_nullable
-              as String,
       category: null == category
           ? _value.category
           : category // ignore: cast_nullable_to_non_nullable
@@ -145,7 +138,6 @@ abstract class _$$ProductImplCopyWith<$Res> implements $ProductCopyWith<$Res> {
       double discountPercentage,
       double rating,
       int stock,
-      String brand,
       String category,
       String thumbnail,
       List<String> images});
@@ -169,7 +161,6 @@ class __$$ProductImplCopyWithImpl<$Res>
     Object? discountPercentage = null,
     Object? rating = null,
     Object? stock = null,
-    Object? brand = null,
     Object? category = null,
     Object? thumbnail = null,
     Object? images = null,
@@ -203,10 +194,6 @@ class __$$ProductImplCopyWithImpl<$Res>
           ? _value.stock
           : stock // ignore: cast_nullable_to_non_nullable
               as int,
-      brand: null == brand
-          ? _value.brand
-          : brand // ignore: cast_nullable_to_non_nullable
-              as String,
       category: null == category
           ? _value.category
           : category // ignore: cast_nullable_to_non_nullable
@@ -234,7 +221,6 @@ class _$ProductImpl implements _Product {
       required this.discountPercentage,
       required this.rating,
       required this.stock,
-      required this.brand,
       required this.category,
       required this.thumbnail,
       required final List<String> images})
@@ -258,8 +244,6 @@ class _$ProductImpl implements _Product {
   @override
   final int stock;
   @override
-  final String brand;
-  @override
   final String category;
   @override
   final String thumbnail;
@@ -273,7 +257,7 @@ class _$ProductImpl implements _Product {
 
   @override
   String toString() {
-    return 'Product(id: $id, title: $title, description: $description, price: $price, discountPercentage: $discountPercentage, rating: $rating, stock: $stock, brand: $brand, category: $category, thumbnail: $thumbnail, images: $images)';
+    return 'Product(id: $id, title: $title, description: $description, price: $price, discountPercentage: $discountPercentage, rating: $rating, stock: $stock, category: $category, thumbnail: $thumbnail, images: $images)';
   }
 
   @override
@@ -290,7 +274,6 @@ class _$ProductImpl implements _Product {
                 other.discountPercentage == discountPercentage) &&
             (identical(other.rating, rating) || other.rating == rating) &&
             (identical(other.stock, stock) || other.stock == stock) &&
-            (identical(other.brand, brand) || other.brand == brand) &&
             (identical(other.category, category) ||
                 other.category == category) &&
             (identical(other.thumbnail, thumbnail) ||
@@ -309,7 +292,6 @@ class _$ProductImpl implements _Product {
       discountPercentage,
       rating,
       stock,
-      brand,
       category,
       thumbnail,
       const DeepCollectionEquality().hash(_images));
@@ -337,7 +319,6 @@ abstract class _Product implements Product {
       required final double discountPercentage,
       required final double rating,
       required final int stock,
-      required final String brand,
       required final String category,
       required final String thumbnail,
       required final List<String> images}) = _$ProductImpl;
@@ -358,8 +339,6 @@ abstract class _Product implements Product {
   double get rating;
   @override
   int get stock;
-  @override
-  String get brand;
   @override
   String get category;
   @override

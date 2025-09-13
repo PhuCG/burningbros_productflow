@@ -11,6 +11,11 @@ class Debouncer {
     _timer?.cancel();
     _timer = Timer(delay, action);
   }
+
+  void dispose() {
+    _timer?.cancel();
+    _timer = null;
+  }
 }
 
 /// A shortcut to debounce a function call.

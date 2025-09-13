@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
-import '../models/http_client.dart';
+import '../core/api/http_client.dart';
 import '../models/products_response.dart';
 import '../models/product.dart';
 import '../utils/api_error.dart';
