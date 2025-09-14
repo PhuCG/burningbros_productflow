@@ -1,3 +1,4 @@
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import '../models/products_response.dart';
 import '../models/product.dart';
@@ -7,7 +8,7 @@ import '../utils/app_constants.dart';
 part 'product_repository.g.dart';
 
 @riverpod
-ProductRepository productRepository(ProductRepositoryRef ref) {
+ProductRepository productRepository(Ref ref) {
   final apiService = ref.watch(productApiServiceProvider);
   return ProductRepository(apiService);
 }

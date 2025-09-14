@@ -57,7 +57,7 @@ class ProductCard extends StatelessWidget {
                     ),
                     onPressed: onFavoriteToggle,
                     style: IconButton.styleFrom(
-                      backgroundColor: Colors.black.withOpacity(0.5),
+                      backgroundColor: Colors.black.withValues(alpha: 0.5),
                       foregroundColor: Colors.white,
                     ),
                   ),

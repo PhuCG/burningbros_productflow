@@ -12,7 +12,8 @@ part of 'product_search_state.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
+);
 
 /// @nodoc
 mixin _$ProductSearchState {
@@ -22,7 +23,9 @@ mixin _$ProductSearchState {
   bool get hasReachedEnd => throw _privateConstructorUsedError;
   Exception? get exception => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ProductSearchState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $ProductSearchStateCopyWith<ProductSearchState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -30,15 +33,17 @@ mixin _$ProductSearchState {
 /// @nodoc
 abstract class $ProductSearchStateCopyWith<$Res> {
   factory $ProductSearchStateCopyWith(
-          ProductSearchState value, $Res Function(ProductSearchState) then) =
-      _$ProductSearchStateCopyWithImpl<$Res, ProductSearchState>;
+    ProductSearchState value,
+    $Res Function(ProductSearchState) then,
+  ) = _$ProductSearchStateCopyWithImpl<$Res, ProductSearchState>;
   @useResult
-  $Res call(
-      {AsyncValue<List<Product>> products,
-      String searchQuery,
-      int currentSkip,
-      bool hasReachedEnd,
-      Exception? exception});
+  $Res call({
+    AsyncValue<List<Product>> products,
+    String searchQuery,
+    int currentSkip,
+    bool hasReachedEnd,
+    Exception? exception,
+  });
 }
 
 /// @nodoc
@@ -51,6 +56,8 @@ class _$ProductSearchStateCopyWithImpl<$Res, $Val extends ProductSearchState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ProductSearchState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -60,55 +67,68 @@ class _$ProductSearchStateCopyWithImpl<$Res, $Val extends ProductSearchState>
     Object? hasReachedEnd = null,
     Object? exception = freezed,
   }) {
-    return _then(_value.copyWith(
-      products: null == products
-          ? _value.products
-          : products // ignore: cast_nullable_to_non_nullable
-              as AsyncValue<List<Product>>,
-      searchQuery: null == searchQuery
-          ? _value.searchQuery
-          : searchQuery // ignore: cast_nullable_to_non_nullable
-              as String,
-      currentSkip: null == currentSkip
-          ? _value.currentSkip
-          : currentSkip // ignore: cast_nullable_to_non_nullable
-              as int,
-      hasReachedEnd: null == hasReachedEnd
-          ? _value.hasReachedEnd
-          : hasReachedEnd // ignore: cast_nullable_to_non_nullable
-              as bool,
-      exception: freezed == exception
-          ? _value.exception
-          : exception // ignore: cast_nullable_to_non_nullable
-              as Exception?,
-    ) as $Val);
+    return _then(
+      _value.copyWith(
+            products:
+                null == products
+                    ? _value.products
+                    : products // ignore: cast_nullable_to_non_nullable
+                        as AsyncValue<List<Product>>,
+            searchQuery:
+                null == searchQuery
+                    ? _value.searchQuery
+                    : searchQuery // ignore: cast_nullable_to_non_nullable
+                        as String,
+            currentSkip:
+                null == currentSkip
+                    ? _value.currentSkip
+                    : currentSkip // ignore: cast_nullable_to_non_nullable
+                        as int,
+            hasReachedEnd:
+                null == hasReachedEnd
+                    ? _value.hasReachedEnd
+                    : hasReachedEnd // ignore: cast_nullable_to_non_nullable
+                        as bool,
+            exception:
+                freezed == exception
+                    ? _value.exception
+                    : exception // ignore: cast_nullable_to_non_nullable
+                        as Exception?,
+          )
+          as $Val,
+    );
   }
 }
 
 /// @nodoc
 abstract class _$$ProductSearchStateImplCopyWith<$Res>
     implements $ProductSearchStateCopyWith<$Res> {
-  factory _$$ProductSearchStateImplCopyWith(_$ProductSearchStateImpl value,
-          $Res Function(_$ProductSearchStateImpl) then) =
-      __$$ProductSearchStateImplCopyWithImpl<$Res>;
+  factory _$$ProductSearchStateImplCopyWith(
+    _$ProductSearchStateImpl value,
+    $Res Function(_$ProductSearchStateImpl) then,
+  ) = __$$ProductSearchStateImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call(
-      {AsyncValue<List<Product>> products,
-      String searchQuery,
-      int currentSkip,
-      bool hasReachedEnd,
-      Exception? exception});
+  $Res call({
+    AsyncValue<List<Product>> products,
+    String searchQuery,
+    int currentSkip,
+    bool hasReachedEnd,
+    Exception? exception,
+  });
 }
 
 /// @nodoc
 class __$$ProductSearchStateImplCopyWithImpl<$Res>
     extends _$ProductSearchStateCopyWithImpl<$Res, _$ProductSearchStateImpl>
     implements _$$ProductSearchStateImplCopyWith<$Res> {
-  __$$ProductSearchStateImplCopyWithImpl(_$ProductSearchStateImpl _value,
-      $Res Function(_$ProductSearchStateImpl) _then)
-      : super(_value, _then);
+  __$$ProductSearchStateImplCopyWithImpl(
+    _$ProductSearchStateImpl _value,
+    $Res Function(_$ProductSearchStateImpl) _then,
+  ) : super(_value, _then);
 
+  /// Create a copy of ProductSearchState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -118,40 +138,48 @@ class __$$ProductSearchStateImplCopyWithImpl<$Res>
     Object? hasReachedEnd = null,
     Object? exception = freezed,
   }) {
-    return _then(_$ProductSearchStateImpl(
-      products: null == products
-          ? _value.products
-          : products // ignore: cast_nullable_to_non_nullable
-              as AsyncValue<List<Product>>,
-      searchQuery: null == searchQuery
-          ? _value.searchQuery
-          : searchQuery // ignore: cast_nullable_to_non_nullable
-              as String,
-      currentSkip: null == currentSkip
-          ? _value.currentSkip
-          : currentSkip // ignore: cast_nullable_to_non_nullable
-              as int,
-      hasReachedEnd: null == hasReachedEnd
-          ? _value.hasReachedEnd
-          : hasReachedEnd // ignore: cast_nullable_to_non_nullable
-              as bool,
-      exception: freezed == exception
-          ? _value.exception
-          : exception // ignore: cast_nullable_to_non_nullable
-              as Exception?,
-    ));
+    return _then(
+      _$ProductSearchStateImpl(
+        products:
+            null == products
+                ? _value.products
+                : products // ignore: cast_nullable_to_non_nullable
+                    as AsyncValue<List<Product>>,
+        searchQuery:
+            null == searchQuery
+                ? _value.searchQuery
+                : searchQuery // ignore: cast_nullable_to_non_nullable
+                    as String,
+        currentSkip:
+            null == currentSkip
+                ? _value.currentSkip
+                : currentSkip // ignore: cast_nullable_to_non_nullable
+                    as int,
+        hasReachedEnd:
+            null == hasReachedEnd
+                ? _value.hasReachedEnd
+                : hasReachedEnd // ignore: cast_nullable_to_non_nullable
+                    as bool,
+        exception:
+            freezed == exception
+                ? _value.exception
+                : exception // ignore: cast_nullable_to_non_nullable
+                    as Exception?,
+      ),
+    );
   }
 }
 
 /// @nodoc
 
 class _$ProductSearchStateImpl implements _ProductSearchState {
-  _$ProductSearchStateImpl(
-      {required this.products,
-      required this.searchQuery,
-      required this.currentSkip,
-      required this.hasReachedEnd,
-      this.exception});
+  _$ProductSearchStateImpl({
+    required this.products,
+    required this.searchQuery,
+    required this.currentSkip,
+    required this.hasReachedEnd,
+    this.exception,
+  });
 
   @override
   final AsyncValue<List<Product>> products;
@@ -187,24 +215,35 @@ class _$ProductSearchStateImpl implements _ProductSearchState {
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, products, searchQuery,
-      currentSkip, hasReachedEnd, exception);
+  int get hashCode => Object.hash(
+    runtimeType,
+    products,
+    searchQuery,
+    currentSkip,
+    hasReachedEnd,
+    exception,
+  );
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ProductSearchState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ProductSearchStateImplCopyWith<_$ProductSearchStateImpl> get copyWith =>
       __$$ProductSearchStateImplCopyWithImpl<_$ProductSearchStateImpl>(
-          this, _$identity);
+        this,
+        _$identity,
+      );
 }
 
 abstract class _ProductSearchState implements ProductSearchState {
-  factory _ProductSearchState(
-      {required final AsyncValue<List<Product>> products,
-      required final String searchQuery,
-      required final int currentSkip,
-      required final bool hasReachedEnd,
-      final Exception? exception}) = _$ProductSearchStateImpl;
+  factory _ProductSearchState({
+    required final AsyncValue<List<Product>> products,
+    required final String searchQuery,
+    required final int currentSkip,
+    required final bool hasReachedEnd,
+    final Exception? exception,
+  }) = _$ProductSearchStateImpl;
 
   @override
   AsyncValue<List<Product>> get products;
@@ -216,8 +255,11 @@ abstract class _ProductSearchState implements ProductSearchState {
   bool get hasReachedEnd;
   @override
   Exception? get exception;
+
+  /// Create a copy of ProductSearchState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ProductSearchStateImplCopyWith<_$ProductSearchStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

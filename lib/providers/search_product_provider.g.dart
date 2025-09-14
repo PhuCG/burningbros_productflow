@@ -7,21 +7,24 @@ part of 'search_product_provider.dart';
 // **************************************************************************
 
 String _$searchProductNotifierHash() =>
-    r'f8434dc0da35ef942c9f648c60b8ff9ce5c1ffbd';
+    r'd5d797015c553e2749d2cacb221411b974039119';
 
 /// See also [SearchProductNotifier].
 @ProviderFor(SearchProductNotifier)
 final searchProductNotifierProvider = AutoDisposeNotifierProvider<
-    SearchProductNotifier, ProductSearchState>.internal(
+  SearchProductNotifier,
+  ProductSearchState
+>.internal(
   SearchProductNotifier.new,
   name: r'searchProductNotifierProvider',
-  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
-      ? null
-      : _$searchProductNotifierHash,
+  debugGetCreateSourceHash:
+      const bool.fromEnvironment('dart.vm.product')
+          ? null
+          : _$searchProductNotifierHash,
   dependencies: null,
   allTransitiveDependencies: null,
 );
 
 typedef _$SearchProductNotifier = AutoDisposeNotifier<ProductSearchState>;
 // ignore_for_file: type=lint
-// ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member
+// ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

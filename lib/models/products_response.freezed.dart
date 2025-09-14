@@ -12,7 +12,8 @@ part of 'products_response.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
+);
 
 ProductsResponse _$ProductsResponseFromJson(Map<String, dynamic> json) {
   return _ProductsResponse.fromJson(json);
@@ -25,8 +26,12 @@ mixin _$ProductsResponse {
   int get skip => throw _privateConstructorUsedError;
   int get limit => throw _privateConstructorUsedError;
 
+  /// Serializes this ProductsResponse to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of ProductsResponse
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $ProductsResponseCopyWith<ProductsResponse> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -34,8 +39,9 @@ mixin _$ProductsResponse {
 /// @nodoc
 abstract class $ProductsResponseCopyWith<$Res> {
   factory $ProductsResponseCopyWith(
-          ProductsResponse value, $Res Function(ProductsResponse) then) =
-      _$ProductsResponseCopyWithImpl<$Res, ProductsResponse>;
+    ProductsResponse value,
+    $Res Function(ProductsResponse) then,
+  ) = _$ProductsResponseCopyWithImpl<$Res, ProductsResponse>;
   @useResult
   $Res call({List<Product> products, int total, int skip, int limit});
 }
@@ -50,6 +56,8 @@ class _$ProductsResponseCopyWithImpl<$Res, $Val extends ProductsResponse>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ProductsResponse
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -58,33 +66,41 @@ class _$ProductsResponseCopyWithImpl<$Res, $Val extends ProductsResponse>
     Object? skip = null,
     Object? limit = null,
   }) {
-    return _then(_value.copyWith(
-      products: null == products
-          ? _value.products
-          : products // ignore: cast_nullable_to_non_nullable
-              as List<Product>,
-      total: null == total
-          ? _value.total
-          : total // ignore: cast_nullable_to_non_nullable
-              as int,
-      skip: null == skip
-          ? _value.skip
-          : skip // ignore: cast_nullable_to_non_nullable
-              as int,
-      limit: null == limit
-          ? _value.limit
-          : limit // ignore: cast_nullable_to_non_nullable
-              as int,
-    ) as $Val);
+    return _then(
+      _value.copyWith(
+            products:
+                null == products
+                    ? _value.products
+                    : products // ignore: cast_nullable_to_non_nullable
+                        as List<Product>,
+            total:
+                null == total
+                    ? _value.total
+                    : total // ignore: cast_nullable_to_non_nullable
+                        as int,
+            skip:
+                null == skip
+                    ? _value.skip
+                    : skip // ignore: cast_nullable_to_non_nullable
+                        as int,
+            limit:
+                null == limit
+                    ? _value.limit
+                    : limit // ignore: cast_nullable_to_non_nullable
+                        as int,
+          )
+          as $Val,
+    );
   }
 }
 
 /// @nodoc
 abstract class _$$ProductsResponseImplCopyWith<$Res>
     implements $ProductsResponseCopyWith<$Res> {
-  factory _$$ProductsResponseImplCopyWith(_$ProductsResponseImpl value,
-          $Res Function(_$ProductsResponseImpl) then) =
-      __$$ProductsResponseImplCopyWithImpl<$Res>;
+  factory _$$ProductsResponseImplCopyWith(
+    _$ProductsResponseImpl value,
+    $Res Function(_$ProductsResponseImpl) then,
+  ) = __$$ProductsResponseImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({List<Product> products, int total, int skip, int limit});
@@ -94,10 +110,13 @@ abstract class _$$ProductsResponseImplCopyWith<$Res>
 class __$$ProductsResponseImplCopyWithImpl<$Res>
     extends _$ProductsResponseCopyWithImpl<$Res, _$ProductsResponseImpl>
     implements _$$ProductsResponseImplCopyWith<$Res> {
-  __$$ProductsResponseImplCopyWithImpl(_$ProductsResponseImpl _value,
-      $Res Function(_$ProductsResponseImpl) _then)
-      : super(_value, _then);
+  __$$ProductsResponseImplCopyWithImpl(
+    _$ProductsResponseImpl _value,
+    $Res Function(_$ProductsResponseImpl) _then,
+  ) : super(_value, _then);
 
+  /// Create a copy of ProductsResponse
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -106,36 +125,42 @@ class __$$ProductsResponseImplCopyWithImpl<$Res>
     Object? skip = null,
     Object? limit = null,
   }) {
-    return _then(_$ProductsResponseImpl(
-      products: null == products
-          ? _value._products
-          : products // ignore: cast_nullable_to_non_nullable
-              as List<Product>,
-      total: null == total
-          ? _value.total
-          : total // ignore: cast_nullable_to_non_nullable
-              as int,
-      skip: null == skip
-          ? _value.skip
-          : skip // ignore: cast_nullable_to_non_nullable
-              as int,
-      limit: null == limit
-          ? _value.limit
-          : limit // ignore: cast_nullable_to_non_nullable
-              as int,
-    ));
+    return _then(
+      _$ProductsResponseImpl(
+        products:
+            null == products
+                ? _value._products
+                : products // ignore: cast_nullable_to_non_nullable
+                    as List<Product>,
+        total:
+            null == total
+                ? _value.total
+                : total // ignore: cast_nullable_to_non_nullable
+                    as int,
+        skip:
+            null == skip
+                ? _value.skip
+                : skip // ignore: cast_nullable_to_non_nullable
+                    as int,
+        limit:
+            null == limit
+                ? _value.limit
+                : limit // ignore: cast_nullable_to_non_nullable
+                    as int,
+      ),
+    );
   }
 }
 
 /// @nodoc
 @JsonSerializable()
 class _$ProductsResponseImpl implements _ProductsResponse {
-  const _$ProductsResponseImpl(
-      {required final List<Product> products,
-      required this.total,
-      required this.skip,
-      required this.limit})
-      : _products = products;
+  const _$ProductsResponseImpl({
+    required final List<Product> products,
+    required this.total,
+    required this.skip,
+    required this.limit,
+  }) : _products = products;
 
   factory _$ProductsResponseImpl.fromJson(Map<String, dynamic> json) =>
       _$$ProductsResponseImplFromJson(json);
@@ -171,32 +196,40 @@ class _$ProductsResponseImpl implements _ProductsResponse {
             (identical(other.limit, limit) || other.limit == limit));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(runtimeType,
-      const DeepCollectionEquality().hash(_products), total, skip, limit);
+  int get hashCode => Object.hash(
+    runtimeType,
+    const DeepCollectionEquality().hash(_products),
+    total,
+    skip,
+    limit,
+  );
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ProductsResponse
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ProductsResponseImplCopyWith<_$ProductsResponseImpl> get copyWith =>
       __$$ProductsResponseImplCopyWithImpl<_$ProductsResponseImpl>(
-          this, _$identity);
+        this,
+        _$identity,
+      );
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$ProductsResponseImplToJson(
-      this,
-    );
+    return _$$ProductsResponseImplToJson(this);
   }
 }
 
 abstract class _ProductsResponse implements ProductsResponse {
-  const factory _ProductsResponse(
-      {required final List<Product> products,
-      required final int total,
-      required final int skip,
-      required final int limit}) = _$ProductsResponseImpl;
+  const factory _ProductsResponse({
+    required final List<Product> products,
+    required final int total,
+    required final int skip,
+    required final int limit,
+  }) = _$ProductsResponseImpl;
 
   factory _ProductsResponse.fromJson(Map<String, dynamic> json) =
       _$ProductsResponseImpl.fromJson;
@@ -209,8 +242,11 @@ abstract class _ProductsResponse implements ProductsResponse {
   int get skip;
   @override
   int get limit;
+
+  /// Create a copy of ProductsResponse
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ProductsResponseImplCopyWith<_$ProductsResponseImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

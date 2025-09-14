@@ -1,3 +1,4 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:burningbros_productflow/utils/error_extension.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -6,6 +7,7 @@ import '../../providers/favorite_provider.dart';
 import '../../utils/load_more_result.dart';
 import '../widgets/product_card.dart';
 
+@RoutePage()
 class FavoriteScreen extends ConsumerStatefulWidget {
   const FavoriteScreen({super.key});
 

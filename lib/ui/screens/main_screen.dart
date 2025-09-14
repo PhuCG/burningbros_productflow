@@ -1,8 +1,9 @@
+import 'package:auto_route/auto_route.dart';
+import 'package:burningbros_productflow/core/router/app_router.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'product_list_screen.dart';
-import 'favorite_screen.dart';
 
+@RoutePage()
 class MainScreen extends ConsumerStatefulWidget {
   const MainScreen({super.key});
 
@@ -11,32 +12,25 @@ class MainScreen extends ConsumerStatefulWidget {
 }
 
 class _MainScreenState extends ConsumerState<MainScreen> {
-  int _currentIndex = 0;
-
-  final List<Widget> _screens = [
-    const ProductListScreen(key: Key('productListScreen')),
-    const FavoriteScreen(key: Key('favoriteScreen')),
-  ];
-
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: IndexedStack(index: _currentIndex, children: _screens),
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: _currentIndex,
-        onTap: (index) {
-          setState(() {
-            _currentIndex = index;
-          });
-        },
-        items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.list), label: 'Products'),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.favorite),
-            label: 'Favorites',
-          ),
-        ],
-      ),
+    return AutoTabsScaffold(
+      routes: [ProductListRoute(), FavoriteRoute()],
+      bottomNavigationBuilder: (context, tabsRouter) {
+        return BottomNavigationBar(
+          currentIndex: tabsRouter.activeIndex,
+          onTap: (index) {
+            tabsRouter.setActiveIndex(index);
+          },
+          items: const [
+            BottomNavigationBarItem(icon: Icon(Icons.list), label: 'Products'),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.favorite),
+              label: 'Favorites',
+            ),
+          ],
+        );
+      },
     );
   }
 }

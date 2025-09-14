@@ -1,3 +1,4 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:burningbros_productflow/ui/widgets/product_list.dart';
 import 'package:burningbros_productflow/utils/error_extension.dart';
 import 'package:flutter/material.dart';
@@ -7,6 +8,7 @@ import '../../providers/product_provider.dart';
 import '../../utils/load_more_result.dart';
 import '../search/product_search_delegate.dart';
 
+@RoutePage()
 class ProductListScreen extends ConsumerStatefulWidget {
   const ProductListScreen({super.key});
 

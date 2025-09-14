@@ -12,7 +12,8 @@ part of 'api_error.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
+);
 
 /// @nodoc
 mixin _$ApiError {
@@ -38,8 +39,7 @@ mixin _$ApiError {
     required TResult Function() timeout,
     required TResult Function(Object? error, StackTrace? stackTrace) unknown,
     required TResult Function() maintenance,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(String? message)? badRequest,
@@ -62,8 +62,7 @@ mixin _$ApiError {
     TResult? Function()? timeout,
     TResult? Function(Object? error, StackTrace? stackTrace)? unknown,
     TResult? Function()? maintenance,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(String? message)? badRequest,
@@ -87,8 +86,7 @@ mixin _$ApiError {
     TResult Function(Object? error, StackTrace? stackTrace)? unknown,
     TResult Function()? maintenance,
     required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(BadRequestApiError value) badRequest,
@@ -100,23 +98,22 @@ mixin _$ApiError {
     required TResult Function(UnsupportedMediaType value) unsupportedMediaType,
     required TResult Function(TooManyRequestsApiError value) tooManyRequests,
     required TResult Function(PreconditionFailedApiError value)
-        preconditionFailed,
+    preconditionFailed,
     required TResult Function(PayloadTooLargeApiError value) payloadTooLarge,
     required TResult Function(InternalServerErrorApiError value)
-        internalServerError,
+    internalServerError,
     required TResult Function(ServiceUnavailableApiError value)
-        serviceUnavailable,
+    serviceUnavailable,
     required TResult Function(GatewayTimeoutApiError value) gatewayTimeout,
     required TResult Function(ServerOverloadApiError value) serverOverload,
     required TResult Function(ServerErrorApiError value) serverError,
     required TResult Function(ServerConnectionErrorApiError value)
-        serverConnectionError,
+    serverConnectionError,
     required TResult Function(NetworkErrorApiError value) networkError,
     required TResult Function(TimeoutApiError value) timeout,
     required TResult Function(UnknownApiError value) unknown,
     required TResult Function(MaintenanceApiError value) maintenance,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(BadRequestApiError value)? badRequest,
@@ -135,13 +132,12 @@ mixin _$ApiError {
     TResult? Function(ServerOverloadApiError value)? serverOverload,
     TResult? Function(ServerErrorApiError value)? serverError,
     TResult? Function(ServerConnectionErrorApiError value)?
-        serverConnectionError,
+    serverConnectionError,
     TResult? Function(NetworkErrorApiError value)? networkError,
     TResult? Function(TimeoutApiError value)? timeout,
     TResult? Function(UnknownApiError value)? unknown,
     TResult? Function(MaintenanceApiError value)? maintenance,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(BadRequestApiError value)? badRequest,
@@ -160,14 +156,13 @@ mixin _$ApiError {
     TResult Function(ServerOverloadApiError value)? serverOverload,
     TResult Function(ServerErrorApiError value)? serverError,
     TResult Function(ServerConnectionErrorApiError value)?
-        serverConnectionError,
+    serverConnectionError,
     TResult Function(NetworkErrorApiError value)? networkError,
     TResult Function(TimeoutApiError value)? timeout,
     TResult Function(UnknownApiError value)? unknown,
     TResult Function(MaintenanceApiError value)? maintenance,
     required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -185,13 +180,17 @@ class _$ApiErrorCopyWithImpl<$Res, $Val extends ApiError>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of ApiError
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
 abstract class _$$BadRequestApiErrorImplCopyWith<$Res> {
-  factory _$$BadRequestApiErrorImplCopyWith(_$BadRequestApiErrorImpl value,
-          $Res Function(_$BadRequestApiErrorImpl) then) =
-      __$$BadRequestApiErrorImplCopyWithImpl<$Res>;
+  factory _$$BadRequestApiErrorImplCopyWith(
+    _$BadRequestApiErrorImpl value,
+    $Res Function(_$BadRequestApiErrorImpl) then,
+  ) = __$$BadRequestApiErrorImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String? message});
 }
@@ -200,21 +199,25 @@ abstract class _$$BadRequestApiErrorImplCopyWith<$Res> {
 class __$$BadRequestApiErrorImplCopyWithImpl<$Res>
     extends _$ApiErrorCopyWithImpl<$Res, _$BadRequestApiErrorImpl>
     implements _$$BadRequestApiErrorImplCopyWith<$Res> {
-  __$$BadRequestApiErrorImplCopyWithImpl(_$BadRequestApiErrorImpl _value,
-      $Res Function(_$BadRequestApiErrorImpl) _then)
-      : super(_value, _then);
+  __$$BadRequestApiErrorImplCopyWithImpl(
+    _$BadRequestApiErrorImpl _value,
+    $Res Function(_$BadRequestApiErrorImpl) _then,
+  ) : super(_value, _then);
 
+  /// Create a copy of ApiError
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? message = freezed,
-  }) {
-    return _then(_$BadRequestApiErrorImpl(
-      message: freezed == message
-          ? _value.message
-          : message // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ));
+  $Res call({Object? message = freezed}) {
+    return _then(
+      _$BadRequestApiErrorImpl(
+        message:
+            freezed == message
+                ? _value.message
+                : message // ignore: cast_nullable_to_non_nullable
+                    as String?,
+      ),
+    );
   }
 }
 
@@ -242,12 +245,16 @@ class _$BadRequestApiErrorImpl extends BadRequestApiError {
   @override
   int get hashCode => Object.hash(runtimeType, message);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ApiError
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$BadRequestApiErrorImplCopyWith<_$BadRequestApiErrorImpl> get copyWith =>
       __$$BadRequestApiErrorImplCopyWithImpl<_$BadRequestApiErrorImpl>(
-          this, _$identity);
+        this,
+        _$identity,
+      );
 
   @override
   @optionalTypeArgs
@@ -346,17 +353,17 @@ class _$BadRequestApiErrorImpl extends BadRequestApiError {
     required TResult Function(UnsupportedMediaType value) unsupportedMediaType,
     required TResult Function(TooManyRequestsApiError value) tooManyRequests,
     required TResult Function(PreconditionFailedApiError value)
-        preconditionFailed,
+    preconditionFailed,
     required TResult Function(PayloadTooLargeApiError value) payloadTooLarge,
     required TResult Function(InternalServerErrorApiError value)
-        internalServerError,
+    internalServerError,
     required TResult Function(ServiceUnavailableApiError value)
-        serviceUnavailable,
+    serviceUnavailable,
     required TResult Function(GatewayTimeoutApiError value) gatewayTimeout,
     required TResult Function(ServerOverloadApiError value) serverOverload,
     required TResult Function(ServerErrorApiError value) serverError,
     required TResult Function(ServerConnectionErrorApiError value)
-        serverConnectionError,
+    serverConnectionError,
     required TResult Function(NetworkErrorApiError value) networkError,
     required TResult Function(TimeoutApiError value) timeout,
     required TResult Function(UnknownApiError value) unknown,
@@ -384,7 +391,7 @@ class _$BadRequestApiErrorImpl extends BadRequestApiError {
     TResult? Function(ServerOverloadApiError value)? serverOverload,
     TResult? Function(ServerErrorApiError value)? serverError,
     TResult? Function(ServerConnectionErrorApiError value)?
-        serverConnectionError,
+    serverConnectionError,
     TResult? Function(NetworkErrorApiError value)? networkError,
     TResult? Function(TimeoutApiError value)? timeout,
     TResult? Function(UnknownApiError value)? unknown,
@@ -412,7 +419,7 @@ class _$BadRequestApiErrorImpl extends BadRequestApiError {
     TResult Function(ServerOverloadApiError value)? serverOverload,
     TResult Function(ServerErrorApiError value)? serverError,
     TResult Function(ServerConnectionErrorApiError value)?
-        serverConnectionError,
+    serverConnectionError,
     TResult Function(NetworkErrorApiError value)? networkError,
     TResult Function(TimeoutApiError value)? timeout,
     TResult Function(UnknownApiError value)? unknown,
@@ -432,25 +439,33 @@ abstract class BadRequestApiError extends ApiError {
   const BadRequestApiError._() : super._();
 
   String? get message;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of ApiError
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$BadRequestApiErrorImplCopyWith<_$BadRequestApiErrorImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class _$$UnauthorizedApiErrorImplCopyWith<$Res> {
-  factory _$$UnauthorizedApiErrorImplCopyWith(_$UnauthorizedApiErrorImpl value,
-          $Res Function(_$UnauthorizedApiErrorImpl) then) =
-      __$$UnauthorizedApiErrorImplCopyWithImpl<$Res>;
+  factory _$$UnauthorizedApiErrorImplCopyWith(
+    _$UnauthorizedApiErrorImpl value,
+    $Res Function(_$UnauthorizedApiErrorImpl) then,
+  ) = __$$UnauthorizedApiErrorImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
 class __$$UnauthorizedApiErrorImplCopyWithImpl<$Res>
     extends _$ApiErrorCopyWithImpl<$Res, _$UnauthorizedApiErrorImpl>
     implements _$$UnauthorizedApiErrorImplCopyWith<$Res> {
-  __$$UnauthorizedApiErrorImplCopyWithImpl(_$UnauthorizedApiErrorImpl _value,
-      $Res Function(_$UnauthorizedApiErrorImpl) _then)
-      : super(_value, _then);
+  __$$UnauthorizedApiErrorImplCopyWithImpl(
+    _$UnauthorizedApiErrorImpl _value,
+    $Res Function(_$UnauthorizedApiErrorImpl) _then,
+  ) : super(_value, _then);
+
+  /// Create a copy of ApiError
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -570,17 +585,17 @@ class _$UnauthorizedApiErrorImpl extends UnauthorizedApiError {
     required TResult Function(UnsupportedMediaType value) unsupportedMediaType,
     required TResult Function(TooManyRequestsApiError value) tooManyRequests,
     required TResult Function(PreconditionFailedApiError value)
-        preconditionFailed,
+    preconditionFailed,
     required TResult Function(PayloadTooLargeApiError value) payloadTooLarge,
     required TResult Function(InternalServerErrorApiError value)
-        internalServerError,
+    internalServerError,
     required TResult Function(ServiceUnavailableApiError value)
-        serviceUnavailable,
+    serviceUnavailable,
     required TResult Function(GatewayTimeoutApiError value) gatewayTimeout,
     required TResult Function(ServerOverloadApiError value) serverOverload,
     required TResult Function(ServerErrorApiError value) serverError,
     required TResult Function(ServerConnectionErrorApiError value)
-        serverConnectionError,
+    serverConnectionError,
     required TResult Function(NetworkErrorApiError value) networkError,
     required TResult Function(TimeoutApiError value) timeout,
     required TResult Function(UnknownApiError value) unknown,
@@ -608,7 +623,7 @@ class _$UnauthorizedApiErrorImpl extends UnauthorizedApiError {
     TResult? Function(ServerOverloadApiError value)? serverOverload,
     TResult? Function(ServerErrorApiError value)? serverError,
     TResult? Function(ServerConnectionErrorApiError value)?
-        serverConnectionError,
+    serverConnectionError,
     TResult? Function(NetworkErrorApiError value)? networkError,
     TResult? Function(TimeoutApiError value)? timeout,
     TResult? Function(UnknownApiError value)? unknown,
@@ -636,7 +651,7 @@ class _$UnauthorizedApiErrorImpl extends UnauthorizedApiError {
     TResult Function(ServerOverloadApiError value)? serverOverload,
     TResult Function(ServerErrorApiError value)? serverError,
     TResult Function(ServerConnectionErrorApiError value)?
-        serverConnectionError,
+    serverConnectionError,
     TResult Function(NetworkErrorApiError value)? networkError,
     TResult Function(TimeoutApiError value)? timeout,
     TResult Function(UnknownApiError value)? unknown,
@@ -657,18 +672,23 @@ abstract class UnauthorizedApiError extends ApiError {
 
 /// @nodoc
 abstract class _$$ForbiddenApiErrorImplCopyWith<$Res> {
-  factory _$$ForbiddenApiErrorImplCopyWith(_$ForbiddenApiErrorImpl value,
-          $Res Function(_$ForbiddenApiErrorImpl) then) =
-      __$$ForbiddenApiErrorImplCopyWithImpl<$Res>;
+  factory _$$ForbiddenApiErrorImplCopyWith(
+    _$ForbiddenApiErrorImpl value,
+    $Res Function(_$ForbiddenApiErrorImpl) then,
+  ) = __$$ForbiddenApiErrorImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
 class __$$ForbiddenApiErrorImplCopyWithImpl<$Res>
     extends _$ApiErrorCopyWithImpl<$Res, _$ForbiddenApiErrorImpl>
     implements _$$ForbiddenApiErrorImplCopyWith<$Res> {
-  __$$ForbiddenApiErrorImplCopyWithImpl(_$ForbiddenApiErrorImpl _value,
-      $Res Function(_$ForbiddenApiErrorImpl) _then)
-      : super(_value, _then);
+  __$$ForbiddenApiErrorImplCopyWithImpl(
+    _$ForbiddenApiErrorImpl _value,
+    $Res Function(_$ForbiddenApiErrorImpl) _then,
+  ) : super(_value, _then);
+
+  /// Create a copy of ApiError
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -787,17 +807,17 @@ class _$ForbiddenApiErrorImpl extends ForbiddenApiError {
     required TResult Function(UnsupportedMediaType value) unsupportedMediaType,
     required TResult Function(TooManyRequestsApiError value) tooManyRequests,
     required TResult Function(PreconditionFailedApiError value)
-        preconditionFailed,
+    preconditionFailed,
     required TResult Function(PayloadTooLargeApiError value) payloadTooLarge,
     required TResult Function(InternalServerErrorApiError value)
-        internalServerError,
+    internalServerError,
     required TResult Function(ServiceUnavailableApiError value)
-        serviceUnavailable,
+    serviceUnavailable,
     required TResult Function(GatewayTimeoutApiError value) gatewayTimeout,
     required TResult Function(ServerOverloadApiError value) serverOverload,
     required TResult Function(ServerErrorApiError value) serverError,
     required TResult Function(ServerConnectionErrorApiError value)
-        serverConnectionError,
+    serverConnectionError,
     required TResult Function(NetworkErrorApiError value) networkError,
     required TResult Function(TimeoutApiError value) timeout,
     required TResult Function(UnknownApiError value) unknown,
@@ -825,7 +845,7 @@ class _$ForbiddenApiErrorImpl extends ForbiddenApiError {
     TResult? Function(ServerOverloadApiError value)? serverOverload,
     TResult? Function(ServerErrorApiError value)? serverError,
     TResult? Function(ServerConnectionErrorApiError value)?
-        serverConnectionError,
+    serverConnectionError,
     TResult? Function(NetworkErrorApiError value)? networkError,
     TResult? Function(TimeoutApiError value)? timeout,
     TResult? Function(UnknownApiError value)? unknown,
@@ -853,7 +873,7 @@ class _$ForbiddenApiErrorImpl extends ForbiddenApiError {
     TResult Function(ServerOverloadApiError value)? serverOverload,
     TResult Function(ServerErrorApiError value)? serverError,
     TResult Function(ServerConnectionErrorApiError value)?
-        serverConnectionError,
+    serverConnectionError,
     TResult Function(NetworkErrorApiError value)? networkError,
     TResult Function(TimeoutApiError value)? timeout,
     TResult Function(UnknownApiError value)? unknown,
@@ -874,18 +894,23 @@ abstract class ForbiddenApiError extends ApiError {
 
 /// @nodoc
 abstract class _$$NotFoundApiErrorImplCopyWith<$Res> {
-  factory _$$NotFoundApiErrorImplCopyWith(_$NotFoundApiErrorImpl value,
-          $Res Function(_$NotFoundApiErrorImpl) then) =
-      __$$NotFoundApiErrorImplCopyWithImpl<$Res>;
+  factory _$$NotFoundApiErrorImplCopyWith(
+    _$NotFoundApiErrorImpl value,
+    $Res Function(_$NotFoundApiErrorImpl) then,
+  ) = __$$NotFoundApiErrorImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
 class __$$NotFoundApiErrorImplCopyWithImpl<$Res>
     extends _$ApiErrorCopyWithImpl<$Res, _$NotFoundApiErrorImpl>
     implements _$$NotFoundApiErrorImplCopyWith<$Res> {
-  __$$NotFoundApiErrorImplCopyWithImpl(_$NotFoundApiErrorImpl _value,
-      $Res Function(_$NotFoundApiErrorImpl) _then)
-      : super(_value, _then);
+  __$$NotFoundApiErrorImplCopyWithImpl(
+    _$NotFoundApiErrorImpl _value,
+    $Res Function(_$NotFoundApiErrorImpl) _then,
+  ) : super(_value, _then);
+
+  /// Create a copy of ApiError
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -1004,17 +1029,17 @@ class _$NotFoundApiErrorImpl extends NotFoundApiError {
     required TResult Function(UnsupportedMediaType value) unsupportedMediaType,
     required TResult Function(TooManyRequestsApiError value) tooManyRequests,
     required TResult Function(PreconditionFailedApiError value)
-        preconditionFailed,
+    preconditionFailed,
     required TResult Function(PayloadTooLargeApiError value) payloadTooLarge,
     required TResult Function(InternalServerErrorApiError value)
-        internalServerError,
+    internalServerError,
     required TResult Function(ServiceUnavailableApiError value)
-        serviceUnavailable,
+    serviceUnavailable,
     required TResult Function(GatewayTimeoutApiError value) gatewayTimeout,
     required TResult Function(ServerOverloadApiError value) serverOverload,
     required TResult Function(ServerErrorApiError value) serverError,
     required TResult Function(ServerConnectionErrorApiError value)
-        serverConnectionError,
+    serverConnectionError,
     required TResult Function(NetworkErrorApiError value) networkError,
     required TResult Function(TimeoutApiError value) timeout,
     required TResult Function(UnknownApiError value) unknown,
@@ -1042,7 +1067,7 @@ class _$NotFoundApiErrorImpl extends NotFoundApiError {
     TResult? Function(ServerOverloadApiError value)? serverOverload,
     TResult? Function(ServerErrorApiError value)? serverError,
     TResult? Function(ServerConnectionErrorApiError value)?
-        serverConnectionError,
+    serverConnectionError,
     TResult? Function(NetworkErrorApiError value)? networkError,
     TResult? Function(TimeoutApiError value)? timeout,
     TResult? Function(UnknownApiError value)? unknown,
@@ -1070,7 +1095,7 @@ class _$NotFoundApiErrorImpl extends NotFoundApiError {
     TResult Function(ServerOverloadApiError value)? serverOverload,
     TResult Function(ServerErrorApiError value)? serverError,
     TResult Function(ServerConnectionErrorApiError value)?
-        serverConnectionError,
+    serverConnectionError,
     TResult Function(NetworkErrorApiError value)? networkError,
     TResult Function(TimeoutApiError value)? timeout,
     TResult Function(UnknownApiError value)? unknown,
@@ -1092,9 +1117,9 @@ abstract class NotFoundApiError extends ApiError {
 /// @nodoc
 abstract class _$$MethodNotAllowedApiErrorImplCopyWith<$Res> {
   factory _$$MethodNotAllowedApiErrorImplCopyWith(
-          _$MethodNotAllowedApiErrorImpl value,
-          $Res Function(_$MethodNotAllowedApiErrorImpl) then) =
-      __$$MethodNotAllowedApiErrorImplCopyWithImpl<$Res>;
+    _$MethodNotAllowedApiErrorImpl value,
+    $Res Function(_$MethodNotAllowedApiErrorImpl) then,
+  ) = __$$MethodNotAllowedApiErrorImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -1102,9 +1127,12 @@ class __$$MethodNotAllowedApiErrorImplCopyWithImpl<$Res>
     extends _$ApiErrorCopyWithImpl<$Res, _$MethodNotAllowedApiErrorImpl>
     implements _$$MethodNotAllowedApiErrorImplCopyWith<$Res> {
   __$$MethodNotAllowedApiErrorImplCopyWithImpl(
-      _$MethodNotAllowedApiErrorImpl _value,
-      $Res Function(_$MethodNotAllowedApiErrorImpl) _then)
-      : super(_value, _then);
+    _$MethodNotAllowedApiErrorImpl _value,
+    $Res Function(_$MethodNotAllowedApiErrorImpl) _then,
+  ) : super(_value, _then);
+
+  /// Create a copy of ApiError
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -1224,17 +1252,17 @@ class _$MethodNotAllowedApiErrorImpl extends MethodNotAllowedApiError {
     required TResult Function(UnsupportedMediaType value) unsupportedMediaType,
     required TResult Function(TooManyRequestsApiError value) tooManyRequests,
     required TResult Function(PreconditionFailedApiError value)
-        preconditionFailed,
+    preconditionFailed,
     required TResult Function(PayloadTooLargeApiError value) payloadTooLarge,
     required TResult Function(InternalServerErrorApiError value)
-        internalServerError,
+    internalServerError,
     required TResult Function(ServiceUnavailableApiError value)
-        serviceUnavailable,
+    serviceUnavailable,
     required TResult Function(GatewayTimeoutApiError value) gatewayTimeout,
     required TResult Function(ServerOverloadApiError value) serverOverload,
     required TResult Function(ServerErrorApiError value) serverError,
     required TResult Function(ServerConnectionErrorApiError value)
-        serverConnectionError,
+    serverConnectionError,
     required TResult Function(NetworkErrorApiError value) networkError,
     required TResult Function(TimeoutApiError value) timeout,
     required TResult Function(UnknownApiError value) unknown,
@@ -1262,7 +1290,7 @@ class _$MethodNotAllowedApiErrorImpl extends MethodNotAllowedApiError {
     TResult? Function(ServerOverloadApiError value)? serverOverload,
     TResult? Function(ServerErrorApiError value)? serverError,
     TResult? Function(ServerConnectionErrorApiError value)?
-        serverConnectionError,
+    serverConnectionError,
     TResult? Function(NetworkErrorApiError value)? networkError,
     TResult? Function(TimeoutApiError value)? timeout,
     TResult? Function(UnknownApiError value)? unknown,
@@ -1290,7 +1318,7 @@ class _$MethodNotAllowedApiErrorImpl extends MethodNotAllowedApiError {
     TResult Function(ServerOverloadApiError value)? serverOverload,
     TResult Function(ServerErrorApiError value)? serverError,
     TResult Function(ServerConnectionErrorApiError value)?
-        serverConnectionError,
+    serverConnectionError,
     TResult Function(NetworkErrorApiError value)? networkError,
     TResult Function(TimeoutApiError value)? timeout,
     TResult Function(UnknownApiError value)? unknown,
@@ -1311,18 +1339,23 @@ abstract class MethodNotAllowedApiError extends ApiError {
 
 /// @nodoc
 abstract class _$$ConflictApiErrorImplCopyWith<$Res> {
-  factory _$$ConflictApiErrorImplCopyWith(_$ConflictApiErrorImpl value,
-          $Res Function(_$ConflictApiErrorImpl) then) =
-      __$$ConflictApiErrorImplCopyWithImpl<$Res>;
+  factory _$$ConflictApiErrorImplCopyWith(
+    _$ConflictApiErrorImpl value,
+    $Res Function(_$ConflictApiErrorImpl) then,
+  ) = __$$ConflictApiErrorImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
 class __$$ConflictApiErrorImplCopyWithImpl<$Res>
     extends _$ApiErrorCopyWithImpl<$Res, _$ConflictApiErrorImpl>
     implements _$$ConflictApiErrorImplCopyWith<$Res> {
-  __$$ConflictApiErrorImplCopyWithImpl(_$ConflictApiErrorImpl _value,
-      $Res Function(_$ConflictApiErrorImpl) _then)
-      : super(_value, _then);
+  __$$ConflictApiErrorImplCopyWithImpl(
+    _$ConflictApiErrorImpl _value,
+    $Res Function(_$ConflictApiErrorImpl) _then,
+  ) : super(_value, _then);
+
+  /// Create a copy of ApiError
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -1441,17 +1474,17 @@ class _$ConflictApiErrorImpl extends ConflictApiError {
     required TResult Function(UnsupportedMediaType value) unsupportedMediaType,
     required TResult Function(TooManyRequestsApiError value) tooManyRequests,
     required TResult Function(PreconditionFailedApiError value)
-        preconditionFailed,
+    preconditionFailed,
     required TResult Function(PayloadTooLargeApiError value) payloadTooLarge,
     required TResult Function(InternalServerErrorApiError value)
-        internalServerError,
+    internalServerError,
     required TResult Function(ServiceUnavailableApiError value)
-        serviceUnavailable,
+    serviceUnavailable,
     required TResult Function(GatewayTimeoutApiError value) gatewayTimeout,
     required TResult Function(ServerOverloadApiError value) serverOverload,
     required TResult Function(ServerErrorApiError value) serverError,
     required TResult Function(ServerConnectionErrorApiError value)
-        serverConnectionError,
+    serverConnectionError,
     required TResult Function(NetworkErrorApiError value) networkError,
     required TResult Function(TimeoutApiError value) timeout,
     required TResult Function(UnknownApiError value) unknown,
@@ -1479,7 +1512,7 @@ class _$ConflictApiErrorImpl extends ConflictApiError {
     TResult? Function(ServerOverloadApiError value)? serverOverload,
     TResult? Function(ServerErrorApiError value)? serverError,
     TResult? Function(ServerConnectionErrorApiError value)?
-        serverConnectionError,
+    serverConnectionError,
     TResult? Function(NetworkErrorApiError value)? networkError,
     TResult? Function(TimeoutApiError value)? timeout,
     TResult? Function(UnknownApiError value)? unknown,
@@ -1507,7 +1540,7 @@ class _$ConflictApiErrorImpl extends ConflictApiError {
     TResult Function(ServerOverloadApiError value)? serverOverload,
     TResult Function(ServerErrorApiError value)? serverError,
     TResult Function(ServerConnectionErrorApiError value)?
-        serverConnectionError,
+    serverConnectionError,
     TResult Function(NetworkErrorApiError value)? networkError,
     TResult Function(TimeoutApiError value)? timeout,
     TResult Function(UnknownApiError value)? unknown,
@@ -1528,18 +1561,23 @@ abstract class ConflictApiError extends ApiError {
 
 /// @nodoc
 abstract class _$$UnsupportedMediaTypeImplCopyWith<$Res> {
-  factory _$$UnsupportedMediaTypeImplCopyWith(_$UnsupportedMediaTypeImpl value,
-          $Res Function(_$UnsupportedMediaTypeImpl) then) =
-      __$$UnsupportedMediaTypeImplCopyWithImpl<$Res>;
+  factory _$$UnsupportedMediaTypeImplCopyWith(
+    _$UnsupportedMediaTypeImpl value,
+    $Res Function(_$UnsupportedMediaTypeImpl) then,
+  ) = __$$UnsupportedMediaTypeImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
 class __$$UnsupportedMediaTypeImplCopyWithImpl<$Res>
     extends _$ApiErrorCopyWithImpl<$Res, _$UnsupportedMediaTypeImpl>
     implements _$$UnsupportedMediaTypeImplCopyWith<$Res> {
-  __$$UnsupportedMediaTypeImplCopyWithImpl(_$UnsupportedMediaTypeImpl _value,
-      $Res Function(_$UnsupportedMediaTypeImpl) _then)
-      : super(_value, _then);
+  __$$UnsupportedMediaTypeImplCopyWithImpl(
+    _$UnsupportedMediaTypeImpl _value,
+    $Res Function(_$UnsupportedMediaTypeImpl) _then,
+  ) : super(_value, _then);
+
+  /// Create a copy of ApiError
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -1659,17 +1697,17 @@ class _$UnsupportedMediaTypeImpl extends UnsupportedMediaType {
     required TResult Function(UnsupportedMediaType value) unsupportedMediaType,
     required TResult Function(TooManyRequestsApiError value) tooManyRequests,
     required TResult Function(PreconditionFailedApiError value)
-        preconditionFailed,
+    preconditionFailed,
     required TResult Function(PayloadTooLargeApiError value) payloadTooLarge,
     required TResult Function(InternalServerErrorApiError value)
-        internalServerError,
+    internalServerError,
     required TResult Function(ServiceUnavailableApiError value)
-        serviceUnavailable,
+    serviceUnavailable,
     required TResult Function(GatewayTimeoutApiError value) gatewayTimeout,
     required TResult Function(ServerOverloadApiError value) serverOverload,
     required TResult Function(ServerErrorApiError value) serverError,
     required TResult Function(ServerConnectionErrorApiError value)
-        serverConnectionError,
+    serverConnectionError,
     required TResult Function(NetworkErrorApiError value) networkError,
     required TResult Function(TimeoutApiError value) timeout,
     required TResult Function(UnknownApiError value) unknown,
@@ -1697,7 +1735,7 @@ class _$UnsupportedMediaTypeImpl extends UnsupportedMediaType {
     TResult? Function(ServerOverloadApiError value)? serverOverload,
     TResult? Function(ServerErrorApiError value)? serverError,
     TResult? Function(ServerConnectionErrorApiError value)?
-        serverConnectionError,
+    serverConnectionError,
     TResult? Function(NetworkErrorApiError value)? networkError,
     TResult? Function(TimeoutApiError value)? timeout,
     TResult? Function(UnknownApiError value)? unknown,
@@ -1725,7 +1763,7 @@ class _$UnsupportedMediaTypeImpl extends UnsupportedMediaType {
     TResult Function(ServerOverloadApiError value)? serverOverload,
     TResult Function(ServerErrorApiError value)? serverError,
     TResult Function(ServerConnectionErrorApiError value)?
-        serverConnectionError,
+    serverConnectionError,
     TResult Function(NetworkErrorApiError value)? networkError,
     TResult Function(TimeoutApiError value)? timeout,
     TResult Function(UnknownApiError value)? unknown,
@@ -1747,9 +1785,9 @@ abstract class UnsupportedMediaType extends ApiError {
 /// @nodoc
 abstract class _$$TooManyRequestsApiErrorImplCopyWith<$Res> {
   factory _$$TooManyRequestsApiErrorImplCopyWith(
-          _$TooManyRequestsApiErrorImpl value,
-          $Res Function(_$TooManyRequestsApiErrorImpl) then) =
-      __$$TooManyRequestsApiErrorImplCopyWithImpl<$Res>;
+    _$TooManyRequestsApiErrorImpl value,
+    $Res Function(_$TooManyRequestsApiErrorImpl) then,
+  ) = __$$TooManyRequestsApiErrorImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -1757,9 +1795,12 @@ class __$$TooManyRequestsApiErrorImplCopyWithImpl<$Res>
     extends _$ApiErrorCopyWithImpl<$Res, _$TooManyRequestsApiErrorImpl>
     implements _$$TooManyRequestsApiErrorImplCopyWith<$Res> {
   __$$TooManyRequestsApiErrorImplCopyWithImpl(
-      _$TooManyRequestsApiErrorImpl _value,
-      $Res Function(_$TooManyRequestsApiErrorImpl) _then)
-      : super(_value, _then);
+    _$TooManyRequestsApiErrorImpl _value,
+    $Res Function(_$TooManyRequestsApiErrorImpl) _then,
+  ) : super(_value, _then);
+
+  /// Create a copy of ApiError
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -1879,17 +1920,17 @@ class _$TooManyRequestsApiErrorImpl extends TooManyRequestsApiError {
     required TResult Function(UnsupportedMediaType value) unsupportedMediaType,
     required TResult Function(TooManyRequestsApiError value) tooManyRequests,
     required TResult Function(PreconditionFailedApiError value)
-        preconditionFailed,
+    preconditionFailed,
     required TResult Function(PayloadTooLargeApiError value) payloadTooLarge,
     required TResult Function(InternalServerErrorApiError value)
-        internalServerError,
+    internalServerError,
     required TResult Function(ServiceUnavailableApiError value)
-        serviceUnavailable,
+    serviceUnavailable,
     required TResult Function(GatewayTimeoutApiError value) gatewayTimeout,
     required TResult Function(ServerOverloadApiError value) serverOverload,
     required TResult Function(ServerErrorApiError value) serverError,
     required TResult Function(ServerConnectionErrorApiError value)
-        serverConnectionError,
+    serverConnectionError,
     required TResult Function(NetworkErrorApiError value) networkError,
     required TResult Function(TimeoutApiError value) timeout,
     required TResult Function(UnknownApiError value) unknown,
@@ -1917,7 +1958,7 @@ class _$TooManyRequestsApiErrorImpl extends TooManyRequestsApiError {
     TResult? Function(ServerOverloadApiError value)? serverOverload,
     TResult? Function(ServerErrorApiError value)? serverError,
     TResult? Function(ServerConnectionErrorApiError value)?
-        serverConnectionError,
+    serverConnectionError,
     TResult? Function(NetworkErrorApiError value)? networkError,
     TResult? Function(TimeoutApiError value)? timeout,
     TResult? Function(UnknownApiError value)? unknown,
@@ -1945,7 +1986,7 @@ class _$TooManyRequestsApiErrorImpl extends TooManyRequestsApiError {
     TResult Function(ServerOverloadApiError value)? serverOverload,
     TResult Function(ServerErrorApiError value)? serverError,
     TResult Function(ServerConnectionErrorApiError value)?
-        serverConnectionError,
+    serverConnectionError,
     TResult Function(NetworkErrorApiError value)? networkError,
     TResult Function(TimeoutApiError value)? timeout,
     TResult Function(UnknownApiError value)? unknown,
@@ -1967,9 +2008,9 @@ abstract class TooManyRequestsApiError extends ApiError {
 /// @nodoc
 abstract class _$$PreconditionFailedApiErrorImplCopyWith<$Res> {
   factory _$$PreconditionFailedApiErrorImplCopyWith(
-          _$PreconditionFailedApiErrorImpl value,
-          $Res Function(_$PreconditionFailedApiErrorImpl) then) =
-      __$$PreconditionFailedApiErrorImplCopyWithImpl<$Res>;
+    _$PreconditionFailedApiErrorImpl value,
+    $Res Function(_$PreconditionFailedApiErrorImpl) then,
+  ) = __$$PreconditionFailedApiErrorImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -1977,9 +2018,12 @@ class __$$PreconditionFailedApiErrorImplCopyWithImpl<$Res>
     extends _$ApiErrorCopyWithImpl<$Res, _$PreconditionFailedApiErrorImpl>
     implements _$$PreconditionFailedApiErrorImplCopyWith<$Res> {
   __$$PreconditionFailedApiErrorImplCopyWithImpl(
-      _$PreconditionFailedApiErrorImpl _value,
-      $Res Function(_$PreconditionFailedApiErrorImpl) _then)
-      : super(_value, _then);
+    _$PreconditionFailedApiErrorImpl _value,
+    $Res Function(_$PreconditionFailedApiErrorImpl) _then,
+  ) : super(_value, _then);
+
+  /// Create a copy of ApiError
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -2099,17 +2143,17 @@ class _$PreconditionFailedApiErrorImpl extends PreconditionFailedApiError {
     required TResult Function(UnsupportedMediaType value) unsupportedMediaType,
     required TResult Function(TooManyRequestsApiError value) tooManyRequests,
     required TResult Function(PreconditionFailedApiError value)
-        preconditionFailed,
+    preconditionFailed,
     required TResult Function(PayloadTooLargeApiError value) payloadTooLarge,
     required TResult Function(InternalServerErrorApiError value)
-        internalServerError,
+    internalServerError,
     required TResult Function(ServiceUnavailableApiError value)
-        serviceUnavailable,
+    serviceUnavailable,
     required TResult Function(GatewayTimeoutApiError value) gatewayTimeout,
     required TResult Function(ServerOverloadApiError value) serverOverload,
     required TResult Function(ServerErrorApiError value) serverError,
     required TResult Function(ServerConnectionErrorApiError value)
-        serverConnectionError,
+    serverConnectionError,
     required TResult Function(NetworkErrorApiError value) networkError,
     required TResult Function(TimeoutApiError value) timeout,
     required TResult Function(UnknownApiError value) unknown,
@@ -2137,7 +2181,7 @@ class _$PreconditionFailedApiErrorImpl extends PreconditionFailedApiError {
     TResult? Function(ServerOverloadApiError value)? serverOverload,
     TResult? Function(ServerErrorApiError value)? serverError,
     TResult? Function(ServerConnectionErrorApiError value)?
-        serverConnectionError,
+    serverConnectionError,
     TResult? Function(NetworkErrorApiError value)? networkError,
     TResult? Function(TimeoutApiError value)? timeout,
     TResult? Function(UnknownApiError value)? unknown,
@@ -2165,7 +2209,7 @@ class _$PreconditionFailedApiErrorImpl extends PreconditionFailedApiError {
     TResult Function(ServerOverloadApiError value)? serverOverload,
     TResult Function(ServerErrorApiError value)? serverError,
     TResult Function(ServerConnectionErrorApiError value)?
-        serverConnectionError,
+    serverConnectionError,
     TResult Function(NetworkErrorApiError value)? networkError,
     TResult Function(TimeoutApiError value)? timeout,
     TResult Function(UnknownApiError value)? unknown,
@@ -2187,9 +2231,9 @@ abstract class PreconditionFailedApiError extends ApiError {
 /// @nodoc
 abstract class _$$PayloadTooLargeApiErrorImplCopyWith<$Res> {
   factory _$$PayloadTooLargeApiErrorImplCopyWith(
-          _$PayloadTooLargeApiErrorImpl value,
-          $Res Function(_$PayloadTooLargeApiErrorImpl) then) =
-      __$$PayloadTooLargeApiErrorImplCopyWithImpl<$Res>;
+    _$PayloadTooLargeApiErrorImpl value,
+    $Res Function(_$PayloadTooLargeApiErrorImpl) then,
+  ) = __$$PayloadTooLargeApiErrorImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -2197,9 +2241,12 @@ class __$$PayloadTooLargeApiErrorImplCopyWithImpl<$Res>
     extends _$ApiErrorCopyWithImpl<$Res, _$PayloadTooLargeApiErrorImpl>
     implements _$$PayloadTooLargeApiErrorImplCopyWith<$Res> {
   __$$PayloadTooLargeApiErrorImplCopyWithImpl(
-      _$PayloadTooLargeApiErrorImpl _value,
-      $Res Function(_$PayloadTooLargeApiErrorImpl) _then)
-      : super(_value, _then);
+    _$PayloadTooLargeApiErrorImpl _value,
+    $Res Function(_$PayloadTooLargeApiErrorImpl) _then,
+  ) : super(_value, _then);
+
+  /// Create a copy of ApiError
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -2319,17 +2366,17 @@ class _$PayloadTooLargeApiErrorImpl extends PayloadTooLargeApiError {
     required TResult Function(UnsupportedMediaType value) unsupportedMediaType,
     required TResult Function(TooManyRequestsApiError value) tooManyRequests,
     required TResult Function(PreconditionFailedApiError value)
-        preconditionFailed,
+    preconditionFailed,
     required TResult Function(PayloadTooLargeApiError value) payloadTooLarge,
     required TResult Function(InternalServerErrorApiError value)
-        internalServerError,
+    internalServerError,
     required TResult Function(ServiceUnavailableApiError value)
-        serviceUnavailable,
+    serviceUnavailable,
     required TResult Function(GatewayTimeoutApiError value) gatewayTimeout,
     required TResult Function(ServerOverloadApiError value) serverOverload,
     required TResult Function(ServerErrorApiError value) serverError,
     required TResult Function(ServerConnectionErrorApiError value)
-        serverConnectionError,
+    serverConnectionError,
     required TResult Function(NetworkErrorApiError value) networkError,
     required TResult Function(TimeoutApiError value) timeout,
     required TResult Function(UnknownApiError value) unknown,
@@ -2357,7 +2404,7 @@ class _$PayloadTooLargeApiErrorImpl extends PayloadTooLargeApiError {
     TResult? Function(ServerOverloadApiError value)? serverOverload,
     TResult? Function(ServerErrorApiError value)? serverError,
     TResult? Function(ServerConnectionErrorApiError value)?
-        serverConnectionError,
+    serverConnectionError,
     TResult? Function(NetworkErrorApiError value)? networkError,
     TResult? Function(TimeoutApiError value)? timeout,
     TResult? Function(UnknownApiError value)? unknown,
@@ -2385,7 +2432,7 @@ class _$PayloadTooLargeApiErrorImpl extends PayloadTooLargeApiError {
     TResult Function(ServerOverloadApiError value)? serverOverload,
     TResult Function(ServerErrorApiError value)? serverError,
     TResult Function(ServerConnectionErrorApiError value)?
-        serverConnectionError,
+    serverConnectionError,
     TResult Function(NetworkErrorApiError value)? networkError,
     TResult Function(TimeoutApiError value)? timeout,
     TResult Function(UnknownApiError value)? unknown,
@@ -2407,9 +2454,9 @@ abstract class PayloadTooLargeApiError extends ApiError {
 /// @nodoc
 abstract class _$$InternalServerErrorApiErrorImplCopyWith<$Res> {
   factory _$$InternalServerErrorApiErrorImplCopyWith(
-          _$InternalServerErrorApiErrorImpl value,
-          $Res Function(_$InternalServerErrorApiErrorImpl) then) =
-      __$$InternalServerErrorApiErrorImplCopyWithImpl<$Res>;
+    _$InternalServerErrorApiErrorImpl value,
+    $Res Function(_$InternalServerErrorApiErrorImpl) then,
+  ) = __$$InternalServerErrorApiErrorImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -2417,9 +2464,12 @@ class __$$InternalServerErrorApiErrorImplCopyWithImpl<$Res>
     extends _$ApiErrorCopyWithImpl<$Res, _$InternalServerErrorApiErrorImpl>
     implements _$$InternalServerErrorApiErrorImplCopyWith<$Res> {
   __$$InternalServerErrorApiErrorImplCopyWithImpl(
-      _$InternalServerErrorApiErrorImpl _value,
-      $Res Function(_$InternalServerErrorApiErrorImpl) _then)
-      : super(_value, _then);
+    _$InternalServerErrorApiErrorImpl _value,
+    $Res Function(_$InternalServerErrorApiErrorImpl) _then,
+  ) : super(_value, _then);
+
+  /// Create a copy of ApiError
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -2539,17 +2589,17 @@ class _$InternalServerErrorApiErrorImpl extends InternalServerErrorApiError {
     required TResult Function(UnsupportedMediaType value) unsupportedMediaType,
     required TResult Function(TooManyRequestsApiError value) tooManyRequests,
     required TResult Function(PreconditionFailedApiError value)
-        preconditionFailed,
+    preconditionFailed,
     required TResult Function(PayloadTooLargeApiError value) payloadTooLarge,
     required TResult Function(InternalServerErrorApiError value)
-        internalServerError,
+    internalServerError,
     required TResult Function(ServiceUnavailableApiError value)
-        serviceUnavailable,
+    serviceUnavailable,
     required TResult Function(GatewayTimeoutApiError value) gatewayTimeout,
     required TResult Function(ServerOverloadApiError value) serverOverload,
     required TResult Function(ServerErrorApiError value) serverError,
     required TResult Function(ServerConnectionErrorApiError value)
-        serverConnectionError,
+    serverConnectionError,
     required TResult Function(NetworkErrorApiError value) networkError,
     required TResult Function(TimeoutApiError value) timeout,
     required TResult Function(UnknownApiError value) unknown,
@@ -2577,7 +2627,7 @@ class _$InternalServerErrorApiErrorImpl extends InternalServerErrorApiError {
     TResult? Function(ServerOverloadApiError value)? serverOverload,
     TResult? Function(ServerErrorApiError value)? serverError,
     TResult? Function(ServerConnectionErrorApiError value)?
-        serverConnectionError,
+    serverConnectionError,
     TResult? Function(NetworkErrorApiError value)? networkError,
     TResult? Function(TimeoutApiError value)? timeout,
     TResult? Function(UnknownApiError value)? unknown,
@@ -2605,7 +2655,7 @@ class _$InternalServerErrorApiErrorImpl extends InternalServerErrorApiError {
     TResult Function(ServerOverloadApiError value)? serverOverload,
     TResult Function(ServerErrorApiError value)? serverError,
     TResult Function(ServerConnectionErrorApiError value)?
-        serverConnectionError,
+    serverConnectionError,
     TResult Function(NetworkErrorApiError value)? networkError,
     TResult Function(TimeoutApiError value)? timeout,
     TResult Function(UnknownApiError value)? unknown,
@@ -2628,9 +2678,9 @@ abstract class InternalServerErrorApiError extends ApiError {
 /// @nodoc
 abstract class _$$ServiceUnavailableApiErrorImplCopyWith<$Res> {
   factory _$$ServiceUnavailableApiErrorImplCopyWith(
-          _$ServiceUnavailableApiErrorImpl value,
-          $Res Function(_$ServiceUnavailableApiErrorImpl) then) =
-      __$$ServiceUnavailableApiErrorImplCopyWithImpl<$Res>;
+    _$ServiceUnavailableApiErrorImpl value,
+    $Res Function(_$ServiceUnavailableApiErrorImpl) then,
+  ) = __$$ServiceUnavailableApiErrorImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -2638,9 +2688,12 @@ class __$$ServiceUnavailableApiErrorImplCopyWithImpl<$Res>
     extends _$ApiErrorCopyWithImpl<$Res, _$ServiceUnavailableApiErrorImpl>
     implements _$$ServiceUnavailableApiErrorImplCopyWith<$Res> {
   __$$ServiceUnavailableApiErrorImplCopyWithImpl(
-      _$ServiceUnavailableApiErrorImpl _value,
-      $Res Function(_$ServiceUnavailableApiErrorImpl) _then)
-      : super(_value, _then);
+    _$ServiceUnavailableApiErrorImpl _value,
+    $Res Function(_$ServiceUnavailableApiErrorImpl) _then,
+  ) : super(_value, _then);
+
+  /// Create a copy of ApiError
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -2760,17 +2813,17 @@ class _$ServiceUnavailableApiErrorImpl extends ServiceUnavailableApiError {
     required TResult Function(UnsupportedMediaType value) unsupportedMediaType,
     required TResult Function(TooManyRequestsApiError value) tooManyRequests,
     required TResult Function(PreconditionFailedApiError value)
-        preconditionFailed,
+    preconditionFailed,
     required TResult Function(PayloadTooLargeApiError value) payloadTooLarge,
     required TResult Function(InternalServerErrorApiError value)
-        internalServerError,
+    internalServerError,
     required TResult Function(ServiceUnavailableApiError value)
-        serviceUnavailable,
+    serviceUnavailable,
     required TResult Function(GatewayTimeoutApiError value) gatewayTimeout,
     required TResult Function(ServerOverloadApiError value) serverOverload,
     required TResult Function(ServerErrorApiError value) serverError,
     required TResult Function(ServerConnectionErrorApiError value)
-        serverConnectionError,
+    serverConnectionError,
     required TResult Function(NetworkErrorApiError value) networkError,
     required TResult Function(TimeoutApiError value) timeout,
     required TResult Function(UnknownApiError value) unknown,
@@ -2798,7 +2851,7 @@ class _$ServiceUnavailableApiErrorImpl extends ServiceUnavailableApiError {
     TResult? Function(ServerOverloadApiError value)? serverOverload,
     TResult? Function(ServerErrorApiError value)? serverError,
     TResult? Function(ServerConnectionErrorApiError value)?
-        serverConnectionError,
+    serverConnectionError,
     TResult? Function(NetworkErrorApiError value)? networkError,
     TResult? Function(TimeoutApiError value)? timeout,
     TResult? Function(UnknownApiError value)? unknown,
@@ -2826,7 +2879,7 @@ class _$ServiceUnavailableApiErrorImpl extends ServiceUnavailableApiError {
     TResult Function(ServerOverloadApiError value)? serverOverload,
     TResult Function(ServerErrorApiError value)? serverError,
     TResult Function(ServerConnectionErrorApiError value)?
-        serverConnectionError,
+    serverConnectionError,
     TResult Function(NetworkErrorApiError value)? networkError,
     TResult Function(TimeoutApiError value)? timeout,
     TResult Function(UnknownApiError value)? unknown,
@@ -2848,9 +2901,9 @@ abstract class ServiceUnavailableApiError extends ApiError {
 /// @nodoc
 abstract class _$$GatewayTimeoutApiErrorImplCopyWith<$Res> {
   factory _$$GatewayTimeoutApiErrorImplCopyWith(
-          _$GatewayTimeoutApiErrorImpl value,
-          $Res Function(_$GatewayTimeoutApiErrorImpl) then) =
-      __$$GatewayTimeoutApiErrorImplCopyWithImpl<$Res>;
+    _$GatewayTimeoutApiErrorImpl value,
+    $Res Function(_$GatewayTimeoutApiErrorImpl) then,
+  ) = __$$GatewayTimeoutApiErrorImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -2858,9 +2911,12 @@ class __$$GatewayTimeoutApiErrorImplCopyWithImpl<$Res>
     extends _$ApiErrorCopyWithImpl<$Res, _$GatewayTimeoutApiErrorImpl>
     implements _$$GatewayTimeoutApiErrorImplCopyWith<$Res> {
   __$$GatewayTimeoutApiErrorImplCopyWithImpl(
-      _$GatewayTimeoutApiErrorImpl _value,
-      $Res Function(_$GatewayTimeoutApiErrorImpl) _then)
-      : super(_value, _then);
+    _$GatewayTimeoutApiErrorImpl _value,
+    $Res Function(_$GatewayTimeoutApiErrorImpl) _then,
+  ) : super(_value, _then);
+
+  /// Create a copy of ApiError
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -2980,17 +3036,17 @@ class _$GatewayTimeoutApiErrorImpl extends GatewayTimeoutApiError {
     required TResult Function(UnsupportedMediaType value) unsupportedMediaType,
     required TResult Function(TooManyRequestsApiError value) tooManyRequests,
     required TResult Function(PreconditionFailedApiError value)
-        preconditionFailed,
+    preconditionFailed,
     required TResult Function(PayloadTooLargeApiError value) payloadTooLarge,
     required TResult Function(InternalServerErrorApiError value)
-        internalServerError,
+    internalServerError,
     required TResult Function(ServiceUnavailableApiError value)
-        serviceUnavailable,
+    serviceUnavailable,
     required TResult Function(GatewayTimeoutApiError value) gatewayTimeout,
     required TResult Function(ServerOverloadApiError value) serverOverload,
     required TResult Function(ServerErrorApiError value) serverError,
     required TResult Function(ServerConnectionErrorApiError value)
-        serverConnectionError,
+    serverConnectionError,
     required TResult Function(NetworkErrorApiError value) networkError,
     required TResult Function(TimeoutApiError value) timeout,
     required TResult Function(UnknownApiError value) unknown,
@@ -3018,7 +3074,7 @@ class _$GatewayTimeoutApiErrorImpl extends GatewayTimeoutApiError {
     TResult? Function(ServerOverloadApiError value)? serverOverload,
     TResult? Function(ServerErrorApiError value)? serverError,
     TResult? Function(ServerConnectionErrorApiError value)?
-        serverConnectionError,
+    serverConnectionError,
     TResult? Function(NetworkErrorApiError value)? networkError,
     TResult? Function(TimeoutApiError value)? timeout,
     TResult? Function(UnknownApiError value)? unknown,
@@ -3046,7 +3102,7 @@ class _$GatewayTimeoutApiErrorImpl extends GatewayTimeoutApiError {
     TResult Function(ServerOverloadApiError value)? serverOverload,
     TResult Function(ServerErrorApiError value)? serverError,
     TResult Function(ServerConnectionErrorApiError value)?
-        serverConnectionError,
+    serverConnectionError,
     TResult Function(NetworkErrorApiError value)? networkError,
     TResult Function(TimeoutApiError value)? timeout,
     TResult Function(UnknownApiError value)? unknown,
@@ -3068,9 +3124,9 @@ abstract class GatewayTimeoutApiError extends ApiError {
 /// @nodoc
 abstract class _$$ServerOverloadApiErrorImplCopyWith<$Res> {
   factory _$$ServerOverloadApiErrorImplCopyWith(
-          _$ServerOverloadApiErrorImpl value,
-          $Res Function(_$ServerOverloadApiErrorImpl) then) =
-      __$$ServerOverloadApiErrorImplCopyWithImpl<$Res>;
+    _$ServerOverloadApiErrorImpl value,
+    $Res Function(_$ServerOverloadApiErrorImpl) then,
+  ) = __$$ServerOverloadApiErrorImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -3078,9 +3134,12 @@ class __$$ServerOverloadApiErrorImplCopyWithImpl<$Res>
     extends _$ApiErrorCopyWithImpl<$Res, _$ServerOverloadApiErrorImpl>
     implements _$$ServerOverloadApiErrorImplCopyWith<$Res> {
   __$$ServerOverloadApiErrorImplCopyWithImpl(
-      _$ServerOverloadApiErrorImpl _value,
-      $Res Function(_$ServerOverloadApiErrorImpl) _then)
-      : super(_value, _then);
+    _$ServerOverloadApiErrorImpl _value,
+    $Res Function(_$ServerOverloadApiErrorImpl) _then,
+  ) : super(_value, _then);
+
+  /// Create a copy of ApiError
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -3200,17 +3259,17 @@ class _$ServerOverloadApiErrorImpl extends ServerOverloadApiError {
     required TResult Function(UnsupportedMediaType value) unsupportedMediaType,
     required TResult Function(TooManyRequestsApiError value) tooManyRequests,
     required TResult Function(PreconditionFailedApiError value)
-        preconditionFailed,
+    preconditionFailed,
     required TResult Function(PayloadTooLargeApiError value) payloadTooLarge,
     required TResult Function(InternalServerErrorApiError value)
-        internalServerError,
+    internalServerError,
     required TResult Function(ServiceUnavailableApiError value)
-        serviceUnavailable,
+    serviceUnavailable,
     required TResult Function(GatewayTimeoutApiError value) gatewayTimeout,
     required TResult Function(ServerOverloadApiError value) serverOverload,
     required TResult Function(ServerErrorApiError value) serverError,
     required TResult Function(ServerConnectionErrorApiError value)
-        serverConnectionError,
+    serverConnectionError,
     required TResult Function(NetworkErrorApiError value) networkError,
     required TResult Function(TimeoutApiError value) timeout,
     required TResult Function(UnknownApiError value) unknown,
@@ -3238,7 +3297,7 @@ class _$ServerOverloadApiErrorImpl extends ServerOverloadApiError {
     TResult? Function(ServerOverloadApiError value)? serverOverload,
     TResult? Function(ServerErrorApiError value)? serverError,
     TResult? Function(ServerConnectionErrorApiError value)?
-        serverConnectionError,
+    serverConnectionError,
     TResult? Function(NetworkErrorApiError value)? networkError,
     TResult? Function(TimeoutApiError value)? timeout,
     TResult? Function(UnknownApiError value)? unknown,
@@ -3266,7 +3325,7 @@ class _$ServerOverloadApiErrorImpl extends ServerOverloadApiError {
     TResult Function(ServerOverloadApiError value)? serverOverload,
     TResult Function(ServerErrorApiError value)? serverError,
     TResult Function(ServerConnectionErrorApiError value)?
-        serverConnectionError,
+    serverConnectionError,
     TResult Function(NetworkErrorApiError value)? networkError,
     TResult Function(TimeoutApiError value)? timeout,
     TResult Function(UnknownApiError value)? unknown,
@@ -3287,18 +3346,23 @@ abstract class ServerOverloadApiError extends ApiError {
 
 /// @nodoc
 abstract class _$$ServerErrorApiErrorImplCopyWith<$Res> {
-  factory _$$ServerErrorApiErrorImplCopyWith(_$ServerErrorApiErrorImpl value,
-          $Res Function(_$ServerErrorApiErrorImpl) then) =
-      __$$ServerErrorApiErrorImplCopyWithImpl<$Res>;
+  factory _$$ServerErrorApiErrorImplCopyWith(
+    _$ServerErrorApiErrorImpl value,
+    $Res Function(_$ServerErrorApiErrorImpl) then,
+  ) = __$$ServerErrorApiErrorImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
 class __$$ServerErrorApiErrorImplCopyWithImpl<$Res>
     extends _$ApiErrorCopyWithImpl<$Res, _$ServerErrorApiErrorImpl>
     implements _$$ServerErrorApiErrorImplCopyWith<$Res> {
-  __$$ServerErrorApiErrorImplCopyWithImpl(_$ServerErrorApiErrorImpl _value,
-      $Res Function(_$ServerErrorApiErrorImpl) _then)
-      : super(_value, _then);
+  __$$ServerErrorApiErrorImplCopyWithImpl(
+    _$ServerErrorApiErrorImpl _value,
+    $Res Function(_$ServerErrorApiErrorImpl) _then,
+  ) : super(_value, _then);
+
+  /// Create a copy of ApiError
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -3418,17 +3482,17 @@ class _$ServerErrorApiErrorImpl extends ServerErrorApiError {
     required TResult Function(UnsupportedMediaType value) unsupportedMediaType,
     required TResult Function(TooManyRequestsApiError value) tooManyRequests,
     required TResult Function(PreconditionFailedApiError value)
-        preconditionFailed,
+    preconditionFailed,
     required TResult Function(PayloadTooLargeApiError value) payloadTooLarge,
     required TResult Function(InternalServerErrorApiError value)
-        internalServerError,
+    internalServerError,
     required TResult Function(ServiceUnavailableApiError value)
-        serviceUnavailable,
+    serviceUnavailable,
     required TResult Function(GatewayTimeoutApiError value) gatewayTimeout,
     required TResult Function(ServerOverloadApiError value) serverOverload,
     required TResult Function(ServerErrorApiError value) serverError,
     required TResult Function(ServerConnectionErrorApiError value)
-        serverConnectionError,
+    serverConnectionError,
     required TResult Function(NetworkErrorApiError value) networkError,
     required TResult Function(TimeoutApiError value) timeout,
     required TResult Function(UnknownApiError value) unknown,
@@ -3456,7 +3520,7 @@ class _$ServerErrorApiErrorImpl extends ServerErrorApiError {
     TResult? Function(ServerOverloadApiError value)? serverOverload,
     TResult? Function(ServerErrorApiError value)? serverError,
     TResult? Function(ServerConnectionErrorApiError value)?
-        serverConnectionError,
+    serverConnectionError,
     TResult? Function(NetworkErrorApiError value)? networkError,
     TResult? Function(TimeoutApiError value)? timeout,
     TResult? Function(UnknownApiError value)? unknown,
@@ -3484,7 +3548,7 @@ class _$ServerErrorApiErrorImpl extends ServerErrorApiError {
     TResult Function(ServerOverloadApiError value)? serverOverload,
     TResult Function(ServerErrorApiError value)? serverError,
     TResult Function(ServerConnectionErrorApiError value)?
-        serverConnectionError,
+    serverConnectionError,
     TResult Function(NetworkErrorApiError value)? networkError,
     TResult Function(TimeoutApiError value)? timeout,
     TResult Function(UnknownApiError value)? unknown,
@@ -3506,9 +3570,9 @@ abstract class ServerErrorApiError extends ApiError {
 /// @nodoc
 abstract class _$$ServerConnectionErrorApiErrorImplCopyWith<$Res> {
   factory _$$ServerConnectionErrorApiErrorImplCopyWith(
-          _$ServerConnectionErrorApiErrorImpl value,
-          $Res Function(_$ServerConnectionErrorApiErrorImpl) then) =
-      __$$ServerConnectionErrorApiErrorImplCopyWithImpl<$Res>;
+    _$ServerConnectionErrorApiErrorImpl value,
+    $Res Function(_$ServerConnectionErrorApiErrorImpl) then,
+  ) = __$$ServerConnectionErrorApiErrorImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String? error});
 }
@@ -3518,21 +3582,24 @@ class __$$ServerConnectionErrorApiErrorImplCopyWithImpl<$Res>
     extends _$ApiErrorCopyWithImpl<$Res, _$ServerConnectionErrorApiErrorImpl>
     implements _$$ServerConnectionErrorApiErrorImplCopyWith<$Res> {
   __$$ServerConnectionErrorApiErrorImplCopyWithImpl(
-      _$ServerConnectionErrorApiErrorImpl _value,
-      $Res Function(_$ServerConnectionErrorApiErrorImpl) _then)
-      : super(_value, _then);
+    _$ServerConnectionErrorApiErrorImpl _value,
+    $Res Function(_$ServerConnectionErrorApiErrorImpl) _then,
+  ) : super(_value, _then);
 
+  /// Create a copy of ApiError
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? error = freezed,
-  }) {
-    return _then(_$ServerConnectionErrorApiErrorImpl(
-      error: freezed == error
-          ? _value.error
-          : error // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ));
+  $Res call({Object? error = freezed}) {
+    return _then(
+      _$ServerConnectionErrorApiErrorImpl(
+        error:
+            freezed == error
+                ? _value.error
+                : error // ignore: cast_nullable_to_non_nullable
+                    as String?,
+      ),
+    );
   }
 }
 
@@ -3561,13 +3628,17 @@ class _$ServerConnectionErrorApiErrorImpl
   @override
   int get hashCode => Object.hash(runtimeType, error);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ApiError
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ServerConnectionErrorApiErrorImplCopyWith<
-          _$ServerConnectionErrorApiErrorImpl>
-      get copyWith => __$$ServerConnectionErrorApiErrorImplCopyWithImpl<
-          _$ServerConnectionErrorApiErrorImpl>(this, _$identity);
+    _$ServerConnectionErrorApiErrorImpl
+  >
+  get copyWith => __$$ServerConnectionErrorApiErrorImplCopyWithImpl<
+    _$ServerConnectionErrorApiErrorImpl
+  >(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -3666,17 +3737,17 @@ class _$ServerConnectionErrorApiErrorImpl
     required TResult Function(UnsupportedMediaType value) unsupportedMediaType,
     required TResult Function(TooManyRequestsApiError value) tooManyRequests,
     required TResult Function(PreconditionFailedApiError value)
-        preconditionFailed,
+    preconditionFailed,
     required TResult Function(PayloadTooLargeApiError value) payloadTooLarge,
     required TResult Function(InternalServerErrorApiError value)
-        internalServerError,
+    internalServerError,
     required TResult Function(ServiceUnavailableApiError value)
-        serviceUnavailable,
+    serviceUnavailable,
     required TResult Function(GatewayTimeoutApiError value) gatewayTimeout,
     required TResult Function(ServerOverloadApiError value) serverOverload,
     required TResult Function(ServerErrorApiError value) serverError,
     required TResult Function(ServerConnectionErrorApiError value)
-        serverConnectionError,
+    serverConnectionError,
     required TResult Function(NetworkErrorApiError value) networkError,
     required TResult Function(TimeoutApiError value) timeout,
     required TResult Function(UnknownApiError value) unknown,
@@ -3704,7 +3775,7 @@ class _$ServerConnectionErrorApiErrorImpl
     TResult? Function(ServerOverloadApiError value)? serverOverload,
     TResult? Function(ServerErrorApiError value)? serverError,
     TResult? Function(ServerConnectionErrorApiError value)?
-        serverConnectionError,
+    serverConnectionError,
     TResult? Function(NetworkErrorApiError value)? networkError,
     TResult? Function(TimeoutApiError value)? timeout,
     TResult? Function(UnknownApiError value)? unknown,
@@ -3732,7 +3803,7 @@ class _$ServerConnectionErrorApiErrorImpl
     TResult Function(ServerOverloadApiError value)? serverOverload,
     TResult Function(ServerErrorApiError value)? serverError,
     TResult Function(ServerConnectionErrorApiError value)?
-        serverConnectionError,
+    serverConnectionError,
     TResult Function(NetworkErrorApiError value)? networkError,
     TResult Function(TimeoutApiError value)? timeout,
     TResult Function(UnknownApiError value)? unknown,
@@ -3752,26 +3823,35 @@ abstract class ServerConnectionErrorApiError extends ApiError {
   const ServerConnectionErrorApiError._() : super._();
 
   String? get error;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of ApiError
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ServerConnectionErrorApiErrorImplCopyWith<
-          _$ServerConnectionErrorApiErrorImpl>
-      get copyWith => throw _privateConstructorUsedError;
+    _$ServerConnectionErrorApiErrorImpl
+  >
+  get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class _$$NetworkErrorApiErrorImplCopyWith<$Res> {
-  factory _$$NetworkErrorApiErrorImplCopyWith(_$NetworkErrorApiErrorImpl value,
-          $Res Function(_$NetworkErrorApiErrorImpl) then) =
-      __$$NetworkErrorApiErrorImplCopyWithImpl<$Res>;
+  factory _$$NetworkErrorApiErrorImplCopyWith(
+    _$NetworkErrorApiErrorImpl value,
+    $Res Function(_$NetworkErrorApiErrorImpl) then,
+  ) = __$$NetworkErrorApiErrorImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
 class __$$NetworkErrorApiErrorImplCopyWithImpl<$Res>
     extends _$ApiErrorCopyWithImpl<$Res, _$NetworkErrorApiErrorImpl>
     implements _$$NetworkErrorApiErrorImplCopyWith<$Res> {
-  __$$NetworkErrorApiErrorImplCopyWithImpl(_$NetworkErrorApiErrorImpl _value,
-      $Res Function(_$NetworkErrorApiErrorImpl) _then)
-      : super(_value, _then);
+  __$$NetworkErrorApiErrorImplCopyWithImpl(
+    _$NetworkErrorApiErrorImpl _value,
+    $Res Function(_$NetworkErrorApiErrorImpl) _then,
+  ) : super(_value, _then);
+
+  /// Create a copy of ApiError
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -3891,17 +3971,17 @@ class _$NetworkErrorApiErrorImpl extends NetworkErrorApiError {
     required TResult Function(UnsupportedMediaType value) unsupportedMediaType,
     required TResult Function(TooManyRequestsApiError value) tooManyRequests,
     required TResult Function(PreconditionFailedApiError value)
-        preconditionFailed,
+    preconditionFailed,
     required TResult Function(PayloadTooLargeApiError value) payloadTooLarge,
     required TResult Function(InternalServerErrorApiError value)
-        internalServerError,
+    internalServerError,
     required TResult Function(ServiceUnavailableApiError value)
-        serviceUnavailable,
+    serviceUnavailable,
     required TResult Function(GatewayTimeoutApiError value) gatewayTimeout,
     required TResult Function(ServerOverloadApiError value) serverOverload,
     required TResult Function(ServerErrorApiError value) serverError,
     required TResult Function(ServerConnectionErrorApiError value)
-        serverConnectionError,
+    serverConnectionError,
     required TResult Function(NetworkErrorApiError value) networkError,
     required TResult Function(TimeoutApiError value) timeout,
     required TResult Function(UnknownApiError value) unknown,
@@ -3929,7 +4009,7 @@ class _$NetworkErrorApiErrorImpl extends NetworkErrorApiError {
     TResult? Function(ServerOverloadApiError value)? serverOverload,
     TResult? Function(ServerErrorApiError value)? serverError,
     TResult? Function(ServerConnectionErrorApiError value)?
-        serverConnectionError,
+    serverConnectionError,
     TResult? Function(NetworkErrorApiError value)? networkError,
     TResult? Function(TimeoutApiError value)? timeout,
     TResult? Function(UnknownApiError value)? unknown,
@@ -3957,7 +4037,7 @@ class _$NetworkErrorApiErrorImpl extends NetworkErrorApiError {
     TResult Function(ServerOverloadApiError value)? serverOverload,
     TResult Function(ServerErrorApiError value)? serverError,
     TResult Function(ServerConnectionErrorApiError value)?
-        serverConnectionError,
+    serverConnectionError,
     TResult Function(NetworkErrorApiError value)? networkError,
     TResult Function(TimeoutApiError value)? timeout,
     TResult Function(UnknownApiError value)? unknown,
@@ -3978,9 +4058,10 @@ abstract class NetworkErrorApiError extends ApiError {
 
 /// @nodoc
 abstract class _$$TimeoutApiErrorImplCopyWith<$Res> {
-  factory _$$TimeoutApiErrorImplCopyWith(_$TimeoutApiErrorImpl value,
-          $Res Function(_$TimeoutApiErrorImpl) then) =
-      __$$TimeoutApiErrorImplCopyWithImpl<$Res>;
+  factory _$$TimeoutApiErrorImplCopyWith(
+    _$TimeoutApiErrorImpl value,
+    $Res Function(_$TimeoutApiErrorImpl) then,
+  ) = __$$TimeoutApiErrorImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -3988,8 +4069,12 @@ class __$$TimeoutApiErrorImplCopyWithImpl<$Res>
     extends _$ApiErrorCopyWithImpl<$Res, _$TimeoutApiErrorImpl>
     implements _$$TimeoutApiErrorImplCopyWith<$Res> {
   __$$TimeoutApiErrorImplCopyWithImpl(
-      _$TimeoutApiErrorImpl _value, $Res Function(_$TimeoutApiErrorImpl) _then)
-      : super(_value, _then);
+    _$TimeoutApiErrorImpl _value,
+    $Res Function(_$TimeoutApiErrorImpl) _then,
+  ) : super(_value, _then);
+
+  /// Create a copy of ApiError
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -4108,17 +4193,17 @@ class _$TimeoutApiErrorImpl extends TimeoutApiError {
     required TResult Function(UnsupportedMediaType value) unsupportedMediaType,
     required TResult Function(TooManyRequestsApiError value) tooManyRequests,
     required TResult Function(PreconditionFailedApiError value)
-        preconditionFailed,
+    preconditionFailed,
     required TResult Function(PayloadTooLargeApiError value) payloadTooLarge,
     required TResult Function(InternalServerErrorApiError value)
-        internalServerError,
+    internalServerError,
     required TResult Function(ServiceUnavailableApiError value)
-        serviceUnavailable,
+    serviceUnavailable,
     required TResult Function(GatewayTimeoutApiError value) gatewayTimeout,
     required TResult Function(ServerOverloadApiError value) serverOverload,
     required TResult Function(ServerErrorApiError value) serverError,
     required TResult Function(ServerConnectionErrorApiError value)
-        serverConnectionError,
+    serverConnectionError,
     required TResult Function(NetworkErrorApiError value) networkError,
     required TResult Function(TimeoutApiError value) timeout,
     required TResult Function(UnknownApiError value) unknown,
@@ -4146,7 +4231,7 @@ class _$TimeoutApiErrorImpl extends TimeoutApiError {
     TResult? Function(ServerOverloadApiError value)? serverOverload,
     TResult? Function(ServerErrorApiError value)? serverError,
     TResult? Function(ServerConnectionErrorApiError value)?
-        serverConnectionError,
+    serverConnectionError,
     TResult? Function(NetworkErrorApiError value)? networkError,
     TResult? Function(TimeoutApiError value)? timeout,
     TResult? Function(UnknownApiError value)? unknown,
@@ -4174,7 +4259,7 @@ class _$TimeoutApiErrorImpl extends TimeoutApiError {
     TResult Function(ServerOverloadApiError value)? serverOverload,
     TResult Function(ServerErrorApiError value)? serverError,
     TResult Function(ServerConnectionErrorApiError value)?
-        serverConnectionError,
+    serverConnectionError,
     TResult Function(NetworkErrorApiError value)? networkError,
     TResult Function(TimeoutApiError value)? timeout,
     TResult Function(UnknownApiError value)? unknown,
@@ -4195,9 +4280,10 @@ abstract class TimeoutApiError extends ApiError {
 
 /// @nodoc
 abstract class _$$UnknownApiErrorImplCopyWith<$Res> {
-  factory _$$UnknownApiErrorImplCopyWith(_$UnknownApiErrorImpl value,
-          $Res Function(_$UnknownApiErrorImpl) then) =
-      __$$UnknownApiErrorImplCopyWithImpl<$Res>;
+  factory _$$UnknownApiErrorImplCopyWith(
+    _$UnknownApiErrorImpl value,
+    $Res Function(_$UnknownApiErrorImpl) then,
+  ) = __$$UnknownApiErrorImplCopyWithImpl<$Res>;
   @useResult
   $Res call({Object? error, StackTrace? stackTrace});
 }
@@ -4207,22 +4293,25 @@ class __$$UnknownApiErrorImplCopyWithImpl<$Res>
     extends _$ApiErrorCopyWithImpl<$Res, _$UnknownApiErrorImpl>
     implements _$$UnknownApiErrorImplCopyWith<$Res> {
   __$$UnknownApiErrorImplCopyWithImpl(
-      _$UnknownApiErrorImpl _value, $Res Function(_$UnknownApiErrorImpl) _then)
-      : super(_value, _then);
+    _$UnknownApiErrorImpl _value,
+    $Res Function(_$UnknownApiErrorImpl) _then,
+  ) : super(_value, _then);
 
+  /// Create a copy of ApiError
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? error = freezed,
-    Object? stackTrace = freezed,
-  }) {
-    return _then(_$UnknownApiErrorImpl(
-      error: freezed == error ? _value.error : error,
-      stackTrace: freezed == stackTrace
-          ? _value.stackTrace
-          : stackTrace // ignore: cast_nullable_to_non_nullable
-              as StackTrace?,
-    ));
+  $Res call({Object? error = freezed, Object? stackTrace = freezed}) {
+    return _then(
+      _$UnknownApiErrorImpl(
+        error: freezed == error ? _value.error : error,
+        stackTrace:
+            freezed == stackTrace
+                ? _value.stackTrace
+                : stackTrace // ignore: cast_nullable_to_non_nullable
+                    as StackTrace?,
+      ),
+    );
   }
 }
 
@@ -4253,14 +4342,21 @@ class _$UnknownApiErrorImpl extends UnknownApiError {
 
   @override
   int get hashCode => Object.hash(
-      runtimeType, const DeepCollectionEquality().hash(error), stackTrace);
+    runtimeType,
+    const DeepCollectionEquality().hash(error),
+    stackTrace,
+  );
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ApiError
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$UnknownApiErrorImplCopyWith<_$UnknownApiErrorImpl> get copyWith =>
       __$$UnknownApiErrorImplCopyWithImpl<_$UnknownApiErrorImpl>(
-          this, _$identity);
+        this,
+        _$identity,
+      );
 
   @override
   @optionalTypeArgs
@@ -4359,17 +4455,17 @@ class _$UnknownApiErrorImpl extends UnknownApiError {
     required TResult Function(UnsupportedMediaType value) unsupportedMediaType,
     required TResult Function(TooManyRequestsApiError value) tooManyRequests,
     required TResult Function(PreconditionFailedApiError value)
-        preconditionFailed,
+    preconditionFailed,
     required TResult Function(PayloadTooLargeApiError value) payloadTooLarge,
     required TResult Function(InternalServerErrorApiError value)
-        internalServerError,
+    internalServerError,
     required TResult Function(ServiceUnavailableApiError value)
-        serviceUnavailable,
+    serviceUnavailable,
     required TResult Function(GatewayTimeoutApiError value) gatewayTimeout,
     required TResult Function(ServerOverloadApiError value) serverOverload,
     required TResult Function(ServerErrorApiError value) serverError,
     required TResult Function(ServerConnectionErrorApiError value)
-        serverConnectionError,
+    serverConnectionError,
     required TResult Function(NetworkErrorApiError value) networkError,
     required TResult Function(TimeoutApiError value) timeout,
     required TResult Function(UnknownApiError value) unknown,
@@ -4397,7 +4493,7 @@ class _$UnknownApiErrorImpl extends UnknownApiError {
     TResult? Function(ServerOverloadApiError value)? serverOverload,
     TResult? Function(ServerErrorApiError value)? serverError,
     TResult? Function(ServerConnectionErrorApiError value)?
-        serverConnectionError,
+    serverConnectionError,
     TResult? Function(NetworkErrorApiError value)? networkError,
     TResult? Function(TimeoutApiError value)? timeout,
     TResult? Function(UnknownApiError value)? unknown,
@@ -4425,7 +4521,7 @@ class _$UnknownApiErrorImpl extends UnknownApiError {
     TResult Function(ServerOverloadApiError value)? serverOverload,
     TResult Function(ServerErrorApiError value)? serverError,
     TResult Function(ServerConnectionErrorApiError value)?
-        serverConnectionError,
+    serverConnectionError,
     TResult Function(NetworkErrorApiError value)? networkError,
     TResult Function(TimeoutApiError value)? timeout,
     TResult Function(UnknownApiError value)? unknown,
@@ -4440,32 +4536,41 @@ class _$UnknownApiErrorImpl extends UnknownApiError {
 }
 
 abstract class UnknownApiError extends ApiError {
-  const factory UnknownApiError(
-      {final Object? error,
-      final StackTrace? stackTrace}) = _$UnknownApiErrorImpl;
+  const factory UnknownApiError({
+    final Object? error,
+    final StackTrace? stackTrace,
+  }) = _$UnknownApiErrorImpl;
   const UnknownApiError._() : super._();
 
   Object? get error;
   StackTrace? get stackTrace;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of ApiError
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$UnknownApiErrorImplCopyWith<_$UnknownApiErrorImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class _$$MaintenanceApiErrorImplCopyWith<$Res> {
-  factory _$$MaintenanceApiErrorImplCopyWith(_$MaintenanceApiErrorImpl value,
-          $Res Function(_$MaintenanceApiErrorImpl) then) =
-      __$$MaintenanceApiErrorImplCopyWithImpl<$Res>;
+  factory _$$MaintenanceApiErrorImplCopyWith(
+    _$MaintenanceApiErrorImpl value,
+    $Res Function(_$MaintenanceApiErrorImpl) then,
+  ) = __$$MaintenanceApiErrorImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
 class __$$MaintenanceApiErrorImplCopyWithImpl<$Res>
     extends _$ApiErrorCopyWithImpl<$Res, _$MaintenanceApiErrorImpl>
     implements _$$MaintenanceApiErrorImplCopyWith<$Res> {
-  __$$MaintenanceApiErrorImplCopyWithImpl(_$MaintenanceApiErrorImpl _value,
-      $Res Function(_$MaintenanceApiErrorImpl) _then)
-      : super(_value, _then);
+  __$$MaintenanceApiErrorImplCopyWithImpl(
+    _$MaintenanceApiErrorImpl _value,
+    $Res Function(_$MaintenanceApiErrorImpl) _then,
+  ) : super(_value, _then);
+
+  /// Create a copy of ApiError
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -4585,17 +4690,17 @@ class _$MaintenanceApiErrorImpl extends MaintenanceApiError {
     required TResult Function(UnsupportedMediaType value) unsupportedMediaType,
     required TResult Function(TooManyRequestsApiError value) tooManyRequests,
     required TResult Function(PreconditionFailedApiError value)
-        preconditionFailed,
+    preconditionFailed,
     required TResult Function(PayloadTooLargeApiError value) payloadTooLarge,
     required TResult Function(InternalServerErrorApiError value)
-        internalServerError,
+    internalServerError,
     required TResult Function(ServiceUnavailableApiError value)
-        serviceUnavailable,
+    serviceUnavailable,
     required TResult Function(GatewayTimeoutApiError value) gatewayTimeout,
     required TResult Function(ServerOverloadApiError value) serverOverload,
     required TResult Function(ServerErrorApiError value) serverError,
     required TResult Function(ServerConnectionErrorApiError value)
-        serverConnectionError,
+    serverConnectionError,
     required TResult Function(NetworkErrorApiError value) networkError,
     required TResult Function(TimeoutApiError value) timeout,
     required TResult Function(UnknownApiError value) unknown,
@@ -4623,7 +4728,7 @@ class _$MaintenanceApiErrorImpl extends MaintenanceApiError {
     TResult? Function(ServerOverloadApiError value)? serverOverload,
     TResult? Function(ServerErrorApiError value)? serverError,
     TResult? Function(ServerConnectionErrorApiError value)?
-        serverConnectionError,
+    serverConnectionError,
     TResult? Function(NetworkErrorApiError value)? networkError,
     TResult? Function(TimeoutApiError value)? timeout,
     TResult? Function(UnknownApiError value)? unknown,
@@ -4651,7 +4756,7 @@ class _$MaintenanceApiErrorImpl extends MaintenanceApiError {
     TResult Function(ServerOverloadApiError value)? serverOverload,
     TResult Function(ServerErrorApiError value)? serverError,
     TResult Function(ServerConnectionErrorApiError value)?
-        serverConnectionError,
+    serverConnectionError,
     TResult Function(NetworkErrorApiError value)? networkError,
     TResult Function(TimeoutApiError value)? timeout,
     TResult Function(UnknownApiError value)? unknown,
